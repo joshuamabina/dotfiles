@@ -1,0 +1,31 @@
+<VirtualHost *:80>
+	Define APP_NAME beacon
+
+	Define SERVER_NAME  ${APP_NAME}.local
+	Define SERVER_ALIAS www.${SERVER_NAME}
+
+	Define PROJECT_DIR        /var/www/${SERVER_NAME}
+	Define CUSTOM_LOG_DIR     ${PROJECT_DIR}/storage/logs/apache
+
+	ServerName  ${SERVER_NAME} 
+	ServerAlias ${SERVER_ALIAS}
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www/${SERVER_NAME}/public
+	<Directory /var/www/${SERVER_NAME}/public/>
+		#Options +FollowSymLinks
+		AllowOverride All
+			
+		<IfVersion >= 2.3>
+			Require all granted
+		</IfVersion>
+		<IfVersion < 2.3>
+			Order allow,deny
+			Allow from all
+		</IfVersion>
+	</Directory>
+
+	ErrorLog  ${CUSTOM_LOG_DIR}/errors.log
+	CustomLog ${CUSTOM_LOG_DIR}/access.log combined
+</VirtualHost>
+

@@ -1,0 +1,49 @@
+music_apps=('mpd' 'vimpc')
+
+mail_apps=('neomutt')
+
+video_apps=('mplayer2' 'peerflix')
+
+pdf_apps=('zathura')
+
+game_apps=('gnutypist' 'command-line-chess')
+
+text_editors=('vim')
+
+screen_scrots=('xfce4-screenshooter')
+
+web_browsers=('w3m' 'vimb')
+
+terminal_emulators=('urxvt' 'tmux')
+
+clipboard_managers=('xclip')
+
+download_managers=('youtube-dl' 'stig')
+
+#file_managers=()
+
+network_managers=('wicd-curses')
+
+volume_manager=('pamix')
+
+power_managers=()
+
+database_managers=('sqlite' 'mariadb' 'redis' 'neo4j' 'elasticsearch')
+
+source_control_managers=('git' 'hg' 'svn')
+
+php_developer_tools=('apache' 'php' 'phpunit' 'composer' 'create-virtual-host')
+
+android_developer_tools=('android_sdkmanager')
+
+cpp_developer_tools=('autotools' 'build-essentials' 'cmake' 'pkg-config')
+
+java_developer_tools=('openjdk' 'sdkman')
+
+javascript_developer_tools=('laravel-echo-server' 'instant-markdown-d' 'vue-cli' 'create-react-app' 'webpack' 'gulp' 'yarn' 'node')
+
+media_developer_tools=('ffmpeg' 'opencv')
+
+creative_tools=('vimiv' 'gimp' 'blender' 'inkscape' 'pitivi')
+
+terminator_tools=('tree' 'pv')

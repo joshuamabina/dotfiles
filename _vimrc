@@ -8,7 +8,7 @@ set nocompatible
 set ttyfast
 
 " Plugins
-so ~/.vim/plugins.vim
+so $HOME/.vim/plugins.vim
 
 set autoindent
 set autoread
@@ -78,17 +78,17 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 let g:jsx_ext_required=0
 
 " PHP-CS-Fixer
-let g:php_cs_fixer_rules='@PSR2'
+"let g:php_cs_fixer_rules='@PSR2'
 " let g:php_cs_fixer_config_file='.php_cs'
-let g:php_cs_fixer_enable_default_mapping=1
+"let g:php_cs_fixer_enable_default_mapping=1
 
 " }}}
 
 " Section Mappings {{{
 
-let mapleader=","
-let g:mapleader=","
-let maplocalleader=",,"
+let mapleader=','
+let g:mapleader=','
+let maplocalleader=',,'
 
 " Ex-mode
 nnoremap Q <nop>

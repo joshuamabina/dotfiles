@@ -1,0 +1,25 @@
+# 
+
+# deb cdrom:[Debian GNU/Linux 8 _Jessie_ - Official Snapshot amd64 LIVE/INSTALL Binary 20160706-02:22]/ jessie contrib main non-free
+
+# deb cdrom:[Debian GNU/Linux 8 _Jessie_ - Official Snapshot amd64 LIVE/INSTALL Binary 20160706-02:22]/ jessie contrib main non-free
+
+deb http://httpredir.debian.org/debian jessie main non-free contrib
+#deb-src http://httpredir.debian.org/debian jessie main non-free contrib
+
+deb http://security.debian.org/ jessie/updates main contrib non-free
+#deb-src http://security.debian.org/ jessie/updates main contrib non-free
+
+# jessie-updates, previously known as 'volatile'
+deb http://httpredir.debian.org/debian jessie-updates main contrib non-free
+#deb-src http://httpredir.debian.org/debian jessie-updates main contrib non-free
+
+# dotdeb packages
+deb http://packages.dotdeb.org jessie all
+# deb-src http://packages.dotdeb.org jessie all
+
+# jessie-backports
+deb http://httpredir.debian.org/debian jessie-backports main contrib non-free
+
+# elasticsearch
+deb https://artifacts.elastic.co/packages/5.x/apt stable main

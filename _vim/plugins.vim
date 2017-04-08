@@ -12,10 +12,11 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-syntastic/syntastic'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'zaki/zazen'
 Plugin 'ryanoasis/vim-devicons' 
-
 Plugin 'vim-airline/vim-airline' 
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -28,8 +29,5 @@ Plugin 'freitass/todo.txt-vim'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'artur-shaik/vim-javacomplete2'
-Plugin 'editorconfig/editorconfig-vim'
-
-"Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()

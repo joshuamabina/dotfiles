@@ -1,0 +1,15 @@
+# pipemenu.rc holds the applications which appear in the Openbox pipemenus
+# Edit the arrays to add or remove package names, making sure there are spaces
+# between each entry.
+
+# Multimedia pipemenu (bl-multimedia-pipemenu)
+MM_APPS=()
+MM_UTILS=()
+MM_EDITORS=()
+
+# Graphics pipemenu (bl-graphics-pipemenu)
+GRAPHICS_APPS=()
+GRAPHICS_SCROTS=()
+
+# Browsers pipemenu (bl-x-www-browser-pipemenu)
+BROWSERS=()
