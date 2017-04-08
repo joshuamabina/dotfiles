@@ -136,6 +136,7 @@ nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wl <C-w>l
 nnoremap <silent> wn :split<CR>
+nnoremap <silent> ww :vsplit<CR>
 
 "
 " Lines
