@@ -1,7 +1,8 @@
-alias diff="colordiff"
-alias less="less -r"
-alias md='/usr/local/bin/markdown2'
-alias yt='/usr/local/bin/youtube-dl'
-alias todo='/usr/local/bin/todo.sh'
 alias ..='cd ..'
-alias lsa='ls -a'
+alias diff="colordiff"
+alias gc="git clone"
+alias md='/usr/local/bin/markdown2'
+alias less='less -r'
+alias lsa='ls -sha | less'
+alias lsd='ls -shtc | less'
+alias yt='/usr/local/bin/youtube-dl'
