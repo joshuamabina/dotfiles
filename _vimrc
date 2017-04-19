@@ -154,5 +154,11 @@ vnoremap <C-k> :m '< -2<CR>gv=gv
 vmap <silent> <leader>y "+y
 noremap <silent> <leader>p "+p
 
+"
+" Vimux
+"
+nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
+nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
+
 " }}}
 
