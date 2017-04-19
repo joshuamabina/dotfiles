@@ -59,6 +59,9 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extesions#tabline#tab_min_count=3
 let g:airline#extensions#tabline#show_buffers=0
 
+" CtrlP
+let g:ctrlp_show_hidden=1
+
 " NerdTree
 let NERDTreeShowHidden=1
 
