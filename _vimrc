@@ -81,9 +81,7 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 let g:jsx_ext_required=0
 
 " PHP-CS-Fixer
-"let g:php_cs_fixer_rules='@PSR2'
-" let g:php_cs_fixer_config_file='.php_cs'
-"let g:php_cs_fixer_enable_default_mapping=1
+let g:php_cs_fixer_rules='@Symfony'
 
 " }}}
 
@@ -156,6 +154,12 @@ vnoremap <silent> <C-k> :m '< -2<CR>gv=gv
 "
 vmap <silent> <leader>y "+y
 noremap <silent> <leader>p "+p
+
+"
+" PHP-CS-Fixer
+"
+nnoremap <silent> <leader>pcd :call PhpCsFixerFixDirectory()<CR>
+nnoremap <silent> <leader>pcf :call PhpCsFixerFixFile()<CR>
 
 "
 " Vimux
