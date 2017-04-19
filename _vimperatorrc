@@ -22,6 +22,7 @@ map d <Nop>
 map <C-h> <Nop>
 map <C-k> <Nop>
 map <C-j> <Nop>
+map <C-o> <Nop>
 map <C-r> <Nop>
 map <C-s> <Nop>
 map <C-t> <Nop>
@@ -35,7 +36,7 @@ map k 5<C-y>
 
 " Clipboard
 noremap <C-c> <C-v><C-c>
-cnoremap <C-c> <C-v><C-v>
+cnoremap <C-v> <C-v><C-v>
 
 nnoremap <A-y> :js util.copyToClipboard(buffer.title + '\u0020(' + buffer.URL + ')', true)<CR>
 nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
