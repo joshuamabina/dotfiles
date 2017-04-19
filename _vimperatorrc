@@ -1,0 +1,48 @@
+"
+" General
+"
+set visualbell
+highlight Bell display:none
+
+set editor='bl-text-editor'
+set hintchars='hfjdksla'
+
+set hlsearch
+set focuscontent
+set defsearch=duckduckgo
+
+set gui=addons,nobookmarks,nomenu,nonavigation,tabs
+
+"
+" Mappings
+"
+
+" Resets
+map d <Nop>
+map <C-h> <Nop>
+map <C-k> <Nop>
+map <C-j> <Nop>
+map <C-r> <Nop>
+map <C-s> <Nop>
+map <C-t> <Nop>
+map <C-x> <Nop>
+map <C-w> <Nop>
+map <C-S-o> <Nop>
+
+" Scrolling
+map j 5<C-e>
+map k 5<C-y>
+
+" Clipboard
+noremap <C-c> <C-v><C-c>
+cnoremap <C-c> <C-v><C-v>
+
+nnoremap <A-y> :js util.copyToClipboard(buffer.title + '\u0020(' + buffer.URL + ')', true)<CR>
+nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
+
+"
+" Qmarks
+"
+
+qmark g https://github.com
+qmark n https://news.ycombinator.com
