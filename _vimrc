@@ -101,10 +101,10 @@ nnoremap Q <nop>
 "" TODO: New line above and remain in normal mode
 
 " Arrows
-nnoremap <Left> :echoboo "use h"<CR>
-nnoremap <Up> :echoboo "use j"<CR>
-nnoremap <Down> :echoboo "use k"<CR>
-nnoremap <Right> :echoboo "use l"<CR>
+map <Left> :echoboo "use h"<CR>
+map <Up> :echoboo "use j"<CR>
+map <Down> :echoboo "use k"<CR>
+map <Right> :echoboo "use l"<CR>
 
 "
 " Tabs
@@ -138,18 +138,18 @@ nnoremap wh <C-w>h
 nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wl <C-w>l
-nnoremap <silent> wn :split<CR>
-nnoremap <silent> ww :vsplit<CR>
+nnoremap <silent> <leader>wn :split<CR>
+nnoremap <silent> <leader>ww :vsplit<CR>
 
 "
 " Lines
 "
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-inoremap <C-k> <Esc>:m .-2<CR>==gi
-inoremap <C-j> <Esc>:m .+1<CR>==gi
-vnoremap <C-j> :m '> +1<CR>gv=gv
-vnoremap <C-k> :m '< -2<CR>gv=gv
+nnoremap <silent> <C-j> :m .+1<CR>==
+nnoremap <silent> <C-k> :m .-2<CR>==
+inoremap <silent> <C-k> <Esc>:m .-2<CR>==gi
+inoremap <silent> <C-j> <Esc>:m .+1<CR>==gi
+vnoremap <silent> <C-j> :m '> +1<CR>gv=gv
+vnoremap <silent> <C-k> :m '< -2<CR>gv=gv
 
 "
 " Clipboard
