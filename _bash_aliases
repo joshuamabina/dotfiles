@@ -1,0 +1,20 @@
+# Alias  Editing
+alias reload='source $HOME/.bashrc'
+
+# Global
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias less='less -r'
+
+# listing directory contents
+alias la='ls -ali'
+alias ll='ls -l'
+alias ls='ls -Fsh -t --group-directories-first'
+
+# Git
+alias gc='git clone'
+
+# YouTube-dl
+alias yt='/usr/local/bin/youtube-dl'

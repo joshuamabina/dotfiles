@@ -11,7 +11,11 @@ set hlsearch
 set focuscontent
 set defsearch=duckduckgo
 
-set gui=addons,nobookmarks,nomenu,nonavigation,tabs
+set gui=none
+set guioptions=nbr
+set! javascript.options.jit.chrome=true
+
+highlight CmdLine background: black; color: #ccc; transition: all 0.25s;
 
 "
 " Mappings
@@ -22,21 +26,31 @@ map d <Nop>
 map <C-h> <Nop>
 map <C-k> <Nop>
 map <C-j> <Nop>
-map <C-o> <Nop>
+map <C-n> <Nop>
+map <C-p> <Nop>
 map <C-r> <Nop>
 map <C-s> <Nop>
 map <C-t> <Nop>
-map <C-x> <Nop>
+map <C-v> <Nop>
 map <C-w> <Nop>
+map <C-x> <Nop>
+map <C-S-h> <Nop>
 map <C-S-o> <Nop>
+map <F5> <Nop>
+
+nnoremap ZZ :q<CR>
+nnoremap <F5> :source $HOME/.vimperatorrc<CR>
+
+" Ctrl-P: fuzzy-find through all buffers
+nnoremap <C-p> :ls<CR> 
 
 " Scrolling
 map j 5<C-e>
 map k 5<C-y>
 
 " Clipboard
-noremap <C-c> <C-v><C-c>
-cnoremap <C-v> <C-v><C-v>
+"map <C-c> <C-v><C-c>
+"map <C-v> <C-v><C-v>
 
 nnoremap <A-y> :js util.copyToClipboard(buffer.title + '\u0020(' + buffer.URL + ')', true)<CR>
 nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>

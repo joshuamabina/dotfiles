@@ -2,7 +2,7 @@ music_apps=('mpd' 'vimpc')
 
 mail_apps=('neomutt')
 
-video_apps=('mplayer2' 'peerflix')
+video_apps=('comp' 'peerflix')
 
 pdf_apps=('zathura')
 
@@ -12,9 +12,9 @@ text_editors=('vim')
 
 screen_scrots=('xfce4-screenshooter')
 
-web_browsers=('w3m' 'vimb')
+web_browsers=('vimperator')
 
-terminal_emulators=('urxvt' 'tmux')
+terminal_emulators=('terminator' 'tmux')
 
 clipboard_managers=('xclip')
 
@@ -22,7 +22,7 @@ download_managers=('youtube-dl' 'stig')
 
 #file_managers=()
 
-network_managers=('wicd-curses')
+network_managers=('nm-cli')
 
 volume_manager=('pamix')
 
@@ -46,4 +46,4 @@ media_developer_tools=('ffmpeg' 'opencv')
 
 creative_tools=('vimiv' 'gimp' 'blender' 'inkscape' 'pitivi')
 
-terminator_tools=('tree' 'pv')
+terminator_tools=('tree' 'pv' 'universal-ctags')

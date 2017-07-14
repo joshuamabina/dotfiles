@@ -1,20 +1,27 @@
-" Section General {{{
+syntax enable
 
 filetype off
-filetype plugin indent on
-
-" Be IMproved
 set nocompatible
-set ttyfast
 
-" Plugins
 so $HOME/.vim/plugins.vim
 
-set autoindent
+autocmd!
 set autoread
-set autowrite	
+set autowrite
 
-" Swap files
+" Indentation {{{
+filetype plugin indent on
+set autoindent
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set expandtab
+" }}}
+
+set ttyfast
+set wildmenu
+set wildignore+=.DS_Store,*.o,*.class,*.pyc,.git/*,node_modules/*,vendor/*
+
 set backupdir=/tmp
 set directory=/tmp
 
@@ -27,7 +34,13 @@ set guifont=Literation\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 set shell=$SHELL
 set laststatus=2
 set encoding=utf8
-"set background=dark
+set background=dark
+set relativenumber
+
+set path+=**
+
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set nolist
 
 set number
 set nowrap
@@ -39,13 +52,19 @@ set splitright
 set ignorecase
 set autoindent
 set copyindent
+set tabstop=2
+set shiftwidth=2
 
-syntax enable
-colorscheme zazen
+colorscheme zazen 
+
+command! MakeTags !ctags-exuberant -R .
 
 " }}}
 
 " Section Plugin Options {{{
+
+let g:NERDTreeChDirMode       = 2
+let g:ctrlp_working_path_mode = 'rw'
 
 let g:vundle_default_git_proto='git'
 
@@ -61,9 +80,15 @@ let g:airline#extensions#tabline#show_buffers=0
 
 " CtrlP
 let g:ctrlp_show_hidden=1
+let g:ctrlp_max_files=0
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn|idea)|build|public|node_modules|vendor)$',
+  \ 'file': '\v\.(exe|so|dll|o|obj|class|png|jpg|jpeg|mp3|mp4)$',
+\}
 
 " NerdTree
 let NERDTreeShowHidden=1
+let NERDTreeRespectWildIgnore=1
 
 " Syntastic
 let g:syntastic_always_populate_loc_list=1
@@ -74,7 +99,7 @@ let g:syntastic_check_on_wq=0
 " InstantMarkdown
 let g:instant_markdown_autostart=0
 
-" Java
+" JavaComplete
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " JSX
@@ -83,16 +108,27 @@ let g:jsx_ext_required=0
 " PHP-CS-Fixer
 let g:php_cs_fixer_rules='@Symfony'
 
+" Vue
+autocmd FileType vue syntax sync fromstart
+
 " }}}
 
 " Section Mappings {{{
 
-let mapleader=','
-let g:mapleader=','
-let maplocalleader=',,'
+let mapleader=';'
+let g:mapleader=';'
+let maplocalleader=';'
+
+"Make it easy to edit the vim source.
+nmap <Leader>ev :tabedit $HOME/.vimrc<CR>
+
+"TODO Automatically source the vim source on save.
+
+" Reload vim source
+nnoremap <silent> <F5> :source $HOME/.vimrc<CR> :echo "Source reloaded!"<CR>
 
 " Ex-mode
-nnoremap Q <nop>
+nnoremap Q gq
 
 " Editing
 "" TODO: New line below and remain in normal mode
@@ -116,14 +152,14 @@ nnoremap <silent> tk :tabnext<CR>
 nnoremap <silent> th :tabfirst<CR>
 nnoremap <silent> tl :tablast<CR>
 
-" Position 
+" Position
 nnoremap <silent> <leader>tj :-tabmove<CR>
 nnoremap <silent> <leader>tk :+tabmove<CR>
 nnoremap <silent> <leader>th :0tabmove<CR>
 nnoremap <silent> <leader>tl :$tabmove<CR>
 
 "
-" NerdTree 
+" NerdTree
 "
 nnoremap <silent> nt :NERDTreeToggle<CR>
 nnoremap <silent> nr :NERDTree<CR>
@@ -132,10 +168,10 @@ nnoremap <silent> nf :NERDTreeFind<CR>
 "
 " Splits
 "
-nnoremap wh <C-w>h
-nnoremap wj <C-w>j
-nnoremap wk <C-w>k
-nnoremap wl <C-w>l
+nnoremap <silent> <leader>wh <C-w>h
+nnoremap <silent> <leader>wj <C-w>j
+nnoremap <silent> <leader>wk <C-w>k
+nnoremap <silent> <leader>wl <C-w>l
 nnoremap <silent> <leader>wn :split<CR>
 nnoremap <silent> <leader>ww :vsplit<CR>
 
@@ -166,6 +202,31 @@ nnoremap <silent> <leader>pcf :call PhpCsFixerFixFile()<CR>
 "
 nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
 nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
+
+"
+" JavaComplete2
+"
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+
+"nmap <F5> <Plug>(JavaComplete-Imports-Add)
+"imap <F5> <Plug>(JavaComplete-Imports-Add)
+
+nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+
+"
+" Git
+"
+
+nnoremap <silent> <Leader>gd :Gdiff<cr>
+nnoremap <silent> <Leader>gl :Glog<cr>
+nnoremap <silent> <Leader>gs :Gstatus<cr>
+nnoremap <silent> <Leader>gb :Gblame<cr>
+nnoremap <silent> <Leader>gc :Gcommit<cr>
+nnoremap <silent> <Leader>amend :Git commit --amend<cr>
+nnoremap <silent> <Leader>stash :Git stash<cr>
+nnoremap <silent> <Leader>pop :Git stash pop<cr>
 
 " }}}
 

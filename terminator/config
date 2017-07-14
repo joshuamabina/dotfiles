@@ -30,5 +30,5 @@
     [[[window0]]]
       type = Window
       parent = ""
-      size = 680, 540
+      size = 1200, 640
 [plugins]
