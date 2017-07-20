@@ -1,24 +1,26 @@
 syntax enable
 
-filetype off
 set nocompatible
+filetype plugin indent on
 
 so $HOME/.vim/plugins.vim
 
-autocmd!
 set autoread
 set autowrite
-
-" Indentation {{{
-filetype plugin indent on
 set autoindent
-set shiftwidth=4
+set copyindent
+set expandtab
+set ignorecase
 set tabstop=4
 set softtabstop=4
-set expandtab
-" }}}
-
+set shiftwidth=4
 set ttyfast
+set number
+set nowrap
+set showcmd
+set smartcase
+set splitbelow
+set splitright
 set wildmenu
 set wildignore+=.DS_Store,*.o,*.class,*.pyc,.git/*,node_modules/*,vendor/*
 
@@ -41,19 +43,6 @@ set path+=**
 
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set nolist
-
-set number
-set nowrap
-set showcmd
-set autowrite
-set smartcase
-set splitbelow
-set splitright
-set ignorecase
-set autoindent
-set copyindent
-set tabstop=2
-set shiftwidth=2
 
 colorscheme zazen 
 
