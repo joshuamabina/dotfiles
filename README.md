@@ -11,3 +11,4 @@
 - Bundle all general configurations together into `general.vim`
 - Remove openbox configurations
 - Remove apt configurations
+- Allow easy copying into system clipboard
