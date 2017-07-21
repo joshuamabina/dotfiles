@@ -1,7 +1,4 @@
-syntax enable
-
 set nocompatible
-filetype plugin indent on
 
 so $HOME/.vim/plugins.vim
 
@@ -47,58 +44,6 @@ set nolist
 colorscheme zazen 
 
 command! MakeTags !ctags-exuberant -R .
-
-" }}}
-
-" Section Plugin Options {{{
-
-let g:NERDTreeChDirMode       = 2
-let g:ctrlp_working_path_mode = 'rw'
-
-let g:vundle_default_git_proto='git'
-
-" Airline
-let g:airline_theme='raven'
-let g:airline_powerline_fonts=1
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline#extensions#tmuxline#enabled=1
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extesions#tabline#tab_min_count=3
-let g:airline#extensions#tabline#show_buffers=0
-
-" CtrlP
-let g:ctrlp_show_hidden=1
-let g:ctrlp_max_files=0
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn|idea)|build|public|node_modules|vendor)$',
-  \ 'file': '\v\.(exe|so|dll|o|obj|class|png|jpg|jpeg|mp3|mp4)$',
-\}
-
-" NerdTree
-let NERDTreeShowHidden=1
-let NERDTreeRespectWildIgnore=1
-
-" Syntastic
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-
-" InstantMarkdown
-let g:instant_markdown_autostart=0
-
-" JavaComplete
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-
-" JSX
-let g:jsx_ext_required=0
-
-" PHP-CS-Fixer
-let g:php_cs_fixer_rules='@Symfony'
-
-" Vue
-autocmd FileType vue syntax sync fromstart
 
 " }}}
 
@@ -207,7 +152,6 @@ imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 "
 " Git
 "
-
 nnoremap <silent> <Leader>gd :Gdiff<cr>
 nnoremap <silent> <Leader>gl :Glog<cr>
 nnoremap <silent> <Leader>gs :Gstatus<cr>
