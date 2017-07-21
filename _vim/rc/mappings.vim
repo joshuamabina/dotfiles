@@ -2,20 +2,11 @@ let mapleader=';'
 let g:mapleader=';'
 let maplocalleader=';'
 
-"Make it easy to edit the vim source.
-nmap <Leader>ev :tabedit $HOME/.vimrc<CR>
-
-"TODO Automatically source the vim source on save.
-
 " Reload vim source
 nnoremap <silent> <F5> :source $HOME/.vimrc<CR> :echo "Source reloaded!"<CR>
 
 " Ex-mode
 nnoremap Q gq
-
-" Editing
-"" TODO: New line below and remain in normal mode
-"" TODO: New line above and remain in normal mode
 
 " Arrows
 map <Left> :echoboo "use h"<CR>
