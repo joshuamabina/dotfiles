@@ -12,3 +12,4 @@
 - Remove openbox configurations
 - Remove apt configurations
 - Allow easy copying into system clipboard
+- Initialize muttatorrc
