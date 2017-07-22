@@ -13,3 +13,4 @@
 - Remove apt configurations
 - Allow easy copying into system clipboard
 - Initialize muttatorrc
+- `w!!` to write to file as sudo
