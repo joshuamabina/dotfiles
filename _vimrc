@@ -3,18 +3,8 @@ set nocompatible
 so $HOME/.vim/rc/general.vim
 so $HOME/.vim/rc/plugins.vim
 
-set autoread
 set autowrite
-set autoindent
-set copyindent
-set expandtab
 set ignorecase
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set ttyfast
-set number
-set nowrap
 set showcmd
 set smartcase
 set splitbelow
