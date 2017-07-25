@@ -11,6 +11,5 @@
 - Bundle all general configurations together into `general.vim`
 - Remove openbox configurations
 - Remove apt configurations
-- Allow easy copying into system clipboard
-- Initialize muttatorrc
 - `w!!` to write to file as sudo
+- Install colorscheme for vimperator and muttator
