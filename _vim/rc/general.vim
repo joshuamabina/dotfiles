@@ -1,7 +1,6 @@
 "
 " Vim general configurations
 "
-
 let mapleader=','
 let g:mapleader=','
 
@@ -12,5 +11,15 @@ let g:mapleader=','
 "" keep tabs 'natural'.
 set softtabstop=4 shiftwidth=4 expandtab autoindent
 
+"" TODO Display filename in vim
+
 "" Make it easy to use the clipboard
 set clipboard^=unnamed,unnamedplus
+
+"" TODO encoding, fileencoding utf-8!
+
+"" TODO always show mode I am on
+
+"" TODO Make searching easy and case sensitive
+
+"" TODO Disable the mouse
