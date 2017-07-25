@@ -1,7 +1,3 @@
-let mapleader=';'
-let g:mapleader=';'
-let maplocalleader=';'
-
 " Reload vim source
 nnoremap <silent> <F5> :source $HOME/.vimrc<CR> :echo "Source reloaded!"<CR>
 

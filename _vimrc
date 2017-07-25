@@ -1,6 +1,7 @@
 set nocompatible
 
-so $HOME/.vim/plugins.vim
+so $HOME/.vim/rc/general.vim
+so $HOME/.vim/rc/plugins.vim
 
 set autoread
 set autowrite
