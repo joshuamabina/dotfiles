@@ -26,13 +26,9 @@ Plugin 'zaki/zazen'
 Plugin 'ap/vim-css-color'
 Plugin 'othree/html5.vim'
 Plugin 'jwalton512/vim-blade'
-Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'vimperator/vimperator.vim'
 
 call vundle#end()
 
 filetype plugin indent on
 syntax on
-
-" PHP-CS-Fixer
-let g:php_cs_fixer_rules='@Symfony'
