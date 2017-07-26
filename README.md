@@ -14,7 +14,6 @@
 - `w!!` to write to file as sudo
 - Install colorscheme for vimperator and muttator
 - Support expanding abbreviations with `emmet-vim`
-- Vim motions on speed with `easymotion`
 
 ## References
 

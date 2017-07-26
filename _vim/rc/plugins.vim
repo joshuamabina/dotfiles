@@ -17,7 +17,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'editorconfig/editorconfig-vim'
-"Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-rooter'
 Plugin 'johngrib/vim-game-code-break'
 
