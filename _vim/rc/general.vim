@@ -18,7 +18,8 @@ set number relativenumber wrap
 "" Make it easy to use the clipboard
 set clipboard^=unnamed,unnamedplus
 
-"" TODO encoding, fileencoding utf-8!
+" Set encoding
+set encoding=utf-8 fileencoding=utf-8
 
 "" TODO always show mode I am on
 
