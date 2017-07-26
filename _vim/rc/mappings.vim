@@ -44,9 +44,3 @@ inoremap <silent> <C-k> <Esc>:m .-2<CR>==gi
 inoremap <silent> <C-j> <Esc>:m .+1<CR>==gi
 vnoremap <silent> <C-j> :m '> +1<CR>gv=gv
 vnoremap <silent> <C-k> :m '< -2<CR>gv=gv
-
-"
-" Vimux
-"
-nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
-nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
