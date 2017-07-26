@@ -7,8 +7,6 @@ set runtimepath+=$HOME/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-
 runtime! rc/plugins/*.vim
 
 Plugin 'benmills/vimux'
