@@ -24,4 +24,5 @@ set showmode
 
 set ignorecase smartcase incsearch hlsearch
 
-"" TODO Disable the mouse
+set mouse=
+
