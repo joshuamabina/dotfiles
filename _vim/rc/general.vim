@@ -11,6 +11,8 @@ let g:mapleader=','
 "" keep tabs 'natural'.
 set softtabstop=4 shiftwidth=4 expandtab autoindent
 
+set number relativenumber wrap
+
 "" TODO Display filename in vim
 
 "" Make it easy to use the clipboard
