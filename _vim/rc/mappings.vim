@@ -50,15 +50,3 @@ vnoremap <silent> <C-k> :m '< -2<CR>gv=gv
 "
 nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
 nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
-
-"
-" Git
-"
-nnoremap <silent> <leader>gd :Gdiff<CR>
-nnoremap <silent> <leader>gl :Glog<CR>
-nnoremap <silent> <leader>gs :Gstatus<CR>
-nnoremap <silent> <leader>gb :Gblame<CR>
-nnoremap <silent> <leader>gc :Gcommit<CR>
-nnoremap <silent> <leader>amend :Git commit --amend<CR>
-nnoremap <silent> <leader>stash :Git stash<CR>
-nnoremap <silent> <leader>pop :Git stash pop<CR>
