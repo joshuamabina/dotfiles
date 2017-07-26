@@ -1,3 +1,5 @@
+" TODO Unset the hlsearch register
+
 " Reload vim source
 nnoremap <silent> <F5> :source $HOME/.vimrc<CR> :echo "Source reloaded!"<CR>
 
