@@ -1,45 +1,33 @@
-" TODO Unset the hlsearch register
-
-" TODO Reload vim source
-"nnoremap <silent> <F5> :source $HOME/.vimrc<CR> :echo "Source reloaded!"<CR>
-
-" Ex-mode
+" No ex-mode
 nnoremap Q gq
 
-" Arrows
+" Quickly open/reload vim
+nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
+nnoremap <silent> <leader>sv :source $MYVIMRC<CR> :echo "Source reloaded!"<CR>
+
+" Use hjkl
 map <Left> :echoboo "use h"<CR>
 map <Up> :echoboo "use j"<CR>
 map <Down> :echoboo "use k"<CR>
 map <Right> :echoboo "use l"<CR>
 
-"
-" Tabs
-"
-nnoremap <silent> tt :tabedit<CR>
-nnoremap <silent> td :tabclose<CR>
+" Stop highlighting
+nnoremap <C-L> <CR> :noh<CR><C-L>
 
-" Navigation
+" Navigate tabs
+nnoremap <silent> tt :tabedit<CR>
 nnoremap <silent> tj :tabprev<CR>
 nnoremap <silent> tk :tabnext<CR>
 nnoremap <silent> th :tabfirst<CR>
 nnoremap <silent> tl :tablast<CR>
 
-" Position
+" Move tabs
 nnoremap <silent> <leader>tj :-tabmove<CR>
 nnoremap <silent> <leader>tk :+tabmove<CR>
 nnoremap <silent> <leader>th :0tabmove<CR>
 nnoremap <silent> <leader>tl :$tabmove<CR>
 
-"
-" NerdTree
-"
-nnoremap <silent> nt :NERDTreeToggle<CR>
-nnoremap <silent> nr :NERDTree<CR>
-nnoremap <silent> nf :NERDTreeFind<CR>
-
-"
-" Splits
-"
+" Split window(s)
 nnoremap <silent> <leader>wh <C-w>h
 nnoremap <silent> <leader>wj <C-w>j
 nnoremap <silent> <leader>wk <C-w>k
@@ -58,18 +46,6 @@ vnoremap <silent> <C-j> :m '> +1<CR>gv=gv
 vnoremap <silent> <C-k> :m '< -2<CR>gv=gv
 
 "
-" Clipboard
-"
-vmap <silent> <leader>y "+y
-noremap <silent> <leader>p "+p
-
-"
-" PHP-CS-Fixer
-"
-nnoremap <silent> <leader>pcd :call PhpCsFixerFixDirectory()<CR>
-nnoremap <silent> <leader>pcf :call PhpCsFixerFixFile()<CR>
-
-"
 " Vimux
 "
 nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
@@ -78,11 +54,11 @@ nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
 "
 " Git
 "
-nnoremap <silent> <Leader>gd :Gdiff<cr>
-nnoremap <silent> <Leader>gl :Glog<cr>
-nnoremap <silent> <Leader>gs :Gstatus<cr>
-nnoremap <silent> <Leader>gb :Gblame<cr>
-nnoremap <silent> <Leader>gc :Gcommit<cr>
-nnoremap <silent> <Leader>amend :Git commit --amend<cr>
-nnoremap <silent> <Leader>stash :Git stash<cr>
-nnoremap <silent> <Leader>pop :Git stash pop<cr>
+nnoremap <silent> <leader>gd :Gdiff<CR>
+nnoremap <silent> <leader>gl :Glog<CR>
+nnoremap <silent> <leader>gs :Gstatus<CR>
+nnoremap <silent> <leader>gb :Gblame<CR>
+nnoremap <silent> <leader>gc :Gcommit<CR>
+nnoremap <silent> <leader>amend :Git commit --amend<CR>
+nnoremap <silent> <leader>stash :Git stash<CR>
+nnoremap <silent> <leader>pop :Git stash pop<CR>

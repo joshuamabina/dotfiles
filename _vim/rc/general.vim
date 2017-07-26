@@ -1,8 +1,6 @@
 "
 " Vim general configurations
 "
-"" TODO If using Airline, set noshowmode
-
 let mapleader=','
 let g:mapleader=','
 

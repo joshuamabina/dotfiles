@@ -14,6 +14,7 @@
 - `w!!` to write to file as sudo
 - Install colorscheme for vimperator and muttator
 - Support expanding abbreviations with `emmet-vim`
+- Delegate time consuming tasks i.e. `+PluginInstall` to tmux
 
 ## References
 
