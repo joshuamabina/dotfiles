@@ -1,5 +1,5 @@
-" No ex-mode
-nnoremap Q gq
+" No ex-mode. Prettify line instead.
+nnoremap Q gqq
 
 " Quickly open/reload vim
 nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
