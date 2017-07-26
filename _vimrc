@@ -8,8 +8,6 @@ set splitright
 set wildmenu
 set wildignore+=.DS_Store,*.o,*.class,*.pyc,.git/*,node_modules/*,vendor/*
 
-set backupdir=/tmp
-set directory=/tmp
 
 " Colors
 set t_Co=256

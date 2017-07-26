@@ -19,3 +19,5 @@ set showmode
 set ignorecase smartcase incsearch hlsearch
 
 set mouse=
+
+set backupdir=/tmp directory=/tmp
