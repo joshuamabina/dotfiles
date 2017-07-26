@@ -15,13 +15,12 @@ set number relativenumber wrap
 
 "" TODO Display filename in vim
 
-"" Make it easy to use the clipboard
 set clipboard^=unnamed,unnamedplus
 
-" Set encoding
 set encoding=utf-8 fileencoding=utf-8
 
-"" TODO always show mode I am on
+"" TODO disable showmode if using Airline
+set showmode
 
 "" TODO Make searching easy and case sensitive
 
