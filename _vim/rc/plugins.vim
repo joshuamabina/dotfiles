@@ -24,7 +24,6 @@ Plugin 'johngrib/vim-game-code-break'
 Plugin 'zaki/zazen'
 
 Plugin 'mxw/vim-jsx'
-Plugin 'posva/vim-vue'
 Plugin 'ap/vim-css-color'
 Plugin 'othree/html5.vim'
 Plugin 'jwalton512/vim-blade'
@@ -45,6 +44,3 @@ let g:jsx_ext_required=0
 
 " PHP-CS-Fixer
 let g:php_cs_fixer_rules='@Symfony'
-
-" Vue
-autocmd FileType vue syntax sync fromstart
