@@ -22,6 +22,6 @@ set encoding=utf-8 fileencoding=utf-8
 "" TODO disable showmode if using Airline
 set showmode
 
-"" TODO Make searching easy and case sensitive
+set ignorecase smartcase incsearch hlsearch
 
 "" TODO Disable the mouse
