@@ -16,7 +16,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'vim-syntastic/syntastic'
@@ -46,17 +45,8 @@ filetype plugin indent on
 syntax on
 
 let g:NERDTreeChDirMode       = 2
-let g:ctrlp_working_path_mode = 'rw'
 
 let g:vundle_default_git_proto='git'
-
-" CtrlP
-let g:ctrlp_show_hidden=1
-let g:ctrlp_max_files=0
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn|idea)|build|public|node_modules|vendor)$',
-  \ 'file': '\v\.(exe|so|dll|o|obj|class|png|jpg|jpeg|mp3|mp4)$',
-\}
 
 " NerdTree
 let NERDTreeShowHidden=1
