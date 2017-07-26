@@ -16,7 +16,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'vim-syntastic/syntastic'
 "Plugin 'Valloric/YouCompleteMe'
@@ -44,13 +43,7 @@ call vundle#end()
 filetype plugin indent on
 syntax on
 
-let g:NERDTreeChDirMode       = 2
-
 let g:vundle_default_git_proto='git'
-
-" NerdTree
-let NERDTreeShowHidden=1
-let NERDTreeRespectWildIgnore=1
 
 " Syntastic
 let g:syntastic_always_populate_loc_list=1
