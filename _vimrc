@@ -17,4 +17,3 @@ set path+=**
 command! MakeTags !ctags-exuberant -R .
 
 source $HOME/.vim/rc/mappings.vim
-
