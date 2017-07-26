@@ -22,17 +22,14 @@ Plugin 'airblade/vim-rooter'
 Plugin 'johngrib/vim-game-code-break'
 
 Plugin 'zaki/zazen'
-"Plugin 'ryanoasis/vim-devicons' 
 
 Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
 Plugin 'ap/vim-css-color'
 Plugin 'othree/html5.vim'
 Plugin 'jwalton512/vim-blade'
-"Plugin 'freitass/todo.txt-vim'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'suan/vim-instant-markdown'
-Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'vimperator/vimperator.vim'
 
 call vundle#end()
@@ -42,9 +39,6 @@ syntax on
 
 " InstantMarkdown
 let g:instant_markdown_autostart=0
-
-" JavaComplete
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " JSX
 let g:jsx_ext_required=0

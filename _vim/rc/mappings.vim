@@ -1,7 +1,7 @@
 " TODO Unset the hlsearch register
 
-" Reload vim source
-nnoremap <silent> <F5> :source $HOME/.vimrc<CR> :echo "Source reloaded!"<CR>
+" TODO Reload vim source
+"nnoremap <silent> <F5> :source $HOME/.vimrc<CR> :echo "Source reloaded!"<CR>
 
 " Ex-mode
 nnoremap Q gq
@@ -74,18 +74,6 @@ nnoremap <silent> <leader>pcf :call PhpCsFixerFixFile()<CR>
 "
 nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
 nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
-
-"
-" JavaComplete2
-"
-nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
-imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
-
-"nmap <F5> <Plug>(JavaComplete-Imports-Add)
-"imap <F5> <Plug>(JavaComplete-Imports-Add)
-
-nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
-imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 
 "
 " Git
