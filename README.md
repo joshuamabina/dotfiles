@@ -20,6 +20,8 @@
 - Support expanding abbreviations with `emmet-vim`
 - Delegate time consuming tasks i.e. `+PluginInstall` to tmux
 - Automatically save changes to disk
+- Navigate seemlessly between vim and tmux
+- YouCompleteMe: a completion engine
 
 ## References
 
@@ -28,3 +30,5 @@
 - https://github.com/mtscout6/dotfiles
 - https://github.com/tao12345666333/vim
 - https://github.com/carlhuda/janus
+- https://github.com/christoomey/vim-tmux-navigator
+- http://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits
