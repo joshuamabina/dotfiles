@@ -3,10 +3,6 @@ set nocompatible
 so $HOME/.vim/rc/general.vim
 so $HOME/.vim/rc/plugins.vim
 
-set autowrite
-set ignorecase
-set showcmd
-set smartcase
 set splitbelow
 set splitright
 set wildmenu
@@ -23,9 +19,7 @@ set guifont=Literation\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 
 set shell=$SHELL
 set laststatus=2
-set encoding=utf8
 set background=dark
-set relativenumber
 
 set path+=**
 
