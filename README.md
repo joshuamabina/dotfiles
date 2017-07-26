@@ -13,9 +13,13 @@
 - Remove apt configurations
 - `w!!` to write to file as sudo
 - Install colorscheme for vimperator and muttator
+- Support expanding abbreviations with `emmet-vim`
+- Vim motions on speed with `easymotion`
 
 ## References
 
 - https://github.com/nanotech/jellybeans.vim
 - https://github.com/ryanpcmcquen/linuxTweaks/blob/master/.vimrc
 - https://github.com/mtscout6/dotfiles
+- https://github.com/tao12345666333/vim
+- https://github.com/carlhuda/janus
