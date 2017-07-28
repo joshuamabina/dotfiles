@@ -9,6 +9,7 @@ call vundle#begin()
 
 runtime! rc/plugins/*.vim
 
+Plugin 'groovy.vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
