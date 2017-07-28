@@ -22,6 +22,7 @@
 - Automatically save changes to disk
 - Navigate seemlessly between vim and tmux
 - YouCompleteMe: a completion engine
+- Search and replace using quickfix list
 
 ## References
 
@@ -32,3 +33,4 @@
 - https://github.com/carlhuda/janus
 - https://github.com/christoomey/vim-tmux-navigator
 - http://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits
+- https://stackoverflow.com/questions/5686206/search-replace-using-quickfix-list-in-vim#14300487
