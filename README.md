@@ -12,17 +12,17 @@
 
 -[x] `w!!` to write to file as sudo
 
-- Automatically source the `.vimrc` after saving
-- Add mapping to create new line above/below and remain in normal mode
-- Remove openbox configurations
-- Remove apt configurations
+- Install tpope/unimpaired: among other things, adds new line above/below.
+- Navigate seemlessly between vim and tmux
+- YouCompleteMe: a completion engine
 - Install colorscheme for vimperator and muttator
 - Support expanding abbreviations with `emmet-vim`
 - Delegate time consuming tasks i.e. `+PluginInstall` to tmux
-- Automatically save changes to disk
-- Navigate seemlessly between vim and tmux
-- YouCompleteMe: a completion engine
 - Search and replace using quickfix list
+- Automatically source the `.vimrc` after saving
+- Automatically save changes to disk
+- Remove openbox configurations
+- Remove apt configurations
 
 ## References
 
@@ -34,3 +34,4 @@
 - https://github.com/christoomey/vim-tmux-navigator
 - http://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits
 - https://stackoverflow.com/questions/5686206/search-replace-using-quickfix-list-in-vim#14300487
+- https://github.com/tpope/vim-unimpaired
