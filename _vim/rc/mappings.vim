@@ -4,7 +4,7 @@ nnoremap <silent> <leader>sv :source $MYVIMRC<CR> :echo "Source reloaded!"<CR>
 
 " No ex-mode. Prettify line instead.
 nnoremap Q gqq
-    
+
 " Write file as sudo
 cmap w!! w !sudo tee > /dev/null &
 
