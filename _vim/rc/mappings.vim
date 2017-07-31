@@ -18,7 +18,7 @@ map <Right> :echoboo "use l"<CR>
 nnoremap <C-L> <CR> :noh<CR><C-L>
 
 " Navigate tabs
-nnoremap <silent> tt :tabedit<CR>
+"nnoremap <silent> tt :tabedit<CR>
 nnoremap <silent> tj :tabprev<CR>
 nnoremap <silent> tk :tabnext<CR>
 nnoremap <silent> th :tabfirst<CR>
