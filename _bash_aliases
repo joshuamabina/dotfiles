@@ -17,4 +17,4 @@ alias ls='ls -Fsh -t --group-directories-first'
 alias gc='git clone'
 
 # YouTube-dl
-alias yt='/usr/local/bin/youtube-dl'
+alias yt='/usr/local/bin/youtube-dl -q'
