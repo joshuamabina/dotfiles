@@ -18,3 +18,6 @@ alias gc='git clone'
 
 # YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
+
+# Laravel
+alias artisan='php artisan'
