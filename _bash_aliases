@@ -16,6 +16,8 @@ alias ls='ls -Fsh -t --group-directories-first'
 # Git
 alias g='git'
 alias gc='git clone'
+alias gd='git diff'
+alias gds='git diff --staged'
 alias gs='git status'
 alias fu='git reset --hard && git clean -df'
 
@@ -31,6 +33,4 @@ alias migrate='php artisan migrate --seed'
 alias tinker='php artisan tinker'
 alias serve='php artisan serve'
 
-# PHPUnit
-alias test='phpunit'
-alias testf='phpunit --filter'
+# TODO: PHPUnit
