@@ -22,6 +22,8 @@ alias fu='git reset --hard && git clean -df'
 # YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
 
+# TODO: Composer
+
 # Laravel
 alias artisan='php artisan'
 alias migrate='php artisan migrate --seed'
