@@ -26,9 +26,10 @@ alias yt='/usr/local/bin/youtube-dl -q'
 
 # Laravel
 alias artisan='php artisan'
-alias migrate='php artisan migrate --seed'
 alias fresh='php artisan migrate:fresh --seed'
+alias migrate='php artisan migrate --seed'
 alias tinker='php artisan tinker'
+alias serve='php artisan serve'
 
 # PHPUnit
 alias test='phpunit'
