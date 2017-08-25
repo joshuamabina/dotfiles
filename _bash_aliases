@@ -1,4 +1,4 @@
-# Alias  Editing
+# Alias editing
 alias reload='source $HOME/.bashrc'
 
 # Global
@@ -8,7 +8,7 @@ alias ....='cd ../../..'
 
 alias less='less -r'
 
-# listing directory contents
+# Directory listing
 alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
