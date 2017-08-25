@@ -30,4 +30,6 @@ alias migrate='php artisan migrate --seed'
 alias fresh='php artisan migrate:fresh --seed'
 alias tinker='php artisan tinker'
 
+# PHPUnit
 alias test='phpunit'
+alias testf='phpunit --filter'
