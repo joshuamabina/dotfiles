@@ -14,7 +14,10 @@ alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
 
 # Git
+alias g='git'
 alias gc='git clone'
+alias gs='git status'
+alias fu='git reset --hard && git clean -df'
 
 # YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
