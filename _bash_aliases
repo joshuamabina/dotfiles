@@ -15,9 +15,13 @@ alias ls='ls -Fsh -t --group-directories-first'
 
 # Git
 alias g='git'
+alias gb='git branch'
+alias gba='git branch -a'
 alias gc='git clone'
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gl='git log'
+alias glo='git log --oneline'
 alias gs='git status'
 alias fu='git reset --hard && git clean -df'
 
