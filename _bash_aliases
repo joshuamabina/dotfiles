@@ -8,6 +8,8 @@ alias ....='cd ../../..'
 
 alias less='less -r'
 
+alias ed='editor .'
+
 # Directory listing
 alias la='ls -ali'
 alias ll='ls -l'
