@@ -1,5 +1,5 @@
 # Alias editing
-alias reload='source $HOME/.bashrc'
+alias so='source $HOME/.bashrc'
 
 # Global
 alias ..='cd ..'
