@@ -45,6 +45,7 @@ alias artisan='php artisan'
 alias fresh='php artisan migrate:fresh --seed'
 alias migrate='php artisan migrate --seed'
 alias tinker='php artisan tinker'
+alias seed='php artisan db:seed'
 alias serve='php artisan serve'
 
 # TODO: PHPUnit
