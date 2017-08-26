@@ -40,7 +40,9 @@ alias yt='/usr/local/bin/youtube-dl -q'
 alias dev='yarn dev'
 alias watch='yarn watch'
 
-# TODO: Composer
+# Composer
+alias require='composer require'
+alias require-dev='composer require --dev'
 
 # Laravel
 alias artisan='php artisan'
