@@ -30,6 +30,8 @@ alias glo='git log --oneline'
 alias gout='git checkout'
 alias gs='git status'
 alias fu='git reset --hard && git clean -df'
+alias pull='git pull'
+alias push='git push'
 
 # YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
