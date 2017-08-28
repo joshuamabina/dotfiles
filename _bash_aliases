@@ -42,6 +42,7 @@ alias dev='yarn dev'
 alias watch='yarn watch'
 
 # Composer
+alias dump='composer dump-autoload'
 alias require='composer require'
 alias require-dev='composer require --dev'
 
