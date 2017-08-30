@@ -1,7 +1,7 @@
-# Alias editing
+#Alias editing
 alias so='source $HOME/.bashrc'
 
-# Global
+#Global
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -10,12 +10,12 @@ alias less='less -r'
 
 alias ed='editor .'
 
-# Directory listing
+#Directory listing
 alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
 
-# Git
+#Git
 alias cc='git commit'
 alias ca='git commit --amend'
 alias g='git'
@@ -35,19 +35,19 @@ alias fu='git reset --hard && git clean -df'
 alias pull='git pull'
 alias push='git push'
 
-# YouTube-dl
+#YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
 
-# JavaScript
+#JavaScript
 alias dev='yarn dev'
 alias watch='yarn watch'
 
-# Composer
+#Composer
 alias dump='composer dump-autoload'
 alias require='composer require'
 alias require-dev='composer require --dev'
 
-# Laravel
+#Laravel
 alias art='php artisan'
 alias fresh='php artisan migrate:fresh --seed'
 alias migrate='php artisan migrate --seed'
@@ -55,4 +55,5 @@ alias tinker='php artisan tinker'
 alias seed='php artisan db:seed'
 alias serve='php artisan serve'
 
-# TODO: PHPUnit
+#PHPUnit
+alias unit='phpunit'
