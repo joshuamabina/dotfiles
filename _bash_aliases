@@ -48,7 +48,7 @@ alias require='composer require'
 alias require-dev='composer require --dev'
 
 # Laravel
-alias artisan='php artisan'
+alias art='php artisan'
 alias fresh='php artisan migrate:fresh --seed'
 alias migrate='php artisan migrate --seed'
 alias tinker='php artisan tinker'
