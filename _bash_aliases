@@ -18,6 +18,7 @@ alias ls='ls -Fsh -t --group-directories-first'
 #Git
 alias cc='git commit'
 alias ca='git commit --amend'
+alias ddt='git reset HEAD'
 alias g='git'
 alias ga='git add .'
 alias gaf='git add'
