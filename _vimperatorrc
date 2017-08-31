@@ -61,8 +61,8 @@ nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
 "Bitbucket
 qmark b https://bitbucket.org
 
-" SoundCloud Charts
-qmark c https://soundcloud.com/charts
+" Up-and-coming tracks in Electronic on SoundCloud
+qmark c https://soundcloud.com/charts/new?genre=electronic&country=all-countries
 
 " GitHub
 qmark g https://github.com
