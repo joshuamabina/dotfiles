@@ -18,7 +18,6 @@ alias ls='ls -Fsh -t --group-directories-first'
 #Git
 alias cc='git commit'
 alias ca='git commit --amend'
-alias ddt='git reset HEAD'
 alias g='git'
 alias ga='git add .'
 alias gaf='git add'
@@ -32,9 +31,11 @@ alias gl='git log'
 alias glo='git log --oneline'
 alias gout='git checkout'
 alias gs='git status'
-alias fu='git reset --hard && git clean -df'
 alias pull='git pull'
 alias push='git push'
+
+alias stfu='git reset --hard && git clean -df'
+alias fu='git reset HEAD'
 
 #YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
