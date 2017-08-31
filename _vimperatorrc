@@ -1,7 +1,7 @@
 "
 " General
 "
-set visualbell
+set novisualbell
 highlight Bell display:none
 
 set editor='bl-text-editor'
@@ -12,7 +12,7 @@ set focuscontent
 set defsearch=duckduckgo
 
 set gui=none
-set guioptions=nbr
+
 set! javascript.options.jit.chrome=true
 
 highlight CmdLine background: black; color: #ccc; transition: all 0.25s;
@@ -38,19 +38,18 @@ map <C-S-h> <Nop>
 map <C-S-o> <Nop>
 map <F5> <Nop>
 
+let mapleader=','
+let g:mapleader=','
+
 nnoremap ZZ :q<CR>
-nnoremap <F5> :source $HOME/.vimperatorrc<CR>
+nnoremap <silent> <leader>sv :source $HOME/.vimperatorrc<CR> :echo "Source reloaded!"<CR>
 
 " Ctrl-P: fuzzy-find through all buffers
-nnoremap <C-p> :ls<CR> 
+nnoremap <C-p> :ls<CR>
 
 " Scrolling
 map j 5<C-e>
 map k 5<C-y>
-
-" Clipboard
-"map <C-c> <C-v><C-c>
-"map <C-v> <C-v><C-v>
 
 nnoremap <A-y> :js util.copyToClipboard(buffer.title + '\u0020(' + buffer.URL + ')', true)<CR>
 nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
@@ -59,7 +58,20 @@ nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
 " Qmarks
 "
 
-"" TODO Add qmark for stackoverflow
+"Bitbucket
+qmark b https://bitbucket.org
 
+" SoundCloud Charts
+qmark c https://soundcloud.com/charts
+
+" GitHub
 qmark g https://github.com
-qmark n https://news.ycombinator.com
+
+" StackOverflow
+qmark l https://stackoverflow.com/questions/tagged/laravel?sort=featured&pageSize=50
+
+" Taiga
+qmark t https://tree.taiga.org
+
+" Udacity
+qmark u https://classroom.udacity.com/me
