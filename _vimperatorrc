@@ -71,7 +71,7 @@ qmark g https://github.com
 qmark l https://stackoverflow.com/questions/tagged/laravel?sort=featured&pageSize=50
 
 " Taiga
-qmark t https://tree.taiga.org
+qmark t https://tree.taiga.io
 
 " Udacity
 qmark u https://classroom.udacity.com/me
