@@ -1,7 +1,7 @@
-#Alias editing
+#Reload
 alias so='source $HOME/.bashrc'
 
-#Global
+#Globals
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -10,10 +10,18 @@ alias less='less -r'
 
 alias ed='editor .'
 
-#Directory listing
+#Directories
 alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
+
+mkcdir() {
+    if [ ! $1 ]; then
+        echo "Whoops! Try mkcdir <DIRECTORY_NAME>"
+    else
+        mkdir -p -- "$1" && cd "$1"
+    fi
+}
 
 #Git
 alias cc='git commit'

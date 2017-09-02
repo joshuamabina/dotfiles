@@ -1,0 +1,12 @@
+#
+# Elasticsearch
+# https://www.elastic.co/downloads/elasticsearch
+#
+
+# Signing Key Instructions 
+#
+# Fetch and install elasticsearch signing key
+# wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+#
+
+deb https://artifacts.elastic.co/packages/5.x/apt stable main

@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Separate sources.list for dotdeb packages
 - Hotkey to edit $MYVIMRC on a vertical split.
 - Hotkey to write a file as sudo, case I forgot to open the file as sudo.
+- Make directories and change to it.
 
 ### Changed
 - Group all general vim configurations in  _vim/general.vim

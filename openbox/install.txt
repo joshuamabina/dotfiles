@@ -1,12 +1,12 @@
-music_apps=('mpd' 'vimpc')
+music_apps=('mpd')
 
-mail_apps=('neomutt')
+mail_apps=('mutator')
 
 video_apps=('comp' 'peerflix')
 
 pdf_apps=('zathura')
 
-game_apps=('gnutypist' 'command-line-chess')
+game_apps=('gtypist' 'command-line-chess')
 
 text_editors=('vim')
 
@@ -20,7 +20,7 @@ clipboard_managers=('xclip')
 
 download_managers=('youtube-dl' 'stig')
 
-#file_managers=()
+file_managers=()
 
 network_managers=('nm-cli')
 

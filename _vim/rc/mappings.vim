@@ -1,5 +1,5 @@
 " Quickly open/reload vim
-nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
+nnoremap <silent> <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <silent> <leader>sv :source $MYVIMRC<CR> :echo "Source reloaded!"<CR>
 
 " No ex-mode. Prettify line instead.

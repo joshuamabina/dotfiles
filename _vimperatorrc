@@ -61,8 +61,10 @@ nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
 "Bitbucket
 qmark b https://bitbucket.org
 
-" Up-and-coming Electronic tracks on SoundCloud
-qmark c https://soundcloud.com/charts/new?genre=electronic&country=all-countries
+" Up-and-coming Ambient tracks on SoundCloud
+"" Ambient music is said to evoke an "atmospheric", "visual", or "unobtrusive" quality.
+"" https://en.wikipedia.org/wiki/Ambient_music
+qmark c https://soundcloud.com/charts/new?genre=ambient&country=all-countries
 
 " TweetDeck
 qmark d https://tweetdeck.twitter.com/

@@ -18,7 +18,7 @@ git clone git@github.com:vim/vim.git --depth=1
 --enable-fontset \
 --enable-cscope \
 --disable-sysmouse \
---with-compiledby="Joshua Mabina <joshuamabina.github.io>" 
+--with-compiledby="Joshua Mabina <joshuamabina.github.io>"
 
 make
 
@@ -27,4 +27,4 @@ sudo make install
 mkdir ~/.vim && \
 	git clone git@github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# TODO: vim -e +PluginInstall 
+# TODO: vim -e +PluginInstall
