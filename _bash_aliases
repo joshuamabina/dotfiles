@@ -8,6 +8,7 @@ alias ....='cd ../../..'
 
 alias less='less -r'
 
+alias ef='editor'
 alias ed='editor .'
 
 #Directories
