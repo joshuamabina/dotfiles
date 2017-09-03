@@ -1,0 +1,38 @@
+"
+" General
+"
+
+set focuscontent
+
+set editor='bl-text-editor'
+set hintchars='hfjdksla'
+
+set newtab='all'
+set noscrollbars
+set shell="$SHELL"
+
+" no auto completion
+set noac
+set history=1000000
+set gui=none
+
+"
+" Mappings
+"
+
+let mapleader=','
+let g:mapleader=','
+
+noremap <leader>sv :source ~/.muttatorrc<CR>
+
+noremap > 30l
+noremap < 30h
+
+cnoremap <C-i> <Tab>
+cnoremap <C-o> <S-Tab>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
+noremap <BS> <NOP>
+
+echo "muttatorrc loaded"
