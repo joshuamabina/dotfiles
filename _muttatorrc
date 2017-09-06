@@ -34,3 +34,5 @@ cnoremap <C-n> <Down>
 noremap <BS> <NOP>
 
 echo "muttatorrc loaded"
+
+" vim: ft=vimperator
