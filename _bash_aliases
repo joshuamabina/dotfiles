@@ -70,3 +70,5 @@ alias serve='php artisan serve'
 
 #PHPUnit
 alias unit='phpunit'
+
+# vim: ft=conf
