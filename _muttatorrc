@@ -7,7 +7,7 @@ set focuscontent
 set editor='bl-text-editor'
 set hintchars='hfjdksla'
 
-set newtab='all'
+set newtab=''
 set noscrollbars
 set shell="$SHELL"
 
