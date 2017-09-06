@@ -11,8 +11,6 @@ set newtab=''
 set noscrollbars
 set shell="$SHELL"
 
-" no auto completion
-set noac
 set history=1000000
 set gui=none
 
