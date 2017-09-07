@@ -1,3 +1,43 @@
+#Functions
+
+#
+# Create and change the current working directory.
+#
+# @param /path/to/directory
+#
+mkcdir() {
+    if [ ! $1 ]; then
+
+        echo "Whoops! Try mkcdir </path/to/directory>"
+
+    else
+
+        mkdir -p -- "$1" && cd "$1"
+
+    fi
+}
+
+#
+# Git reset current HEAD to previous state.
+#
+# @param number of commits
+#
+stfu() {
+    echo "Shut the fuck up and go back to work."
+    STFU_CMD="git reset HEAD"
+
+    if [ ! $1 ]; then
+
+        $(${STFU_CMD})
+
+    else
+
+        STFU_CMD="${STFU_CMD}~$1"
+        $(${STFU_CMD})
+
+    fi
+}
+
 #Reload
 alias so='source $HOME/.bashrc'
 
@@ -16,16 +56,8 @@ alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
 
-mkcdir() {
-    if [ ! $1 ]; then
-        echo "Whoops! Try mkcdir <DIRECTORY_NAME>"
-    else
-        mkdir -p -- "$1" && cd "$1"
-    fi
-}
-
-#Git
 alias cc='git commit'
+#Git
 alias ca='git commit --amend'
 alias g='git'
 alias ga='git add'
@@ -41,11 +73,12 @@ alias gl='git log'
 alias glo='git log --oneline'
 alias gout='git checkout'
 alias gs='git status'
+
+alias fetch='git fetch'
 alias pull='git pull'
 alias push='git push'
 
-alias stfu='git reset --hard && git clean -df'
-alias fu='git reset HEAD'
+alias fu='git reset --hard && git clean -df'
 
 #YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
