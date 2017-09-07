@@ -1,6 +1,8 @@
-" Quickly open/reload vim
-nnoremap <silent> <leader>ev :vsplit $MYVIMRC<CR>
-nnoremap <silent> <leader>sv :source $MYVIMRC<CR> :echo "Source reloaded!"<CR>
+" Edit MYVIMRC
+nnoremap <silent> <leader>E :vsplit $MYVIMRC<CR>
+
+" Reload MYVIMRC
+nnoremap <silent> <leader>R :source $MYVIMRC<CR> :echo "Source reloaded!"<CR>
 
 " No ex-mode. Prettify line instead.
 nnoremap Q gqq

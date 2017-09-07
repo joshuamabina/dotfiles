@@ -112,13 +112,18 @@ fi
 # Include composer vendor binaries, if exists.
 
 if [ -d "$HOME/.config/composer/vendor/bin" ]; then
-	PATH="$PATH:$HOME/.config/composer/vendor/bin" 
+	PATH="$PATH:$HOME/.config/composer/vendor/bin"
 fi
 
 export ANDROID_AVD_HOME="$HOME/.android/avd"
 export ANDROID_SDK_HOME="$HOME/toolkit/android"
-export WORKSPACE="$HOME/Workspace/"
+
+export MYTMUXRC="$HOME/.tmux.conf"
+export MYVIMPERATORRC="$HOME/.vimperatorrc"
+export MYMUTTATORRC="$HOME/.vimperatorrc"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/joshua/.sdkman"
 [[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
+
+# vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent

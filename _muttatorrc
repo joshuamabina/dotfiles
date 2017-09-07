@@ -21,7 +21,8 @@ set gui=none
 let mapleader=','
 let g:mapleader=','
 
-noremap <leader>sv :source ~/.muttatorrc<CR>
+" Reload MYMUTTATORRC
+noremap <leader>R :source "$MYMUTTATORRC"<CR>
 
 noremap > 30l
 noremap < 30h
@@ -35,4 +36,4 @@ noremap <BS> <NOP>
 
 echo "muttatorrc loaded"
 
-" vim: ft=vimperator
+" vim: ft=vimperator softtabstop=4 shiftwidth=4 expandtab autoindent
