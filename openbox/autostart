@@ -12,7 +12,7 @@
 # synclient VertEdgeScroll=1 HorizEdgeScroll=1 TapButton1=1 2>/dev/null
 
 # Disable pointing devices
-pointman killall
+#pointman killall
 
 ## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
 ## Adjust the values according to your preferances.
@@ -34,10 +34,12 @@ xset b off
 
 nitrogen --restore &
 
-bl-compositor --start &
+## Compton
+## NOTE: composition must be started before tint2
+bl-compositor --start
 
 ## Start the tint2 session (the default tint2 will run if no sessions have been set)
-(sleep 2s; bl-tint2-session) &
+bl-tint2-session
 
 ## Start the Conky session (the default conkyrc will run if no sessions have been set)
 (sleep 2s; bl-conky-session --autostart) &
