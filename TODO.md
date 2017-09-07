@@ -12,3 +12,4 @@
 - bl-welcome: Customized BL post installation script
 - bl-utilities: Customized collection of BL scripts
 - create-virtual-host: creates virtual host for apache or nginx
+- create-avd: creates an android virtual device (prompts user)
