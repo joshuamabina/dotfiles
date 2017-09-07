@@ -13,3 +13,8 @@
 - bl-utilities: Customized collection of BL scripts
 - create-virtual-host: creates virtual host for apache or nginx
 - create-avd: creates an android virtual device (prompts user)
+- install eclim
+- install latest php
+- install latest node
+- install latest nginx
+- AsyncRun: https://github.com/skywind3000/asyncrun.vim
