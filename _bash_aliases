@@ -23,7 +23,6 @@ mkcdir() {
 # @param number of commits
 #
 stfu() {
-    echo "Shut the fuck up and go back to work."
     STFU_CMD="git reset HEAD"
 
     if [ ! $1 ]; then
