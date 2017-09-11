@@ -27,12 +27,12 @@ stfu() {
 
     if [ ! $1 ]; then
 
-        ${STFU_CMD}
+        $(${STFU_CMD})
 
     else
 
         STFU_CMD="${STFU_CMD}~$1"
-        ${STFU_CMD}
+        $(${STFU_CMD})
 
     fi
 }
