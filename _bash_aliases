@@ -50,6 +50,13 @@ alias less='less -r'
 alias ef='editor'
 alias ed='editor .'
 
+#Aptitude
+alias apt-install='sudo apt-get install'
+alias apt-remove='sudo apt-get remove'
+alias apt-purge='sudo apt-get purge'
+alias apt-autoclean='sudo apt-get autoclean'
+alias apt-autoremove='sudo apt-get autoremove'
+
 #Directories
 alias la='ls -ali'
 alias ll='ls -l'
