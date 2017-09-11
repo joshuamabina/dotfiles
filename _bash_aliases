@@ -3,7 +3,7 @@
 #
 # Create and change the current working directory.
 #
-# @param /path/to/directory
+# @param    /path/to/directory
 #
 mkcdir() {
     if [ ! $1 ]; then
@@ -20,21 +20,18 @@ mkcdir() {
 #
 # Git reset current HEAD to previous state.
 #
-# @param number of commits
+# @param    The number of commits.
 #
 stfu() {
     STFU_CMD="git reset HEAD"
 
-    if [ ! $1 ]; then
-
-        $(${STFU_CMD})
-
-    else
+    if [ $1 ]; then
 
         STFU_CMD="${STFU_CMD}~$1"
-        $(${STFU_CMD})
 
     fi
+
+    ${STFU_CMD}
 }
 
 #Reload
