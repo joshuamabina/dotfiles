@@ -20,3 +20,5 @@
 - AsyncRun: https://github.com/skywind3000/asyncrun.vim
 - Vim, find and enter insert mode
 - Vim, max linewrap characters
+- Get max depth of directory tree
+- Estimate folder's maximum size
