@@ -46,4 +46,4 @@ media_developer_tools=('ffmpeg' 'opencv')
 
 creative_tools=('vimiv' 'gimp' 'blender' 'inkscape' 'pitivi')
 
-terminator_tools=('tree' 'pv' 'universal-ctags')
+terminator_tools=('tree' 'pv' 'universal-ctags' 'lftp')
