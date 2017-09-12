@@ -59,10 +59,11 @@ alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
 
-alias cc='git commit'
 #Git
-alias ca='git commit --amend'
 alias g='git'
+
+alias ca='git commit --amend'
+alias cc='git commit'
 alias ga='git add'
 alias gaa='git add .'
 alias gap='git add -p'
