@@ -37,19 +37,31 @@ stfu() {
 #
 ddg() {
 
-    echo "DDGing '$@'"
-
     BASE_URL='https://duckduckgo.com?q='
 
-    query=''
+    DDG_BANG='!'
 
-    for term in $@; do
+    DDG_QUERY=''
 
-        query="${query}%20${term}"
+    for term in "$@"; do
+
+        case "$1" in
+
+            -b|--bang)
+                shift
+
+                DDG_BANG="${DDG_BANG}$1"
+
+                shift
+                ;;
+
+        esac
 
     done
 
-    firefox "${BASE_URL}${query}"
+    DDG_QUERY="${DDG_QUERY}$1"
+
+    firefox "${BASE_URL}${DDG_BANG}%20${DDG_QUERY}"
 }
 
 #Reload
