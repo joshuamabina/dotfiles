@@ -34,6 +34,28 @@ stfu() {
     ${STFU_CMD}
 }
 
+
+
+#
+# DDG powered spotlight search
+#
+# @param   $1 ddg-bang
+# @param   $2 ddg-query
+#
+ddg() {
+
+    SEARCH_URL='https://duckduckgo.com?q='
+
+    if [ $2 ]; then
+
+        SEARCH_URL="${SEARCH_URL}!$2"
+
+    fi
+
+    firefox "${SEARCH_URL} $1"
+
+}
+
 #Reload
 alias so='source $HOME/.bashrc'
 
