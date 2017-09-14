@@ -47,6 +47,13 @@ alias less='less -r'
 alias ef='editor'
 alias ed='editor .'
 
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
 #Aptitude
 alias apt-install='sudo apt-get install'
 alias apt-remove='sudo apt-get remove'
@@ -92,18 +99,26 @@ alias dev='yarn dev'
 alias watch='yarn watch'
 
 #Composer
-alias dump='composer dump-autoload'
+alias dump-autoload='composer dump-autoload'
 alias require='composer require'
 alias require-dev='composer require --dev'
 
 #Laravel
 alias art='php artisan'
-alias fresh='php artisan migrate:fresh --seed'
-alias migrate='php artisan migrate --seed'
-alias opt='art cache:clear && art config:clear && art view:clear && art optimize'
-alias tinker='php artisan tinker'
-alias seed='php artisan db:seed'
-alias serve='php artisan serve'
+
+alias seed='art db:seed'
+alias serve='art serve'
+alias tinker='art tinker'
+
+alias migrate='art migrate && seed'
+alias fresh='art migrate:fresh && seed'
+
+alias art-clear='art cache:clear && art config:clear && art view:clear'
+alias art-cache='art config:cache && art route:cache'
+
+alias dump='dump-autoload && art-clear && art optimize'
+
+alias opt='art-dump && art-cache'
 
 #PHPUnit
 alias unit='phpunit'
