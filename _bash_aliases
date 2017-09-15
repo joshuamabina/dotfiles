@@ -33,13 +33,11 @@ stfu() {
 
 
 #
-# Searching with DDG
+# Do a DuckDuckGo search, opens results in firefox.
 #
 ddg() {
 
     BASE_URL='https://duckduckgo.com?q='
-
-    #DDG_BANG='!'
 
     DDG_QUERY=''
 
@@ -67,7 +65,7 @@ ddg() {
     done
 
 
-    echo "${BASE_URL}${DDG_QUERY}"
+    #echo "${BASE_URL}${DDG_QUERY}"
     firefox "${BASE_URL}${DDG_QUERY}"
 }
 
