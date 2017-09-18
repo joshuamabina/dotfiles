@@ -72,7 +72,7 @@ qmark c https://soundcloud.com/charts/new?genre=ambient&country=all-countries
 qmark d https://tweetdeck.twitter.com/
 
 " FontAwesome
-qmark http://fontawesome.io/icons/
+qmark i http://fontawesome.io/icons/
 
 " GitHub
 qmark g https://github.com
