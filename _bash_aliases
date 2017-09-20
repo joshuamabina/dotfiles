@@ -16,10 +16,10 @@ mkcdir() {
 }
 
 #
-# Git reset current HEAD to previous state.
+# g reset current HEAD to previous state.
 #
 stfu() {
-    STFU_CMD="git reset HEAD"
+    STFU_CMD="g reset HEAD"
 
     if [ $1 ]; then
 
@@ -101,31 +101,31 @@ alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
 
-#Git
+#g
 alias g='git'
 
-alias ca='git commit --amend'
-alias cc='git commit'
-alias ga='git add'
-alias gaa='git add .'
-alias gap='git add -p'
-alias gash='git stash'
-alias gb='git branch'
-alias gba='git branch -a'
+alias ca='g commit --amend'
+alias cc='g commit'
+alias ga='g add'
+alias gaa='g add .'
+alias gap='g add -p'
+alias gash='g stash'
+alias gb='g branch'
+alias gba='g branch -a'
 alias gconf='g config'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gl='git log'
-alias glo='git log --oneline'
-alias glone='git clone'
-alias gout='git checkout'
-alias gs='git status'
+alias gd='g diff'
+alias gds='g diff --staged'
+alias gl='g log'
+alias glo='g log --oneline'
+alias glone='g clone'
+alias gout='g checkout'
+alias gs='g status'
 
-alias fetch='git fetch'
-alias pull='git pull'
-alias push='git push'
+alias fetch='g fetch'
+alias pull='g pull'
+alias push='g push'
 
-alias fu='git reset --hard && git clean -df'
+alias fu='g reset --hard && g clean -df'
 
 #YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
