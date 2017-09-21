@@ -101,7 +101,7 @@ alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
 
-#g
+#Git
 alias g='git'
 
 alias ca='g commit --amend'
@@ -115,6 +115,7 @@ alias gba='g branch -a'
 alias gconf='g config'
 alias gd='g diff'
 alias gds='g diff --staged'
+alias gftp='g ftp'
 alias gl='g log'
 alias glo='g log --oneline'
 alias glone='g clone'
