@@ -6,7 +6,7 @@ let g:mapleader=','
 
 set softtabstop=4 shiftwidth=4 expandtab autoindent
 
-set number relativenumber wrap
+set number relativenumber wrap linebreak
 
 set clipboard^=unnamed,unnamedplus
 
