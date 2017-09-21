@@ -19,7 +19,7 @@ mkcdir() {
 # g reset current HEAD to previous state.
 #
 stfu() {
-    STFU_CMD="g reset HEAD"
+    STFU_CMD="git reset HEAD"
 
     if [ $1 ]; then
 
