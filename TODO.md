@@ -23,3 +23,4 @@
 - Vim, max linewrap characters
 - Get max depth of directory tree
 - Support expanding abbreviations with 'emmet-vim'
+- Automate git message title based on branch prefix i.e. wip, feat, fix e.t.c 
