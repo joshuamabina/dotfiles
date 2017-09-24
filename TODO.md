@@ -17,8 +17,9 @@
 - install latest php
 - install latest node
 - install latest nginx
+- Vim-OrgMode: https://github.com/jceb/vim-orgmode
 - AsyncRun: https://github.com/skywind3000/asyncrun.vim
 - Vim, find and enter insert mode
 - Vim, max linewrap characters
 - Get max depth of directory tree
-- Estimate folder's maximum size
+- Support expanding abbreviations with 'emmet-vim'
