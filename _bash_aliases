@@ -160,4 +160,4 @@ alias opt='art-dump && art-cache'
 #PHPUnit
 alias pest='phpunit'
 
-# vim: ft=conf
+# vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent
