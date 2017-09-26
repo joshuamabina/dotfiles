@@ -158,6 +158,6 @@ alias dump='dump-autoload && art-clear && art optimize'
 alias opt='art-dump && art-cache'
 
 #PHPUnit
-alias unit='phpunit'
+alias pest='phpunit'
 
 # vim: ft=conf
