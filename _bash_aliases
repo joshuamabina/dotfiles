@@ -131,9 +131,9 @@ alias fu='g reset --hard && g clean -df'
 #YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
 
-#JavaScript
-alias dev='yarn dev'
-alias watch='yarn watch'
+#Yarn
+alias yev='yarn dev'
+alias yatch='yarn watch'
 
 #Composer
 alias dump-autoload='composer dump-autoload'
