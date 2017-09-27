@@ -132,6 +132,7 @@ alias fu='g reset --hard && g clean -df'
 alias yt='/usr/local/bin/youtube-dl -q'
 
 #Yarn
+alias yad='yarn add --save'
 alias yev='yarn dev'
 alias yatch='yarn watch'
 
