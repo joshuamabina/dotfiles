@@ -20,8 +20,8 @@ map <Right> :echoboo "use l"<CR>
 nnoremap <C-L> <CR> :noh<CR><C-L>
 
 " Insert an empty new line without leaving normal mode.
-nnoremap <Leader>o o<Esc>
-nnoremap <Leader>O O<Esc>
+nnoremap <Leader>o o<Esc> :w<CR>
+nnoremap <Leader>O O<Esc> :w<CR>
 
 " Navigate tabs
 "nnoremap <silent> tt :tabedit<CR>
