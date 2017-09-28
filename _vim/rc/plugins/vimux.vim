@@ -1,4 +1,4 @@
-"Plugin 'benmills/vimux'
+Plugin 'benmills/vimux'
 
-"nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
-"nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
+nnoremap <silent> <leader>vp :VimuxPromptCommand<CR>
+nnoremap <silent> <leader>vl :VimuxRunLastCommand<CR>
