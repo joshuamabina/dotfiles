@@ -135,6 +135,7 @@ alias yt='/usr/local/bin/youtube-dl -q'
 alias yad='yarn add --save'
 alias yev='yarn dev'
 alias yatch='yarn watch'
+alias yall='yarn install'
 
 #Composer
 alias dump-autoload='composer dump-autoload'
