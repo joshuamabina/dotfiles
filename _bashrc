@@ -103,7 +103,7 @@ if ! shopt -oq posix; then
 fi
 
 # Composer binaries
-# Include composer vendor binaries, if exists.
+# If exist, include composer binaries.
 
 if [ -d "$HOME/.config/composer/vendor/bin" ]; then
 
@@ -112,7 +112,7 @@ if [ -d "$HOME/.config/composer/vendor/bin" ]; then
 fi
 
 # Yarn binaries
-# Include yarn binaries, if they exist
+# If exists, include yarn binaries.
 
 if [ -d "$HOME/.yarn/bin" ]; then
 
