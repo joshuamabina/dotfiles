@@ -102,11 +102,22 @@ if ! shopt -oq posix; then
 	fi
 fi
 
-# Composer binaries.
+# Composer binaries
 # Include composer vendor binaries, if exists.
 
 if [ -d "$HOME/.config/composer/vendor/bin" ]; then
-	PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+    PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+fi
+
+# Yarn binaries
+# Include yarn binaries, if they exist
+
+if [ -d "$HOME/.yarn/bin" ]; then
+
+    PATH="$PATH:$HOME/.yarn/bin"
+
 fi
 
 export ANDROID_AVD_HOME="$HOME/.android/avd"
