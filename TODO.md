@@ -4,7 +4,6 @@
 > 1-9 as in vim (9=required for next release, 5=would be nice, 1=probably not)
 
 - Vim for laravel framework
-- Support --env laravel artisan command flag
 - Get a git-repo and change to the newly created directory
 - Build and install redis and imagick php extension
 - Create a new gradle starter project i.e. java, javafx, android or cpp
