@@ -143,6 +143,7 @@ alias yall='yarn install'
 alias dump-autoload='composer dump-autoload'
 alias require='composer require'
 alias require-dev='composer require --dev'
+alias call='composer install'
 
 #Laravel
 alias art='php artisan'
