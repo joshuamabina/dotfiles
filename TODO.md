@@ -3,6 +3,7 @@
 > Priority list:
 > 1-9 as in vim (9=required for next release, 5=would be nice, 1=probably not)
 
+- Update vim mapping to create a new empty line (above or below), remain in normal and on the same line.
 - Vim for laravel framework
 - Get a git-repo and change to the newly created directory
 - Build and install redis and imagick php extension
@@ -23,4 +24,4 @@
 - Vim, max linewrap characters
 - Get max depth of directory tree
 - Support expanding abbreviations with 'emmet-vim'
-- Automate git message title based on branch prefix i.e. wip, feat, fix e.t.c 
+- Automate git message title based on branch prefix i.e. wip, feat, fix e.t.c
