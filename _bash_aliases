@@ -148,13 +148,16 @@ alias call='composer install'
 #Laravel
 alias art='php artisan'
 
-alias seed='art db:seed'
 alias serve='art serve'
 alias tinker='art tinker'
 
+alias seed='art db:seed'
+alias seed-test='art db:seed --env=testing'
+
 alias migrate='art migrate && seed'
+
 alias fresh='art migrate:fresh && seed'
-alias fresh-test='art migrate:fresh --env=testing && seed --env=testing'
+alias fresh-test='art migrate:fresh --env=testing && seed-test'
 
 alias art-clear='art cache:clear && art config:clear && art view:clear'
 alias art-cache='art config:cache && art route:cache'
