@@ -22,7 +22,7 @@ download_managers=('youtube-dl' 'stig')
 
 file_managers=()
 
-network_managers=('wavemon' 'wicd-curses' 'wicd-cli')
+network_managers=('nload' 'wicd-curses' 'wicd-cli')
 
 volume_manager=('pamix')
 
