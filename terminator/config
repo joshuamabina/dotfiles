@@ -18,7 +18,7 @@
     foreground_color = "#ffffff"
     use_custom_command = True
     scroll_on_output = False
-    custom_command = ssh-add && tmux
+    custom_command = ssh-add && tmux -2
     color_scheme = custom
     font = LiterationMonoPowerline Nerd Font 17
     scrollback_infinite = True
