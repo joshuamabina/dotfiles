@@ -4,7 +4,7 @@ set t_Co=256
 
 set background=dark
 
-colorscheme zazen
+colorscheme ir_black
 
 set guifont=Literation\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 
