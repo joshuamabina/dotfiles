@@ -8,7 +8,7 @@ nnoremap <silent> <leader>R :source $MYVIMRC<CR> :echo "Source reloaded!"<CR>
 nnoremap Q gqq
 
 " Write file as sudo
-cmap w!! w !sudo tee > /dev/null &
+cmap w!! w !sudo tee > /dev/null %
 
 " Use hjkl
 map <Left> :echoboo "use h"<CR>
