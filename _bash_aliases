@@ -130,6 +130,9 @@ alias push='g push'
 
 alias fu='g reset --hard && g clean -df'
 
+#Tmux
+tmux='tmux -2'
+
 #YouTube-dl
 alias yt='/usr/local/bin/youtube-dl -q'
 
