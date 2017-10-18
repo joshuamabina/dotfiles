@@ -1,8 +1,5 @@
 # All tasks
 
-> Priority list:
-> 1-9 as in vim (9=required for next release, 5=would be nice, 1=probably not)
-
 - Update vim mapping to create a new empty line (above or below), remain in normal and on the same line.
 - Save file after creating a new empty line.
 - Vim for laravel framework
@@ -23,6 +20,5 @@
 - AsyncRun: https://github.com/skywind3000/asyncrun.vim
 - Vim, find and enter insert mode
 - Vim, max linewrap characters
-- Get max depth of directory tree
 - Support expanding abbreviations with 'emmet-vim'
 - Automate git message title based on branch prefix i.e. wip, feat, fix e.t.c
