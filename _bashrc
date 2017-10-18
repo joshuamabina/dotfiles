@@ -103,7 +103,7 @@ if ! shopt -oq posix; then
 fi
 
 # Composer binaries
-# If exist, include composer binaries.
+# If exists, include composer binaries.
 
 if [ -d "$HOME/.config/composer/vendor/bin" ]; then
 
@@ -120,14 +120,18 @@ if [ -d "$HOME/.yarn/bin" ]; then
 
 fi
 
+#Android
 export ANDROID_AVD_HOME="$HOME/.android/avd"
 export ANDROID_SDK_HOME="$HOME/toolkit/android"
 
+
+#TMUX
 export MYTMUXRC="$HOME/.tmux.conf"
 export MYVIMPERATORRC="$HOME/.vimperatorrc"
 export MYMUTTATORRC="$HOME/.vimperatorrc"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+
+#SDKMAN
 export SDKMAN_DIR="/home/joshua/.sdkman"
 [[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
 
