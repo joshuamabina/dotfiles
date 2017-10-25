@@ -17,3 +17,5 @@ set showmode
 set ignorecase smartcase incsearch hlsearch
 
 set backupdir=/tmp directory=/tmp
+
+set colorcolumn=80
