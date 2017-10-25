@@ -103,6 +103,8 @@ alias la='ls -ali'
 alias ll='ls -l'
 alias ls='ls -Fsh -t --group-directories-first'
 
+alias mkdir='mkdir -p'
+
 #Git
 alias g='git'
 
