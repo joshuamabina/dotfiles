@@ -113,6 +113,7 @@ alias ls='ls -Fsh -t --group-directories-first'
 alias mkdir='mkdir -p'
 
 #Git
+#TODO migrate to git-aliases
 alias g='git'
 
 alias ca='g commit --amend'
