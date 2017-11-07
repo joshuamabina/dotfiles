@@ -1,11 +1,7 @@
 #
 # Dotdeb: The extra repository for Debian servers
+#
 # https://www.dotdeb.org/instructions/
-#
-# Signing Key Instructions
-#
-# Fetch and install the dotdeb signing key
-# wget -qO https://www.dotdeb.org/dotdeb.gpg | sudo apt-key add -
 #
 
 # Nginx with "full" HTTP2 support
