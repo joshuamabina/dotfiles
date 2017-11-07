@@ -25,8 +25,7 @@ apt-get remove --purge vim \
 
 cd /tmp
 
-git clone git@github.com:vim/vim.git --depth=1 \
-	&& cd vim
+git clone git@github.com:vim/vim.git --depth=1 2> /dev/null
 
 ./configure \
 	--with-features=huge \
