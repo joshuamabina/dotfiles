@@ -58,7 +58,7 @@ sudo auto-apt run ./configure \
 make
 
 sudo checkinstall \
-&& apt-get autoremove \
+&& sudo apt-get autoremove \
 && sudo apt-get autoclean \
 && sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/vim 1 \
 && sudo update-alternatives --set editor /usr/local/bin/vim \
