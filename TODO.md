@@ -23,3 +23,5 @@
 - Support expanding abbreviations with 'emmet-vim'
 - Automate git message title based on branch prefix i.e. wip, feat, fix e.t.c
 - Deprecate terminator in favor of urxvt
+- Add tint configuration
+- Add conky configuration
