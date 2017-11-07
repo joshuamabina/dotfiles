@@ -6,28 +6,41 @@
 #Contact mabinajoshua-at-gmail-dot-com
 ##
 
-sudo -v
-
-#prerequisite libraries
-apt-get install libncurses5-dev \
+#Prerequisites
+sudo apt-get install libncurses5-dev \
     libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
     python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git
-    
-#remove vim if you have it already.
-apt-get remove --purge vim \
+
+##When you want to build a program from source and it fails due to missing headers.
+##Auto-apt can search what package would provide the header files.
+##https://help.ubuntu.com/community/AutoApt
+sudo apt-get install auto-apt
+
+##CheckInstall keeps track of all the files created or modified by your installation script,
+##builds a standard binary package (.deb, .rpm, .tgz) and
+##installs it in your system giving you the ability to uninstall it
+##with your distribution's standard package management utilities.
+##See https://wiki.debian.org/CheckInstall
+
+#Remove vim if you have it already.
+sudo apt-get remove --purge vim \
 	vim-runtime \
 	gvim \
 	vim-tiny \
 	vim-common \
-	vim-gui-common
+	vim-gui-common \
 	vim-nox
 
 cd /tmp
 
 git clone git@github.com:vim/vim.git --depth=1 2> /dev/null
 
-./configure \
+cd vim
+
+make distclean
+
+sudo auto-apt run ./configure \
 	--with-features=huge \
 	--enable-python3interp \
 	--enable-pythoninterp \
@@ -44,9 +57,12 @@ git clone git@github.com:vim/vim.git --depth=1 2> /dev/null
 
 make
 
-make install
+sudo checkinstall \
+&& apt-get autoremove \
+&& sudo apt-get autoclean \
+&& sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/vim 1 \
+&& sudo update-alternatives --set editor /usr/local/bin/vim \
+&& sudo update-alternatives --install /usr/bin/vi vi /usr/local/bin/vim 1 \
+&& sudo update-alternatives --set vi /usr/local/bin/vim
 
-vim --version
-
-mkdir -p ~/.vim && \
-	git clone git@github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+which vim && vim --version
