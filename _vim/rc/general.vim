@@ -18,4 +18,4 @@ set ignorecase smartcase incsearch hlsearch
 
 set backupdir=/tmp directory=/tmp
 
-set colorcolumn=80
+"set colorcolumn=80
