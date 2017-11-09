@@ -25,3 +25,4 @@
 - Deprecate terminator in favor of urxvt
 - Add tint configuration
 - Add conky configuration
+- Return to normal after omnicompletion
