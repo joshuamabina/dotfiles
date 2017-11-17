@@ -171,10 +171,17 @@ alias migrate='art migrate && seed'
 alias fresh='art migrate:fresh && seed'
 alias fresh-test='art migrate:fresh --env=testing'
 
-alias art-clear='art cache:clear && art config:clear && art view:clear'
+alias clear-medialibrary='art medialibrary:clear'
+alias clear-compiled='art clear-compiled'
+alias clear-config='art config:clear'
+alias clear-cache='art cache:clear'
+alias clear-route='art route:clear'
+alias clear-view='art view:clear'
+
+alias art-clear='clear-compiled && clear-cache && clear-config && clear-route && clear-view && clear-medialibrary'
 alias art-cache='art config:cache && art route:cache'
 
-alias dump='dump-autoload && art-clear && art optimize'
+alias dump='dump-autoload && art-clear'
 
 alias opt='dump && art-cache'
 
