@@ -176,6 +176,6 @@ alias art-cache='art config:cache && art route:cache'
 
 alias dump='dump-autoload && art-clear && art optimize'
 
-alias opt='art-dump && art-cache'
+alias opt='dump && art-cache'
 
 # vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent
