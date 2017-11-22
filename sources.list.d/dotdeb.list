@@ -1,8 +1,0 @@
-#
-# Dotdeb: The extra repository for Debian servers
-#
-# https://www.dotdeb.org/instructions/
-#
-
-# Nginx with "full" HTTP2 support
-deb http://packages.dotdeb.org jessie-nginx-http2 all
