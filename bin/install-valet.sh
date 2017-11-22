@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-#install valet-linux as a global composer package.
+sudo apt-get update
+sudo apt-get install -y libnss3-tools dnsmasq jq
 composer global require cpriego/valet-linux
 
-#update domain
-valet domain local
+valet install
 
-#update TLD name
 valet domain .local
+
+sudo apt-get autoremove
+sudo apt-get autoclean
