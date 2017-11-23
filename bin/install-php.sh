@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+##TODO install php-redis
+
 ## pre-requisites
 sudo apt-get install apt-transport-https ca-certificates
 
@@ -39,6 +41,8 @@ sudo apt-get install php${VERSION}-fpm \
 	php${VERSION}-zip \
 	php${VERSION}-bz2 \
 	php${VERSION}-xml
+
+sudo apt-get install php-imagick -y
 
 sudo apt-get autoremove
 sudo apt-get autoclean
