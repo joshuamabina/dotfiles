@@ -40,6 +40,13 @@ getpasswd() {
 }
 
 #
+# Start a logbook
+#
+function lb() {
+    vim ~/logbook/$(date '+%Y-%m-%d').md
+}
+
+#
 # Do a DuckDuckGo search, opens results in firefox.
 #
 ddg() {
