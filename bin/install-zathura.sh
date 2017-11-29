@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-#TODO build and install zathura
+sudo apt-get update \
+	&& sudo apt-get install zathura
+
+#TODO ~/.config/zathura/zathurarc
