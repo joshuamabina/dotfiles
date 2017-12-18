@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #Website: https://codezen.org/canto-ng/
 
+#TODO Ensure python versions match with that installed using install-python.sh
+
 sudo apt-get install -y python3 python3-dev python3-feedparser
 
 cd /tmp
