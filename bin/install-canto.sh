@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
+#Website: https://codezen.org/canto-ng/
 
-#https://codezen.org/canto-ng/
-#https://github.com/themoken/Canto
+sudo apt-get install -y python3 python3-dev python3-feedparser
 
-#install canto-daemon
-#install canto-curses
+cd /tmp
+
+#clone the latest release (v0.9.7)
+git clone https://github.com/themoken/canto-next.git -b v0.9.7 --depth=1
+
+cd canto-next
+sudo python3 setup.py install
+
+cd ../
+
+#clone the latest release (v0.9.9)
+git clone https://github.com/themoken/canto-curses.git -b v0.9.9 --depth=1
+
+cd canto-curses
+sudo python3 setup.py install
