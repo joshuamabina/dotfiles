@@ -158,6 +158,9 @@ alias fetch='g fetch'
 alias pull='g pull'
 alias push='g push'
 
+alias f='git flow feature'
+complete -F __git_flow_feature f
+
 alias fu='g reset --hard && g clean -df'
 
 #Tmux
