@@ -208,4 +208,6 @@ alias dump='dump-autoload && art-clear'
 
 alias opt='dump && art-cache'
 
+alias trans='art langman:trans'
+
 # vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent
