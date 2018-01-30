@@ -95,6 +95,18 @@ ddg() {
     firefox "${BASE_URL}${DDG_QUERY}"
 }
 
+#
+# Pointman
+#
+# Kills pointing devices.
+#
+pointman() {
+    #TODO Use args: enable, disable, killall
+
+    touchpad_id=$(xinput --list | grep -i touchpad | xargs | cut -d '=' -f2 | cut -d ' ' -f1)
+    xinput disable $touchpad_id
+}
+
 #Reload
 alias so='source $HOME/.bashrc'
 
