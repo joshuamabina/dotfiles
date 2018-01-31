@@ -224,4 +224,6 @@ alias opt='dump && art-cache'
 alias trans='art langman:trans'
 alias route-list='art route:list'
 
+alias echo-start='laravel-echo-server start'
+
 # vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent
