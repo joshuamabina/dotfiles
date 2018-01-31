@@ -103,8 +103,10 @@ ddg() {
 pointman() {
     #TODO Use args: enable, disable, killall
 
-    touchpad_id=$(xinput --list | grep -i touchpad | xargs | cut -d '=' -f2 | cut -d ' ' -f1)
-    xinput disable $touchpad_id
+    dev="$1"
+
+    dev_id=$(xinput --list | grep -i $dev | xargs | cut -d '=' -f2 | cut -d ' ' -f1)
+    xinput disable $dev_id
 }
 
 #Reload
