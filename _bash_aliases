@@ -226,4 +226,6 @@ alias route-list='art route:list'
 
 alias echo-start='laravel-echo-server start'
 
+alias qwork='art queue:work'
+
 # vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent
