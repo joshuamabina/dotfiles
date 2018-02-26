@@ -10,19 +10,21 @@ call vundle#begin()
 runtime! rc/plugins/*.vim
 
 Plugin 'groovy.vim'
+Plugin 'zaki/zazen'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'ap/vim-css-color'
 Plugin 'tpope/vim-repeat'
+Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdcommenter'
-"Plugin 'Valloric/YouCompleteMe'
-Plugin 'editorconfig/editorconfig-vim'
 Plugin 'airblade/vim-rooter'
-Plugin 'johngrib/vim-game-code-break'
-Plugin 'zaki/zazen'
-Plugin 'ap/vim-css-color'
-Plugin 'othree/html5.vim'
 Plugin 'jwalton512/vim-blade'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'vimperator/vimperator.vim'
+Plugin 'johngrib/vim-game-code-break'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
 
