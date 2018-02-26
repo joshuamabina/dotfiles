@@ -228,4 +228,7 @@ alias echo-start='laravel-echo-server start'
 
 alias qwork='art queue:work'
 
+alias make-view='art make:view'
+alias make-filter='art model:filter'
+
 # vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent
