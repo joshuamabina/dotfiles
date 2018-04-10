@@ -1,11 +1,5 @@
 #Functions
 
-# Resolve active wlan0
-
-fixwifi() {
-    echo "nameserver 8.8.8.8" >> /etc/resolv.conf
-}
-
 #
 # Create and change the current working directory.
 #
