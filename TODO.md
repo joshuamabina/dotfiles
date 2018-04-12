@@ -1,6 +1,5 @@
 # All tasks
 
-- install git-flow
 - resize vim splits keybinding
 - Update vim mapping to create a new empty line (above or below), remain in normal and on the same line.
 - Save file after creating a new empty line.
@@ -28,3 +27,8 @@
 - Add tint configuration
 - Add conky configuration
 - Return to normal after omnicompletion
+- Install script for [jupyter][install-jupyter] notebook
+- [Vimpyter][vimptyer-gh]: Edit jupyter vim notes in Vim
+
+[vimptyer-gh]: https://github.com/vyzyv/vimpyter
+[install-jupyter]: https://jupyter.readthedocs.io/en/latest/install.html
