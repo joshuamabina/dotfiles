@@ -218,6 +218,7 @@ alias echo-start='laravel-echo-server start'
 alias qwork='art queue:work'
 
 alias make-view='art make:view'
+alias make-model='art make:model'
 alias make-seeder='art make:seeder'
 alias make-filter='art model:filter'
 alias make-factory='art make:factory'
