@@ -1,5 +1,6 @@
 Plugin 'scrooloose/nerdtree'
 
+let g:NERDTreeDirArrows=0
 let g:NERDTreeChDirMode=2
 
 let NERDTreeShowHidden=1

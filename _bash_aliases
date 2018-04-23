@@ -172,8 +172,8 @@ tmux='tmux -2'
 alias yt='/usr/local/bin/youtube-dl -q'
 
 #Yarn
-alias yad='yarn add --save'
-alias yev='yarn dev'
+alias yad='yarn add'
+alias yev='yarn develop'
 alias yatch='yarn watch'
 alias yall='yarn install'
 
