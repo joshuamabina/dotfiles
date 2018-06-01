@@ -17,3 +17,9 @@ set path+=**
 command! MakeTags !ctags-exuberant -R .
 
 source $HOME/.vim/rc/mappings.vim
+
+" TODO Move to _vim/plugins/ansible-yaml.vim
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+
+
