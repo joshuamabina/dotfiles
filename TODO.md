@@ -1,5 +1,6 @@
 # All tasks
 
+- Vim arduino setup
 - resize vim splits keybinding
 - Update vim mapping to create a new empty line (above or below), remain in normal and on the same line.
 - Save file after creating a new empty line.
