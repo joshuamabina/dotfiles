@@ -22,6 +22,7 @@ sudo apt-get install auto-apt
 ##installs it in your system giving you the ability to uninstall it
 ##with your distribution's standard package management utilities.
 ##See https://wiki.debian.org/CheckInstall
+sudo apt-get install checkinstall -y
 
 #Remove vim if you have it already.
 sudo apt-get remove --purge vim \
