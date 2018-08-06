@@ -10,18 +10,19 @@
 sudo apt-get install libncurses5-dev \
     libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
-    python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git
+    python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git -y
 
 ##When you want to build a program from source and it fails due to missing headers.
 ##Auto-apt can search what package would provide the header files.
 ##https://help.ubuntu.com/community/AutoApt
-sudo apt-get install auto-apt
+sudo apt-get install auto-apt -y
 
 ##CheckInstall keeps track of all the files created or modified by your installation script,
 ##builds a standard binary package (.deb, .rpm, .tgz) and
 ##installs it in your system giving you the ability to uninstall it
 ##with your distribution's standard package management utilities.
 ##See https://wiki.debian.org/CheckInstall
+sudo apt-get install checkinstall -y
 
 #Remove vim if you have it already.
 sudo apt-get remove --purge vim \
@@ -34,7 +35,8 @@ sudo apt-get remove --purge vim \
 
 cd /tmp
 
-git clone git@github.com:vim/vim.git --depth=1 2> /dev/null
+git clone https://github.com/vim/vim.git --depth=1 2> /dev/null
+
 
 cd vim
 
