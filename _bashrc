@@ -140,3 +140,6 @@ export SDKMAN_DIR="/home/joshua/.sdkman"
 [[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
 
 # vim: ft=conf softtabstop=4 shiftwidth=4 expandtab autoindent
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
