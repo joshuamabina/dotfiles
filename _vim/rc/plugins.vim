@@ -26,6 +26,8 @@ Plugin 'vimperator/vimperator.vim'
 Plugin 'johngrib/vim-game-code-break'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'thoughtbot/vim-rspec'
 
 call vundle#end()
 
