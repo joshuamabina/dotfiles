@@ -89,8 +89,6 @@ source $ZSH/oh-my-zsh.sh
 export SDKMAN_DIR="/home/joshua/.sdkman"
 [[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
 
-export TMUX_PATH="$HOME/.tmux.conf"
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
