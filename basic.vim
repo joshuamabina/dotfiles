@@ -61,6 +61,9 @@ command W w !sudo tee % > /dev/null
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
+" Preceed each line with its number.
+set number
+
 " Turn relative line numbers on
 set relativenumber
 
