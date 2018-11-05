@@ -78,6 +78,7 @@ plugins=(
   node
   npm
   npx
+  nvm
   tmux
   httpie
   yarn
