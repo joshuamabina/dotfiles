@@ -1,0 +1,90 @@
+"
+" General
+"
+set novisualbell
+highlight Bell display:none
+
+set editor='bl-text-editor'
+set hintchars='hfjdksla'
+
+set hlsearch
+set focuscontent
+set searchengine duckduckgo
+
+set gui=none
+
+set! javascript.options.jit.chrome=true
+
+highlight CmdLine background: black; color: #ccc; transition: all 0.25s;
+
+"
+" Mappings
+"
+
+" Resets
+map d <Nop>
+map <C-h> <Nop>
+map <C-k> <Nop>
+map <C-j> <Nop>
+map <C-n> <Nop>
+map <C-p> <Nop>
+map <C-r> <Nop>
+map <C-s> <Nop>
+map <C-t> <Nop>
+map <C-v> <Nop>
+map <C-w> <Nop>
+map <C-x> <Nop>
+map <C-S-h> <Nop>
+map <C-S-o> <Nop>
+map <F5> <Nop>
+
+let mapleader=','
+let g:mapleader=','
+
+nnoremap ZZ :q<CR>
+
+" Reload MYVIMPERATORRC
+nnoremap <silent> <leader>R :source "$MYVIMPERATORRC"<CR> :echo "Source reloaded!"<CR>
+
+" Ctrl-P: fuzzy-find through all buffers
+nnoremap <C-p> :ls<CR>
+
+" Scrolling
+map j 5<C-e>
+map k 5<C-y>
+
+nnoremap <A-y> :js util.copyToClipboard(buffer.title + '\u0020(' + buffer.URL + ')', true)<CR>
+nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
+
+"
+" Qmarks
+"
+
+"Bitbucket
+qmark b https://bitbucket.org
+
+" Up-and-coming Ambient tracks on SoundCloud
+"" Ambient music is said to evoke an "atmospheric", "visual", or "unobtrusive" quality.
+"" https://en.wikipedia.org/wiki/Ambient_music
+qmark c https://soundcloud.com/charts/new?genre=ambient&country=all-countries
+
+" TweetDeck
+qmark d https://tweetdeck.twitter.com/
+
+" FontAwesome
+qmark i http://fontawesome.io/icons/
+
+" GitHub
+qmark g https://github.com
+
+" StackOverflow
+qmark l https://stackoverflow.com/questions/tagged/laravel?sort=featured&pageSize=50
+
+" Taiga
+qmark t https://tree.taiga.io
+
+" Udacity
+qmark u https://classroom.udacity.com/me
+
+" YouTube Watch Later
+qmark w https://www.youtube.com/playlist?list=WL
