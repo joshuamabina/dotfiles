@@ -1,90 +1,63 @@
-"
-" General
-"
-set novisualbell
-highlight Bell display:none
+" Move this to $XDG_CONFIG_DIR/tridactyl/tridactylrc (that's
+" ~/.config/tridactyl/tridactylrc to mere mortals) or ~/.tridactylrc and
+" install the native messenger (:installnative in Tridactyl). Run :source to
+" get it in the browser, or just restart.
 
-set editor='bl-text-editor'
-set hintchars='hfjdksla'
+" NB: If you want "vim-like" behaviour where removing a line from 
+" here makes the setting disappear, uncomment the line below.
 
-set hlsearch
-set focuscontent
-set searchengine duckduckgo
-
-set gui=none
-
-set! javascript.options.jit.chrome=true
-
-highlight CmdLine background: black; color: #ccc; transition: all 0.25s;
+"sanitise tridactyllocal tridactylsync
 
 "
-" Mappings
+" Binds
 "
 
-" Resets
-map d <Nop>
-map <C-h> <Nop>
-map <C-k> <Nop>
-map <C-j> <Nop>
-map <C-n> <Nop>
-map <C-p> <Nop>
-map <C-r> <Nop>
-map <C-s> <Nop>
-map <C-t> <Nop>
-map <C-v> <Nop>
-map <C-w> <Nop>
-map <C-x> <Nop>
-map <C-S-h> <Nop>
-map <C-S-o> <Nop>
-map <F5> <Nop>
+" Comment toggler for Reddit and Hacker News
+bind ;c hint -c [class*="expand"],[class="togg"]
 
-let mapleader=','
-let g:mapleader=','
+" GitHub pull request checkout command to clipboard (only works if you're a collaborator or above)
+bind yp composite js document.getElementById("clone-help-step-1").textContent.replace("git checkout -b", "git checkout -B").replace("git pull ", "git fetch ") + "git reset --hard " + document.getElementById("clone-help-step-1").textContent.split(" ")[3].replace("-","/") | yank
 
-nnoremap ZZ :q<CR>
+" Git{Hub,Lab} git clone via SSH yank
+bind yg composite js "git clone " + document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git") | clipboard yank
 
-" Reload MYVIMPERATORRC
-nnoremap <silent> <leader>R :source "$MYVIMPERATORRC"<CR> :echo "Source reloaded!"<CR>
+" I like wikiwand but I don't like the way it changes URLs
+bindurl wikiwand.com yy composite js document.location.href.replace("wikiwand.com/en","wikipedia.org/wiki") | clipboard yank
 
-" Ctrl-P: fuzzy-find through all buffers
-nnoremap <C-p> :ls<CR>
+" Make gu take you back to subreddit from comments
+bindurl reddit.com gu urlparent 4
 
-" Scrolling
-map j 5<C-e>
-map k 5<C-y>
-
-nnoremap <A-y> :js util.copyToClipboard(buffer.title + '\u0020(' + buffer.URL + ')', true)<CR>
-nnoremap Y :js util.copyToClipboard(buffer.title, true)<CR>
+" Allow Ctrl-a to select all in the commandline
+unbind --mode=ex <C-a>
 
 "
-" Qmarks
+" Misc settings
 "
 
-"Bitbucket
-qmark b https://bitbucket.org
+" set editorcmd to suckless terminal, or use the defaults on other platforms
+js tri.browserBg.runtime.getPlatformInfo().then(os=>{const editorcmd = os.os=="linux" ? "st vim" : "auto"; tri.config.set("editorcmd", editorcmd)})
 
-" Up-and-coming Ambient tracks on SoundCloud
-"" Ambient music is said to evoke an "atmospheric", "visual", or "unobtrusive" quality.
-"" https://en.wikipedia.org/wiki/Ambient_music
-qmark c https://soundcloud.com/charts/new?genre=ambient&country=all-countries
+" set profile dir on Windows
+jsb browser.runtime.getPlatformInfo().then(os=>{const profiledir = os.os=="win" ? "C:\\Users\\olie\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\gwm76nmk.default" : "auto"; tri.config.set("profiledir", profiledir)})
 
-" TweetDeck
-qmark d https://tweetdeck.twitter.com/
+" Sane hinting mode
+set hintfiltermode vimperator-reflow
 
-" FontAwesome
-qmark i http://fontawesome.io/icons/
+" Make Tridactyl work on more sites at the expense of some security
+set csp clobber
+fixamo_quiet
 
-" GitHub
-qmark g https://github.com
+" Make quickmarks for the sane Tridactyl issue view
+quickmark n https://news.ycombinator.com
 
-" StackOverflow
-qmark l https://stackoverflow.com/questions/tagged/laravel?sort=featured&pageSize=50
+"
+" URL redirects
+" 
 
-" Taiga
-qmark t https://tree.taiga.io
+" New reddit is bad
+autocmd DocStart www.reddit.com js tri.excmds.urlmodify("-t", "www", "old")
+" Mosquito nets won't make themselves
+autocmd DocStart www.amazon.co.uk js tri.excmds.urlmodify("-t", "www", "smile")
 
-" Udacity
-qmark u https://classroom.udacity.com/me
-
-" YouTube Watch Later
-qmark w https://www.youtube.com/playlist?list=WL
+" This will have to do until someone writes us a nice syntax file :)
+" vim: set filetype=vim:
