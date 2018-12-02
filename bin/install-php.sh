@@ -7,7 +7,7 @@ sudo apt-get install apt-transport-https ca-certificates
 
 sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 
-sudo sh -c 'echo "deb https://packages.sury.org/php/ jessie main" > /etc/apt/sources.list.d/php.list'
+sudo sh -c 'echo "deb https://packages.sury.org/php/ stretch main" > /etc/apt/sources.list.d/php.list'
 
 sudo apt-get update
 

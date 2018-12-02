@@ -1,0 +1,90 @@
+#!/usr/bin/env php
+
+<?php
+
+/**
+ * Server Requirements
+ *
+ * The Laravel framework has few system requirements. Make sure that your server meets the following requirements:
+ *
+ *  PHP >= 7.0.0
+ *  OpenSSL PHP Extension
+ *  PDO PHP Extension
+ *  Mbstring PHP Extension
+ *  Tokenizer PHP Extension
+ *  XML PHP Extension
+ */
+
+error_reporting(E_ALL);
+
+set_exception_handler(function ($exception) {
+
+    printinfo('failed', 'Exception: ' . $exception->getMessage());
+
+    exit;
+
+});
+
+set_error_handler(function ($errno, $errstr) {
+
+    printinfo('failed', 'Error: ' . $errno . '->' . $errstr);
+
+    exit;
+
+});
+
+
+function printinfo($status, $message)
+{
+    printf("(%s): %s \r\n", $status, $message);
+}
+
+function it($test, $func)
+{
+    $func() === true
+        ? printinfo('passed', $test)
+        : printinfo('failed', $test)
+        ;
+}
+
+
+it('should have php >= 7.0.0 installed', function () {
+
+    return class_exists('ParseError');
+
+});
+
+
+it('should have openssl php extension installed', function () {
+
+    return function_exists('openssl_random_pseudo_bytes');
+
+});
+
+
+it('should have pdo php extension installed', function () {
+
+    return class_exists('PDO');
+
+});
+
+
+it('should have mbstring php extension installed', function () {
+
+    return function_exists('mb_convert_case');
+
+});
+
+
+it('should have tokenizer php extension installed', function () {
+
+    return function_exists('token_get_all');
+
+});
+
+
+it ('should have xml php extension installed', function () {
+
+    return function_exists('simplexml_load_string');
+
+});

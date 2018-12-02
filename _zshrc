@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH
 
 # Disable compfix for insecure directories.
 ZSH_DISABLE_COMPFIX=true
@@ -67,6 +67,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   adb
+  composer
   docker
   git
   git-flow
@@ -115,6 +116,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # For a full list of active aliases, run `alias`.
 # Example aliases
 
+alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 
