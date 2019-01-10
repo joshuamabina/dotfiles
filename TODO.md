@@ -1,5 +1,13 @@
 # All tasks
 
+## Basic.vim
+
+- fugitive.vim
+- rhubarb.vim
+- 
+
+## Other
+
 - Vim arduino setup
 - resize vim splits keybinding
 - Update vim mapping to create a new empty line (above or below), remain in normal and on the same line.
@@ -14,7 +22,6 @@
 - bl-utilities: Customized collection of BL scripts
 - create-virtual-host: creates virtual host for apache or nginx
 - create-avd: creates an android virtual device (prompts user)
-- install eclim
 - install latest php
 - install latest node
 - install latest nginx
