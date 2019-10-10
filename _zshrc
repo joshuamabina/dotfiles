@@ -120,3 +120,4 @@ alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 
+alias jn="jupyter notebook"
