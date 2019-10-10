@@ -1,5 +1,3 @@
-[alias]
-  refresh="!git branch --merged master | grep -v master | xargs git branch -d 2> /dev/null"
 [push]
   default = simple
 [user]
