@@ -1,2 +1,5 @@
+[user]
+	email = mabinajoshua@gmail.com
+	name = Joshua Mabina
 [alias]
-
+  refresh="!git branch --merged master | grep -v master | xargs git branch -d 2> /dev/null"
