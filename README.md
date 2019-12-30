@@ -1,11 +1,8 @@
-# My dotfiles
+My dotfiles
 
 > **Heads up!** This is work in progress
 
-## Changelog
+# Features
 
-For a complete list of notable changes, please read the [CHANGELOG](./CHANGELOG.md)
-
-## Contacts
-
-Feel free to yell at me: mabinajoshua@gmail.com
+- [show-time](https://github.com/naholyr/show-time) uses a simple cli to watch tv-shows!
+- [torrentsearch](https://github.com/sergiogiogio/torrentsearch) popular sites using your termimal 
