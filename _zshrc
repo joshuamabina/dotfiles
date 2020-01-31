@@ -72,9 +72,6 @@ plugins=(
   git
   git-flow
   laravel5
-  rails
-  rvm
-  ruby
   heroku
   node
   npm
