@@ -28,9 +28,14 @@ hsetroot -solid "#2E3436" &
 ## 2. compositor - start
 ## 3. sleep - give compositor time to start
 ## 4. tint2 panel
-nitrogen --restore &
-cbpp-compositor --start &
-tint2 &
+## 5. tilda terminal
+(\
+nitrogen --restore && \
+cbpp-compositor --start && \
+sleep 2s && \
+tint2 && \
+tilda \ 
+) &
 
 ## Start nm-applet for systray
 nm-applet &
@@ -44,6 +49,11 @@ xfce4-power-manager &
 ## Start Thunar Daemon
 thunar --daemon &
 
+## Detect and configure touchpad. See 'man synclient' for more info.
+if egrep -iq 'touchpad' /proc/bus/input/devices; then
+    synclient VertEdgeScroll=1 TapButton1=1 &
+fi
+
 ## Start xscreensaver
 xscreensaver -no-splash &
 
@@ -56,16 +66,13 @@ xset r rate 250 25 &
 
 ## Swap CapsLock to Escape
 setxkbmap -option caps:swapescape
-#setxkbmap -option ctrl:nocaps
-# alternative: use as compose key
-#setxkbmap -option compose:caps
 
 ## Turn on/off system beep
 xset b off &
 
 ## cbpp-user-setup - User space initialization, sets .gtk-bookmarks and
 ## creates symlink in images to wallpaper folder only runs once. Safe to remove.
-##~/.cbpp-user-setup &
+~/.cbpp-user-setup &
 
 ## cbpp-welcome - post-installation script, will not run in a live session and
 ## only runs once. Safe to remove.
