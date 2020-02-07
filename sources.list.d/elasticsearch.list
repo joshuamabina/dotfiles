@@ -1,6 +1,0 @@
-#
-# Elasticsearch
-# https://www.elastic.co/downloads/elasticsearch
-#
-
-deb https://artifacts.elastic.co/packages/5.x/apt stable main
