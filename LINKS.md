@@ -9,6 +9,7 @@
 
 ## References
 
+- https://github.com/yesmeck/tmuxrc
 - https://github.com/ninrod/dotfiles
 - https://github.com/mtscout6/dotfiles
 - https://github.com/nanotech/jellybeans.vim
