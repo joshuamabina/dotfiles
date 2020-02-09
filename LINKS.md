@@ -2,6 +2,9 @@
 
 ## Dependencies
 
+- https://github.com/tmux-plugins/tmux-resurrect
+- https://github.com/expo/expo
+- https://github.com/facebook/create-react-app
 - https://github.com/http-party/http-server
 - https://github.com/Thann/pingg
 - https://github.com/maxogden/torrent
@@ -20,4 +23,3 @@
 - http://www.codeography.com/2013/06/19/navigating-vim-and-tmux-splits
 - https://stackoverflow.com/questions/5686206/search-replace-using-quickfix-list-in-vim#14300487
 - https://github.com/tpope/vim-unimpaired
-
