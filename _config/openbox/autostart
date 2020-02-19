@@ -26,15 +26,15 @@ hsetroot -solid "#2E3436" &
 ## Group start:
 ## 1. nitrogen - restores wallpaper
 ## 2. compositor - start
+## 3. tint2 panel
+## 4. tilda terminal
 ## 3. sleep - give compositor time to start
-## 4. tint2 panel
-## 5. tilda terminal
 (\
 nitrogen --restore && \
 cbpp-compositor --start && \
-sleep 2s && \
 tint2 && \
-tilda \ 
+tilda && \
+sleep 2s \
 ) &
 
 ## Start nm-applet for systray
