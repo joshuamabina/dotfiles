@@ -126,6 +126,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
-alias pping="pingg 2> /dev/null"
+alias dotconfig="vi ~/dotfiles"
 
-alias jn="jupyter notebook"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
