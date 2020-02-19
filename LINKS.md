@@ -2,6 +2,11 @@
 
 ## Dependencies
 
+- https://github.com/yarnpkg/yarn
+- https://github.com/bubenshchykov/ngrok
+- https://github.com/webpack/webpack-cli
+- https://github.com/naholyr/show-time
+- https://sdkman.io/
 - https://github.com/tmux-plugins/tmux-resurrect
 - https://github.com/expo/expo
 - https://github.com/facebook/create-react-app
