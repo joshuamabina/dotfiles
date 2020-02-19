@@ -13,6 +13,7 @@
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
+"    -> CtrlP
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -381,3 +382,10 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ctrlp
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Exclude some files and directories for a much saner search scope.
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
