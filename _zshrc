@@ -91,6 +91,9 @@ source $ZSH/oh-my-zsh.sh
 export SDKMAN_DIR="/home/joshua/.sdkman"
 [[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
 
+export LOGBOOK_DIR="/home/joshua/.logbook"
+[[ -d "/home/joshua/.logbook" ]] || mkdir $LOGBOOK_DIR
+
 export ANDROID_HOME=$HOME/.android
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -127,7 +130,7 @@ alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias dotconfig="vi ~/dotfiles"
+alias lb="vi ~/.logbook/$(date '+%Y-%m-%d').md"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
