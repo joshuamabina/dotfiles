@@ -88,6 +88,8 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export EDITOR=vi
+
 export SDKMAN_DIR="/home/joshua/.sdkman"
 [[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
 
