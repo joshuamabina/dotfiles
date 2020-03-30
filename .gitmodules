@@ -10,9 +10,6 @@
 [submodule "_vim/pack/editorconfig/start/editorconfig-vim"]
 	path = _vim/pack/editorconfig/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
-[submodule "_tmux/tmux-resurrect"]
-	path = _tmux/tmux-resurrect
-	url = git@github.com:tmux-plugins/tmux-resurrect.git
 [submodule "_vim/pack/ctrlpvim/start/ctrlp.vim"]
 	path = _vim/pack/ctrlpvim/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
