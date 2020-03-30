@@ -1,7 +1,7 @@
 tilda_config_version="1.4.1"
 command="tmux"
 font="Monospace 11"
-key="F12"
+key="F2"
 addtab_key="<Shift><Control>t"
 fullscreen_key="F11"
 toggle_transparency_key="F12"
