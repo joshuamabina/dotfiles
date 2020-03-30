@@ -387,5 +387,8 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ctrlp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Show hidden files and folders
+let g:ctrlp_show_hidden = 1
+
 "Exclude some files and directories for a much saner search scope.
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
