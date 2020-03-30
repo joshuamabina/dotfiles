@@ -13,3 +13,6 @@
 [submodule "_vim/pack/ctrlpvim/start/ctrlp.vim"]
 	path = _vim/pack/ctrlpvim/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "_vim/pack/pangloss/start/vim-javascript"]
+	path = _vim/pack/pangloss/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
