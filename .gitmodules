@@ -19,3 +19,6 @@
 [submodule "_vim/pack/mxw/start/vim-jsx"]
 	path = _vim/pack/mxw/start/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule "_vim/pack/prettier/start/vim-prettier"]
+	path = _vim/pack/prettier/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier
