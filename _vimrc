@@ -303,6 +303,9 @@ endif
 " Quickly change directory to the current file
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
+" Disable entering Ex mode
+map Q <Nop>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
