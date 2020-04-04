@@ -300,6 +300,9 @@ if has("autocmd")
     autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
 
+" Quickly change directory to the current file
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
