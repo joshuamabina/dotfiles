@@ -22,3 +22,6 @@
 [submodule "_vim/pack/prettier/start/vim-prettier"]
 	path = _vim/pack/prettier/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier
+[submodule "_vim/pack/vim-airline/start/vim-airline"]
+	path = _vim/pack/vim-airline/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
