@@ -76,6 +76,7 @@ plugins=(
   npm
   nvm
   yarn
+  git-flow
 )
 
 source $ZSH/oh-my-zsh.sh
