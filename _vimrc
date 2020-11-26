@@ -14,6 +14,8 @@
 "    -> Misc
 "    -> Helper functions
 "    -> CtrlP
+"    -> Load all plugins
+"    -> Generate all help files
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -21,9 +23,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Load all plugins earlier
-packloadall
-
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -401,3 +400,15 @@ let g:ctrlp_show_hidden = 1
 
 "Exclude some files and directories for a much saner search scope.
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vimp help files
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Load all plugins now.
+packloadall
+
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
