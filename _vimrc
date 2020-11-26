@@ -13,9 +13,8 @@
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
+"    -> Bootstrap plugins and docs
 "    -> CtrlP
-"    -> Load all plugins
-"    -> Generate all help files
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -23,6 +22,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -393,6 +393,17 @@ endfunction
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Bootstrap plugins and docs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Load all plugins now.
+packloadall
+
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ctrlp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Show hidden files and folders
@@ -401,14 +412,9 @@ let g:ctrlp_show_hidden = 1
 "Exclude some files and directories for a much saner search scope.
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimp help files
+" => ALE Linters
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Load all plugins now.
-packloadall
 
-" Load all of the helptags now, after plugins have been loaded.
-" All messages and errors will be ignored.
-silent! helptags ALL
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}

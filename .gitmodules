@@ -25,3 +25,6 @@
 [submodule "_vim/pack/vim-airline/start/vim-airline"]
 	path = _vim/pack/vim-airline/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule "_vim/pack/dense-analysis/start/ale"]
+	path = _vim/pack/dense-analysis/start/ale
+	url = git@github.com:dense-analysis/ale.git
