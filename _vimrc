@@ -13,8 +13,7 @@
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
-"    -> Bootstrap plugins and docs
-"    -> CtrlP
+"    -> Plugins, docs, and customizations
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -391,9 +390,12 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Bootstrap plugins and docs
+" => Plugins, docs and customizations
+"
+"    -> General
+"    -> Ctrlp
+"    -> ALE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Load all plugins now.
 packloadall
@@ -402,19 +404,11 @@ packloadall
 " All messages and errors will be ignored.
 silent! helptags ALL
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Ctrlp
+" Ctrlp
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Show hidden files and folders
+" Show hidden files and folders
 let g:ctrlp_show_hidden = 1
 
 "Exclude some files and directories for a much saner search scope.
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ALE Linters
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
-let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
