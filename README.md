@@ -33,6 +33,15 @@ My dotfiles
 - @tpope/vim-surround
 - @vim-airline/vim-airline
 
+##### Adding a Vim plugin
+
+1. Create a new directory to hold the plugin, `mkdir -p [_vim/pack/plugin-author/start]`
+2. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url]`
+3. Stage, commit, and push changes for review and merging.
+
 ### Todo
 
 - Deprecate LINKS.md
+- Maybe, [\_vim/pack/start/plugin-name]
+- Installing submodules with a shallow clone?
+- Extract basic configurations to basic.vimrc plugin
