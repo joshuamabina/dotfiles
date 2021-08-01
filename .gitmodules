@@ -26,5 +26,5 @@
 	path = _vim/pack/vim-airline/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
 [submodule "Colorizer"]
-	path = Colorizer
+	path = _vim/pack/chrisbra/start/Colorizer
 	url = git@github.com:chrisbra/Colorizer.git
