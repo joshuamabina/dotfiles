@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/composer/vendor/bin:$HOME/.android/emulator:$HOME/.android/tools/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$$HOME/.local/bin:HOME/.config/composer/vendor/bin:$HOME/.android/emulator:$HOME/.android/tools/bin:$PATH
 
 # Disable compfix for insecure directories.
 ZSH_DISABLE_COMPFIX=true
@@ -90,11 +90,22 @@ export EDITOR=vi
 export SDKMAN_DIR="/home/joshua/.sdkman"
 [[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
 
-export ANDROID_HOME=$HOME/.android
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.xml.bind'
+# export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+
+if [[ -d "$HOME/.android" ]]; then
+  export ANDROID_HOME=$HOME/.android
+
+  # Add jarxb jar libs
+  # See https://stackoverflow.com/q/53076422/3451822
+  # export PATH=$PATH:$ANDROID_HOME/jaxb_lib
+
+  export PATH=$PATH:$ANDROID_HOME/android
+  export PATH=$PATH:$ANDROID_HOME/emulator
+  export PATH=$PATH:$ANDROID_HOME/tools
+  export PATH=$PATH:$ANDROID_HOME/tools/bin
+  export PATH=$PATH:$ANDROID_HOME/platform-tools
+fi
 
 # pyenv
 # see https://github.com/pyenv/pyenv
@@ -104,11 +115,13 @@ if [[ -d "$HOME/.pyenv" ]]; then
 
   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
   export WORKON_HOME=~/.virtualenvs
-  source $(which virtualenvwrapper.sh)
+  # source $(which virtualenvwrapper.sh)
+  source $HOME/.local/bin/virtualenvwrapper.sh
 
   PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
-  eval "$(pyenv init -)"
+  # Load pyenv into the shell
+  #eval "$(pyenv init -)"
 fi
 
 
