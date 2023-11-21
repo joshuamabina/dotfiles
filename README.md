@@ -1,5 +1,7 @@
 My dotfiles
 
+Optimized for Ubuntu 22.04
+
 ### Requirements
 
 - Vim 8.0+
@@ -15,9 +17,9 @@ My dotfiles
 
 ### Supported features
 
-- Vim
-- Tmux
-- Zsh
+[ ] Tmux
+[ ] https://ohmyz.sh/
+[ ] Vim things
 
 ### Vim things
 
@@ -31,6 +33,19 @@ My dotfiles
 - @tpope/vim-surround
 - @vim-airline/vim-airline
 
+##### How to install tmux
+
+TODO
+
+#### How to install ohmyzsh
+
+sudo apt-get install -y zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+cp ~/dotfiles/_zshrc ~/.zshrc
+cp ~/dotfiles/_bashrc ~/.bashrc
+
 ##### Adding a Vim plugin
 
 1. Create a new directory to hold the plugin, `mkdir -p [_vim/pack/plugin-author/start]`
@@ -40,6 +55,11 @@ My dotfiles
 ### Todo
 
 - Deprecate LINKS.md
+- Remove openbox config
+- Remove tilda
 - Maybe, [\_vim/pack/start/plugin-name]
 - Installing submodules with a shallow clone?
 - Extract basic configurations to basic.vimrc plugin
+- Install script for tmux
+- Install script for zsh
+- Install script for ohmyzsh
