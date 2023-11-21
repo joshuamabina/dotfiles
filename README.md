@@ -4,7 +4,7 @@ Optimized for Ubuntu 22.04
 
 ### Requirements
 
-- Vim 8.0+
+- Git
 
 ### Installation
 
@@ -17,7 +17,7 @@ Optimized for Ubuntu 22.04
 
 ### Supported features
 
-[ ] Tmux
+[ ] tmux
 [ ] https://ohmyz.sh/
 [ ] Vim things
 
@@ -35,7 +35,9 @@ Optimized for Ubuntu 22.04
 
 ##### How to install tmux
 
-TODO
+sudo apt-get install -y tmux
+
+cp ~/dotfiles/_tmux.conf ~/.tmux.conf
 
 #### How to install ohmyzsh
 
@@ -45,6 +47,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 cp ~/dotfiles/_zshrc ~/.zshrc
 cp ~/dotfiles/_bashrc ~/.bashrc
+
+
+#### How to install Vim
 
 ##### Adding a Vim plugin
 
@@ -63,3 +68,4 @@ cp ~/dotfiles/_bashrc ~/.bashrc
 - Install script for tmux
 - Install script for zsh
 - Install script for ohmyzsh
+- Add bash aliases
