@@ -16,8 +16,6 @@ My dotfiles
 ### Supported features
 
 - Vim
-- Openbox
-- Tilda
 - Tmux
 - Zsh
 
