@@ -68,4 +68,4 @@ cp ~/dotfiles/_bashrc ~/.bashrc
 - Install script for tmux
 - Install script for zsh
 - Install script for ohmyzsh
-- Add bash aliases
+- Add bash aliases: source, update-zsh update-bash
