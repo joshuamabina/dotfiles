@@ -26,7 +26,7 @@ Install latest git, tmux, zsh and vim
 sudo apt-get install -y git tmux zsh vim 
 ```
 
-Install php-laravel
+## Install php-laravel
 
 Refer to:
 
