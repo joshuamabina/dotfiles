@@ -1,4 +1,4 @@
-My dotfiles
+# My dotfiles
 
 Optimized for Ubuntu 22.04
 
@@ -6,6 +6,7 @@ Supported features:
 
 [x] tmux
 [x] Oh-My-Zsh https://ohmyz.sh/
+[x] PHP-Laravel
 [ ] @ctrlpvim/ctrlp.vim
 [ ] @editorconfig/editorconfig-vim
 [ ] @mxw/vim-jsx
@@ -16,7 +17,7 @@ Supported features:
 [ ] @vim-airline/vim-airline
 
 
-# Before setting up
+## Before setting up
 
 Install latest git
 
@@ -34,7 +35,48 @@ Install latest vim
 
 > sudo apt-get install -y vim
 
-# Install dotfiles 
+Install php-laravel
+
+Refer to:
+
+https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04
+
+```
+sudo apt-get update && sudo apt-get -y dist upgrade
+
+
+sudo apt-get install -y apache2
+
+# sudo service apache2 status
+
+
+sudo apt-get install -y mysql-server
+
+# test: sudo mysql 
+
+
+sudo apt-get install --no-install-recommends php8.1
+
+# test: php -v
+
+sudo apt-get install -y libapache2-mod-php php8.1-common php8.1-cli \ 
+php8.1-mysql php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml
+
+# test: php -m
+# todo: php8.1-bcmath php8.1-zip 
+
+
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+
+sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+# test: composer
+
+
+composer global require laravel/installer
+```
+
+## Install dotfiles 
 
 Clone this repo
 
