@@ -2,54 +2,70 @@ My dotfiles
 
 Optimized for Ubuntu 22.04
 
-### Requirements
+Supported features:
 
-- Git
+[x] tmux
+[x] Oh-My-Zsh https://ohmyz.sh/
+[ ] @ctrlpvim/ctrlp.vim
+[ ] @editorconfig/editorconfig-vim
+[ ] @mxw/vim-jsx
+[ ] @pangloss/vim-javascript
+[ ] @prettier/vim-prettier
+[ ] @tpope/commentary
+[ ] @tpope/vim-surround
+[ ] @vim-airline/vim-airline
 
-### Installation
 
-1. Clone this repository `git clone git@github.com:joshuamabina/dotfiles.git ~/.dotfiles`.
-2. Install dependencies, `git submodule init && git submodule update`.
-3. Create local vimrc, `ln -sf ~/.dotfiles/_vimrc ~/.vimrc`
-5. Create local vim directory, `ln -sf ~/.dotfiles/_vim ~/.vim`
-4. Create local tmuxrc, `ln -sf ~/.dotfiles/_tmux.conf ~/.tmux.conf`
-6. Manually update `config` directory to add `tilda` and `openbox` configurations
+# Before setting up
 
-### Supported features
+Install latest git
 
-[ ] tmux
-[ ] https://ohmyz.sh/
-[ ] Vim things
+> sudo apt-get install -y git 
 
-### Vim things
+Install latest tmux
 
-- @ctrlpvim/ctrlp.vim
-- @editorconfig/editorconfig-vim
-- @mxw/vim-jsx
-- @pangloss/vim-javascript
-- @prettier/vim-prettier
-- @tpope/commentary
-- @tpope/vim-fugitive
-- @tpope/vim-surround
-- @vim-airline/vim-airline
+> sudo apt-get install -y tmux
 
-##### How to install tmux
+Install latest zsh
 
-sudo apt-get install -y tmux
+> sudo apt-get install -y zsh
 
-cp ~/dotfiles/_tmux.conf ~/.tmux.conf
+Install latest vim
 
-#### How to install ohmyzsh
+> sudo apt-get install -y vim
 
-sudo apt-get install -y zsh
+# Install dotfiles 
 
+Clone this repo
+
+> git clone git@github.com:joshuamabina/dotfiles.git ~/.dotfiles
+
+Install dependencies
+
+> git submodule init && git submodule update
+
+Setup tmux
+
+```
+ln -sf ~/.dotfiles/_tmux.conf ~/.tmux.conf
+```
+
+Setup ohmyzsh
+
+```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 cp ~/dotfiles/_zshrc ~/.zshrc
+
 cp ~/dotfiles/_bashrc ~/.bashrc
+```
 
+Setup vim
 
-#### How to install Vim
+```
+ln -sf ~/.dotfiles/_vimrc ~/.vimrc \ 
+&& ln -sf ~/.dotfiles/_vim ~/.vim
+```
 
 ##### Adding a Vim plugin
 
@@ -60,8 +76,7 @@ cp ~/dotfiles/_bashrc ~/.bashrc
 ### Todo
 
 - Deprecate LINKS.md
-- Remove openbox config
-- Remove tilda
+- Remove vim-fugitive. Use basic git commands.
 - Maybe, [\_vim/pack/start/plugin-name]
 - Installing submodules with a shallow clone?
 - Extract basic configurations to basic.vimrc plugin
