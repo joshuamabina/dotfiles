@@ -2,39 +2,29 @@
 
 Optimized for Ubuntu 22.04
 
-Supported features:
+## Supported features:
 
-[x] tmux
-[x] Oh-My-Zsh https://ohmyz.sh/
-[ ] NVM-Node
-[x] PHP-Laravel
-[ ] @ctrlpvim/ctrlp.vim
-[ ] @editorconfig/editorconfig-vim
-[ ] @mxw/vim-jsx
-[ ] @pangloss/vim-javascript
-[ ] @prettier/vim-prettier
-[ ] @tpope/commentary
-[ ] @tpope/vim-surround
-[ ] @vim-airline/vim-airline
-
+- [x] tmux
+- [x] Oh-My-Zsh https://ohmyz.sh/
+- [ ] NVM-Node
+- [x] PHP-Laravel
+- [ ] @ctrlpvim/ctrlp.vim
+- [ ] @editorconfig/editorconfig-vim
+- [ ] @mxw/vim-jsx
+- [ ] @pangloss/vim-javascript
+- [ ] @prettier/vim-prettier
+- [ ] @tpope/commentary
+- [ ] @tpope/vim-surround
+- [ ] @vim-airline/vim-airline
 
 ## Before setting up
 
-Install latest git
+Install latest git, tmux, zsh and vim
 
-> sudo apt-get install -y git 
 
-Install latest tmux
-
-> sudo apt-get install -y tmux
-
-Install latest zsh
-
-> sudo apt-get install -y zsh
-
-Install latest vim
-
-> sudo apt-get install -y vim
+```
+sudo apt-get install -y git tmux zsh vim 
+```
 
 Install php-laravel
 
