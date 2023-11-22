@@ -6,6 +6,7 @@ Supported features:
 
 [x] tmux
 [x] Oh-My-Zsh https://ohmyz.sh/
+[ ] NVM-Node
 [x] PHP-Laravel
 [ ] @ctrlpvim/ctrlp.vim
 [ ] @editorconfig/editorconfig-vim
