@@ -134,6 +134,7 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc \
 
 ### Todo
 
+- emma gui mysql https://github.com/clayadavis/emma
 - Install dmenu - https://github.com/stilvoid/dmenu
 - Deprecate LINKS.md
 - Remove vim-fugitive. Use basic git commands.
