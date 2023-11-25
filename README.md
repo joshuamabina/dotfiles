@@ -108,6 +108,7 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc \
 
 ### Todo
 
+- Install dmenu - https://github.com/stilvoid/dmenu
 - Deprecate LINKS.md
 - Remove vim-fugitive. Use basic git commands.
 - Maybe, [\_vim/pack/start/plugin-name]
