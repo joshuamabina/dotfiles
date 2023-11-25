@@ -8,6 +8,7 @@ Optimized for Ubuntu 22.04
 - [x] Oh-My-Zsh https://ohmyz.sh/
 - [x] NVM-Node
 - [x] PHP-Laravel
+- [ ] sdkman
 - [ ] @ctrlpvim/ctrlp.vim
 - [ ] @editorconfig/editorconfig-vim
 - [ ] @mxw/vim-jsx
@@ -134,6 +135,7 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc \
 
 ### Todo
 
+- Install flutter - https://docs.flutter.dev/get-started/install/linux
 - emma gui mysql https://github.com/clayadavis/emma
 - Install dmenu - https://github.com/stilvoid/dmenu
 - Deprecate LINKS.md
