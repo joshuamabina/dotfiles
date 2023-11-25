@@ -137,6 +137,7 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc \
 
 - Install flutter - https://docs.flutter.dev/get-started/install/linux
 - emma gui mysql https://github.com/clayadavis/emma
+- Install expo
 - Install dmenu - https://github.com/stilvoid/dmenu
 - Deprecate LINKS.md
 - Remove vim-fugitive. Use basic git commands.
