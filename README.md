@@ -6,7 +6,7 @@ Optimized for Ubuntu 22.04
 
 - [x] tmux
 - [x] Oh-My-Zsh https://ohmyz.sh/
-- [ ] NVM-Node
+- [x] NVM-Node
 - [x] PHP-Laravel
 - [ ] @ctrlpvim/ctrlp.vim
 - [ ] @editorconfig/editorconfig-vim
@@ -43,7 +43,13 @@ sudo apt-get install -y apache2
 
 sudo apt-get install -y mysql-server
 
-# test: sudo mysql 
+sudo mysql 
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+FLUSH PRIVILEGES;
+# test: SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+# doc: Incase of any issues, completely uninstall and repeat. https://www.digitalocean.com/community/questions/completely-uninstall-mysql-server
 
 
 sudo apt-get install --no-install-recommends php8.1
@@ -65,6 +71,26 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 
 
 composer global require laravel/installer
+```
+
+
+## Install node-nvm
+
+Install nvm. Refer to: https://github.com/nvm-sh/nvm
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# test: command -v nvm
+
+nvm install node
+
+# test: node
+
 ```
 
 ## Install dotfiles 
