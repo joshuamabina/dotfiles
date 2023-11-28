@@ -2,6 +2,13 @@
 
 Optimized for Ubuntu 22.04
 
+My goal is to be able to seemlessly (do and run all the setups in seconds):
+
+- Write Laravel-PHP code
+- Write Flutter Apps for Android (and iOS)
+- Write React-Redux Apps for the Web
+- Write Python code and libraries
+
 ## Supported features:
 
 - [x] tmux
@@ -9,6 +16,7 @@ Optimized for Ubuntu 22.04
 - [x] NVM-Node
 - [x] PHP-Laravel
 - [ ] sdkman
+- [ ] vimb (opt for firefox instead)
 - [ ] @ctrlpvim/ctrlp.vim
 - [ ] @editorconfig/editorconfig-vim
 - [ ] @mxw/vim-jsx
@@ -135,6 +143,10 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc \
 
 ### Todo
 
+- Kotlin for serverside https://kotlinlang.org/docs/server-overview.html
+- Setup WebKit https://www.webkit.org/getting-the-code/
+- Setup a sandbox for building/testing dotfiles
+- Install vimb - https://github.com/fanglingsu/vimb.git
 - Install flutter - https://docs.flutter.dev/get-started/install/linux
 - emma gui mysql https://github.com/clayadavis/emma
 - Install expo
