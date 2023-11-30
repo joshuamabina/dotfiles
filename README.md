@@ -9,6 +9,14 @@ My goal is to be able to seemlessly (do and run all the setups in seconds):
 - Write React-Redux Apps for the Web
 - Write Python code and libraries
 
+## Helpful links
+
+- Setting up VMs for dev/test 
+
+https://williamjturkel.net/2013/05/31/installing-debian-linux-in-a-vm/
+
+https://medium.com/platform-engineer/how-to-install-debian-linux-on-virtualbox-with-guest-additions-778afa0ee7e0
+
 ## Supported features:
 
 - [x] tmux
@@ -142,6 +150,11 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc \
 3. Stage, commit, and push changes for review and merging.
 
 ### Todo
+
+Use xorg (not wayland) - If you wish to do it permanently, edit /etc/gdm3/custom.conf and uncomment the line:
+
+#WaylandEnable=false
+
 
 - Kotlin for serverside https://kotlinlang.org/docs/server-overview.html
 - Setup WebKit https://www.webkit.org/getting-the-code/
