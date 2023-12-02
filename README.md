@@ -156,6 +156,8 @@ Use xorg (not wayland) - If you wish to do it permanently, edit /etc/gdm3/custom
 #WaylandEnable=false
 
 
+- Flutter architecture https://docs.flutter.dev/resources/architectural-overview
+- Use vim-plug in favor of git-submodules. https://github.com/junegunn/vim-plug
 - Kotlin for serverside https://kotlinlang.org/docs/server-overview.html
 - Setup WebKit https://www.webkit.org/getting-the-code/
 - Setup a sandbox for building/testing dotfiles
