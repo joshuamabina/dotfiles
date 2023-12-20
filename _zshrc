@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$$HOME/.local/bin:HOME/.config/composer/vendor/bin:$HOME/.android/emulator:$HOME/.android/tools/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$$HOME/.local/bin:HOME/.config/composer/vendor/bin:$PATH
 
 # Disable compfix for insecure directories.
 ZSH_DISABLE_COMPFIX=true
@@ -84,11 +84,13 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vi
 
-export SDKMAN_DIR="/home/joshua/.sdkman"
-[[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
+#export SDKMAN_DIR="/home/joshua/.sdkman"
+#[[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
 
-export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.xml.bind'
-# export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.xml.bind'
+#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+export JAVA_OPTS=''
 
 if [[ -d "$HOME/Android" ]]; then
   export ANDROID_HOME=$HOME/Android
@@ -98,8 +100,9 @@ if [[ -d "$HOME/Android" ]]; then
   # export PATH=$PATH:$ANDROID_HOME/jaxb_lib
 
   # export PATH=$PATH:$ANDROID_HOME/android
-  # export PATH=$PATH:$ANDROID_HOME/emulator
+  export PATH=$PATH:$ANDROID_HOME/Sdk/emulator
   # export PATH=$PATH:$ANDROID_HOME/tools
+  export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
   # export PATH=$PATH:$ANDROID_HOME/tools/bin
   # export PATH=$PATH:$ANDROID_HOME/platform-tools
 fi
