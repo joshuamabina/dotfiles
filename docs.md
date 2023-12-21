@@ -79,12 +79,8 @@ nvm install node
 Clone this repo
 
 ```
-git clone --recurse-submodules -j8 https://github.com/joshuamabina/dotfiles.git
+git clone --recurse-submodules -j8 https://github.com/joshuamabina/dotfiles.git ~/.dotfiles
 ```
-
-Install dependencies
-
-> git submodule init && git submodule update
 
 Setup tmux
 
@@ -99,7 +95,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 cp ~/dotfiles/_zshrc ~/.zshrc
 
-cp ~/dotfiles/_bashrc ~/.bashrc
+rm ~/.bashrc
 ```
 
 Setup vim
