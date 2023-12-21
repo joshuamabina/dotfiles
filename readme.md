@@ -10,6 +10,8 @@ My goal is to fine-tune these configurations for seamless setup and execution wi
 - React Native (Expo) for mobile app development
 - Python code and library writing
 
+To kick things off, take a look at the docs.md file!
+
 ## Supported features:
 
 - [x] tmux
