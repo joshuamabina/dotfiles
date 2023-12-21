@@ -2,7 +2,7 @@
 
 Optimized for Ubuntu 22.04
 
-My goal is to be able to seemlessly (do and run all the setups in seconds):
+My aim is to effortlessly execute and run all setups in a matter of seconds.
 
 - Write Laravel-PHP code
 - Write Flutter Apps for mobile apps 
