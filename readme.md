@@ -15,7 +15,7 @@ Some gotchas:
 - This project is trying to keep things lean, so we've opted for Vim 8's native package manager.
 - This repo uses git submodules to manage dependencies. So, don't forget to run `git submodule update`.
 
-To kick things off, take a look at the docs.md file!
+To kick things off, take a look at the [docs.md](./docs.md) file!
 
 ## Supported features:
 
