@@ -19,6 +19,7 @@ Helpful links
 
 ## References
 
+- https://github.com/github/scripts-to-rule-them-all/tree/master
 - https://williamjturkel.net/2013/05/31/installing-debian-linux-in-a-vm/
 - https://medium.com/platform-engineer/how-to-install-debian-linux-on-virtualbox-with-guest-additions-778afa0ee7e0
 - https://github.com/yesmeck/tmuxrc

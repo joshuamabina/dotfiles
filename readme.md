@@ -2,13 +2,13 @@
 
 Optimized for Ubuntu 22.04
 
-My aim is to effortlessly execute and run all setups in a matter of seconds.
+My goal is to fine-tune these configurations for seamless setup and execution within seconds. Specifically tailored for the following use cases and platforms:
 
-- Write Laravel-PHP code
-- Write Flutter Apps for mobile apps 
-- Write React-Redux Apps for the web
-- Write React Native (Expo) for mobile apps
-- Write Python code and libraries
+- Laravel-PHP code development
+- Flutter code writing and testing on Android
+- React-Redux code creation for the web
+- React Native (Expo) for mobile app development
+- Python code and library writing
 
 ## Supported features:
 

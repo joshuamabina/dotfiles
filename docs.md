@@ -78,7 +78,9 @@ nvm install node
 
 Clone this repo
 
-> git clone git@github.com:joshuamabina/dotfiles.git ~/.dotfiles
+```
+git clone --recurse-submodules -j8 https://github.com/joshuamabina/dotfiles.git
+```
 
 Install dependencies
 
