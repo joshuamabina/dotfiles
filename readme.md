@@ -25,11 +25,11 @@ To kick things off, take a look at the docs.md file!
 - [x] PHP-Laravel
 - [ ] Flutter
 - [ ] sdkman
-- [ ] @ctrlpvim/ctrlp.vim
-- [ ] @editorconfig/editorconfig-vim
-- [ ] @mxw/vim-jsx
-- [ ] @pangloss/vim-javascript
-- [ ] @prettier/vim-prettier
-- [ ] @tpope/commentary
-- [ ] @tpope/vim-surround
-- [ ] @vim-airline/vim-airline
+- [x] @ctrlpvim/ctrlp.vim
+- [x] @editorconfig/editorconfig-vim
+- [x] @mxw/vim-jsx
+- [x] @pangloss/vim-javascript
+- [x] @prettier/vim-prettier
+- [x] @tpope/commentary
+- [x] @tpope/vim-surround
+- [x] @vim-airline/vim-airline
