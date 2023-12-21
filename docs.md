@@ -1,39 +1,3 @@
-# My dotfiles
-
-Optimized for Ubuntu 22.04
-
-My goal is to be able to seemlessly (do and run all the setups in seconds):
-
-- Write Laravel-PHP code
-- Write Flutter Apps for Android (and iOS)
-- Write React-Redux Apps for the Web
-- Write Python code and libraries
-
-## Helpful links
-
-- Setting up VMs for dev/test 
-
-https://williamjturkel.net/2013/05/31/installing-debian-linux-in-a-vm/
-
-https://medium.com/platform-engineer/how-to-install-debian-linux-on-virtualbox-with-guest-additions-778afa0ee7e0
-
-## Supported features:
-
-- [x] tmux
-- [x] Oh-My-Zsh https://ohmyz.sh/
-- [x] NVM-Node
-- [x] PHP-Laravel
-- [ ] sdkman
-- [ ] vimb (opt for firefox instead)
-- [ ] @ctrlpvim/ctrlp.vim
-- [ ] @editorconfig/editorconfig-vim
-- [ ] @mxw/vim-jsx
-- [ ] @pangloss/vim-javascript
-- [ ] @prettier/vim-prettier
-- [ ] @tpope/commentary
-- [ ] @tpope/vim-surround
-- [ ] @vim-airline/vim-airline
-
 ## Before setting up
 
 Install latest git, tmux, zsh and vim
@@ -139,8 +103,7 @@ cp ~/dotfiles/_bashrc ~/.bashrc
 Setup vim
 
 ```
-ln -sf ~/.dotfiles/_vimrc ~/.vimrc \ 
-&& ln -sf ~/.dotfiles/_vim ~/.vim
+ln -sf ~/.dotfiles/_vimrc ~/.vimrc && ln -sf ~/.dotfiles/_vim ~/.vim
 ```
 
 ##### Adding a Vim plugin
@@ -149,27 +112,16 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc \
 2. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url]`
 3. Stage, commit, and push changes for review and merging.
 
-### Todo
+# Ideas, todos, and feature requests
 
-Use xorg (not wayland) - If you wish to do it permanently, edit /etc/gdm3/custom.conf and uncomment the line:
-
-#WaylandEnable=false
-
-
-- Flutter architecture https://docs.flutter.dev/resources/architectural-overview
 - Use vim-plug in favor of git-submodules. https://github.com/junegunn/vim-plug
 - Kotlin for serverside https://kotlinlang.org/docs/server-overview.html
-- Setup WebKit https://www.webkit.org/getting-the-code/
-- Setup a sandbox for building/testing dotfiles
+- Setup a sandbox (like a virtualbox-vm) for building/testing dotfiles
 - Install vimb - https://github.com/fanglingsu/vimb.git
 - Install flutter - https://docs.flutter.dev/get-started/install/linux
-- emma gui mysql https://github.com/clayadavis/emma
+- Emma gui mysql https://github.com/clayadavis/emma
 - Install expo
 - Install dmenu - https://github.com/stilvoid/dmenu
-- Deprecate LINKS.md
-- Remove vim-fugitive. Use basic git commands.
-- Maybe, [\_vim/pack/start/plugin-name]
-- Installing submodules with a shallow clone?
 - Extract basic configurations to basic.vimrc plugin
 - Install script for tmux
 - Install script for zsh
