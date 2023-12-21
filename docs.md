@@ -1,4 +1,4 @@
-## Before setting up
+# Before setting up
 
 Install latest git, tmux, zsh and vim
 
@@ -7,7 +7,7 @@ Install latest git, tmux, zsh and vim
 sudo apt-get install -y git tmux zsh vim 
 ```
 
-## Install php-laravel
+# Install php-laravel
 
 Refer to:
 
@@ -55,7 +55,7 @@ composer global require laravel/installer
 ```
 
 
-## Install node-nvm
+# Install node-nvm
 
 Install nvm. Refer to: https://github.com/nvm-sh/nvm
 
@@ -74,7 +74,7 @@ nvm install node
 
 ```
 
-## Install dotfiles 
+# Install dotfiles 
 
 Clone this repo
 
@@ -107,7 +107,7 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc && ln -sf ~/.dotfiles/_vim ~/.vim
 ##### Adding a Vim plugin
 
 1. Create a new directory to hold the plugin, `mkdir -p [_vim/pack/plugin-author/start]`
-2. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url]`
+2. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url] [_vim/pack/plugin-author/start/plugin-name]`
 3. Stage, commit, and push changes for review and merging.
 
 # Ideas, todos, and feature requests
@@ -116,12 +116,9 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc && ln -sf ~/.dotfiles/_vim ~/.vim
 - Kotlin for serverside https://kotlinlang.org/docs/server-overview.html
 - Setup a sandbox (like a virtualbox-vm) for building/testing dotfiles
 - Install vimb - https://github.com/fanglingsu/vimb.git
-- Install flutter - https://docs.flutter.dev/get-started/install/linux
 - Emma gui mysql https://github.com/clayadavis/emma
-- Install expo
-- Install dmenu - https://github.com/stilvoid/dmenu
+- Setup react-native expo
+- Setup flutter - https://docs.flutter.dev/get-started/install/linux
 - Extract basic configurations to basic.vimrc plugin
-- Install script for tmux
-- Install script for zsh
-- Install script for ohmyzsh
-- Add bash aliases: source, update-zsh update-bash
+- Install and manage specific versions of php and apache
+- Install scripts: php, apache, tmux, ohmyzsh, vim
