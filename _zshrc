@@ -141,6 +141,14 @@ fi
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+
+PATH="/home/joshua/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/joshua/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/joshua/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/joshua/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/joshua/perl5"; export PERL_MM_OPT;
+
+# Aliases and Helpers
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -151,3 +159,11 @@ alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias dotconfig="vi ~/dotfiles"
+
+function searchfx { 
+  q="$@"; 
+
+  SEARCH_URL='https://www.google.com/search?q=';
+  stream=$(firefox "${SEARCH_URL}${q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||'); 
+  echo -e "${stream//\%/\x}"; 
+}

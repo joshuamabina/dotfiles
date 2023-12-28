@@ -112,6 +112,7 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc && ln -sf ~/.dotfiles/_vim ~/.vim
 
 # Ideas, todos, and feature requests
 
+- jq https://github.com/bobbyiliev/introduction-to-bash-scripting/blob/main/ebook/en/content/018-working-with-json-in-bash-using-jq.md
 - Use vim-plug in favor of git-submodules. https://github.com/junegunn/vim-plug
 - Kotlin for serverside https://kotlinlang.org/docs/server-overview.html
 - Setup a sandbox (like a virtualbox-vm) for building/testing dotfiles

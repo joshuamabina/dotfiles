@@ -23,7 +23,7 @@ To kick things off, take a look at the [docs.md](./docs.md) file!
 - [x] Oh-My-Zsh https://ohmyz.sh/
 - [x] NVM-Node
 - [x] PHP-Laravel
-- [ ] Flutter
+- [ ] Flutter and FVM
 - [ ] sdkman
 - [x] @ctrlpvim/ctrlp.vim
 - [x] @editorconfig/editorconfig-vim
