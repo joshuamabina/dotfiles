@@ -159,11 +159,20 @@ alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias dotconfig="vi ~/dotfiles"
+alias chrome="google-chrome-stable"
 
-function searchfx { 
-  q="$@"; 
+function searchfx {
+  q="$@";
 
   SEARCH_URL='https://www.google.com/search?q=';
-  stream=$(firefox "${SEARCH_URL}${q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||'); 
-  echo -e "${stream//\%/\x}"; 
+  stream=$(firefox "${SEARCH_URL}${q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||');
+  echo -e "${stream//\%/\x}";
+}
+
+function search {
+  q="$@";
+
+  SEARCH_URL='https://www.google.com/search?q=';
+  stream=$(chrome "${SEARCH_URL}${q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||');
+  echo -e "${stream//\%/\x}";
 }
