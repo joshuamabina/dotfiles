@@ -176,3 +176,19 @@ function search {
   stream=$(chrome "${SEARCH_URL}${q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||');
   echo -e "${stream//\%/\x}";
 }
+
+function htmlToText {
+  outputFile="$@"
+
+  perl -0777 -MHTML::Strip -nlE 'say HTML::Strip->new->parse($_)' $outputFile
+}
+
+# expiriment: don't use
+function gotchas {
+  linkToBlog="$@"
+  outputFile="/tmp/${linkToBlog}.output.txt"
+
+  curl $linkToBlog -o /tmp/$linkToBlog.output.txt
+
+  htmlToText $outputFile
+}
