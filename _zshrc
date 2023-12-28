@@ -155,11 +155,16 @@ PERL_MM_OPT="INSTALL_BASE=/home/joshua/perl5"; export PERL_MM_OPT;
 # For a full list of active aliases, run `alias`.
 # Example aliases
 
+alias ohmyzsh="vi ~/.oh-my-zsh"
 alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
-alias ohmyzsh="vi ~/.oh-my-zsh"
+alias zshedit="vi ~/.zshrc"
 alias dotconfig="vi ~/dotfiles"
 alias chrome="google-chrome-stable"
+
+#check-if-installed
+alias downloadyt="yt-dlp"
+alias youtube-dl="downloadyt"
 
 function searchfx {
   q="$@";
