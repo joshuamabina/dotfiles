@@ -1,14 +1,16 @@
 # My dotfiles
 
-Optimized for Ubuntu 22.04
+Currently optimized for Ubuntu 22.04 (also, plans exists for Debian).
 
 My goal is to fine-tune these configurations for seamless setup and execution within seconds. Specifically tailored for the following use cases and platforms:
 
+- **WIP:HighPriority** React-Redux-Jest code creation for the web
 - Laravel-PHP code development
 - Flutter code writing and testing on Android
-- React-Redux code creation for the web
 - React Native (Expo) for mobile app development
 - Python code and library writing
+
+TODO: Create a roadmap table to describe the implementation of the above, also marking their priorities and date to completion.
 
 Some gotchas:
 
@@ -22,8 +24,9 @@ To kick things off, take a look at the [docs.md](./docs.md) file!
 - [x] tmux
 - [x] Oh-My-Zsh https://ohmyz.sh/
 - [x] NVM-Node
+- [ ] React things
 - [x] PHP-Laravel
-- [ ] Flutter and FVM
+- [ ] Flutter and FVM things
 - [ ] sdkman
 - [x] @ctrlpvim/ctrlp.vim
 - [x] @editorconfig/editorconfig-vim
