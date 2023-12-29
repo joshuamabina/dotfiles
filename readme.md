@@ -36,3 +36,4 @@ To kick things off, take a look at the [docs.md](./docs.md) file!
 - [x] @tpope/commentary
 - [x] @tpope/vim-surround
 - [x] @vim-airline/vim-airline
+- [-] Experiment: Blog gotchas
