@@ -168,8 +168,7 @@ PERL_MM_OPT="INSTALL_BASE=/home/joshua/perl5"; export PERL_MM_OPT;
 # remember your previous working directory so you can easily switch back after editing.
 alias dotconfig="vi ~/dotfiles"
 
-# wip
-# Quickly switch to the dotfiles directory, and switch back to the last
+# wip: Quickly switch to the dotfiles directory, and switch back to the last
 # current working directory.
 # TODO: Consider export DOTFILES_HOME=~/.dotfiles
 function _dotconfig {
@@ -177,6 +176,10 @@ function _dotconfig {
 
   cd ~/.dotfiles && vi . && cd $last_cwd
 }
+
+# Git things
+alias wip="git add . && git commit -am 'wip'"
+alias gitlog="git log --oneline"
 
 # Dart things
 # TODO: npm-watch "clear && dart codegen && cd ./packages && dart test" ./packages/*/lib ./packages/*/test
@@ -272,5 +275,6 @@ function _notes {
 
   # TODO:
   # Find a way to append updatedAt (as in, last update date) at the top of the file just after the edits.
-  cd "$HOME/notes" && vi $notePath && clear && echo 'Done. That was awesome!'
+  # Check if connection exists, then upon save just git push automatically.
+  cd "$HOME/notes" && vi $notePath && git add . && git commit -am 'wip' && clear && echo 'Done. That was awesome!'
 }
