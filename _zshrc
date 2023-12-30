@@ -258,11 +258,19 @@ function _notes {
   dateSuffix=$(date -I)
   notePath="$HOME/notes/$fileName.$dateSuffix.txt"
 
+
   # If it already exists, don't reacreate
   echo $notePath
-  touch $notePath
+  # touch $notePath
+
+  # TODO:
+  # If does not exist, just create from the notes template
+  # For now, just copy-paste manually
+  #
+  # template="$HOME/notes/_template.txt"
+  # cat $template > $notePath
 
   # TODO:
   # Find a way to append updatedAt (as in, last update date) at the top of the file just after the edits.
-  vi $notePath && clear && echo 'Done. That was awesome!'
+  cd "$HOME/notes" && vi $notePath && clear && echo 'Done. That was awesome!'
 }
