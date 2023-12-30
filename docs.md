@@ -109,20 +109,3 @@ ln -sf ~/.dotfiles/_vimrc ~/.vimrc && ln -sf ~/.dotfiles/_vim ~/.vim
 1. Create a new directory to hold the plugin, `mkdir -p [_vim/pack/plugin-author/start]`
 2. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url] [_vim/pack/plugin-author/start/plugin-name]`
 3. Stage, commit, and push changes for review and merging.
-
-# Ideas, todos, and feature requests
-
-- Flatpak + Stremio - `flatpak install flathub com.stremio.Stremio`
-- Python + Python env
-- zshaliases - downloadyt - cleanup the youtube url - remove `&pp=%` just use `v=%` or `list=%` where appropriate.
-- jq https://github.com/bobbyiliev/introduction-to-bash-scripting/blob/main/ebook/en/content/018-working-with-json-in-bash-using-jq.md
-- Use vim-plug in favor of git-submodules. https://github.com/junegunn/vim-plug
-- Kotlin for serverside https://kotlinlang.org/docs/server-overview.html
-- Setup a sandbox (like a virtualbox-vm) for building/testing dotfiles
-- Install vimb - https://github.com/fanglingsu/vimb.git
-- Emma gui mysql https://github.com/clayadavis/emma
-- Setup react-native expo
-- Setup flutter - https://docs.flutter.dev/get-started/install/linux
-- Extract basic configurations to basic.vimrc plugin
-- Install and manage specific versions of php and apache
-- Install scripts: php, apache, tmux, ohmyzsh, vim

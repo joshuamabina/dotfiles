@@ -19,6 +19,8 @@ Some gotchas:
 
 To kick things off, take a look at the [docs.md](./docs.md) file!
 
+For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
+
 ## Supported features:
 
 - [x] tmux
@@ -26,14 +28,25 @@ To kick things off, take a look at the [docs.md](./docs.md) file!
 - [x] NVM-Node
 - [ ] React things
 - [x] PHP-Laravel
-- [ ] Flutter and FVM things
-- [ ] sdkman
-- [x] @ctrlpvim/ctrlp.vim
-- [x] @editorconfig/editorconfig-vim
-- [x] @mxw/vim-jsx
-- [x] @pangloss/vim-javascript
-- [x] @prettier/vim-prettier
-- [x] @tpope/commentary
-- [x] @tpope/vim-surround
-- [x] @vim-airline/vim-airline
-- [-] Experiment: Blog gotchas
+
+- [ ] Dart and flutter
+
+  - [ ] FVM 
+  - [ ] Syntax highlighting
+  - [ ] IntelliSense
+
+- [ ] Kotlin things
+
+  - [ ] sdkman
+
+- [ ] Vim things
+
+  - [x] @ctrlpvim/ctrlp.vim
+  - [x] @editorconfig/editorconfig-vim
+  - [x] @mxw/vim-jsx
+  - [x] @pangloss/vim-javascript
+  - [x] @prettier/vim-prettier
+  - [x] @tpope/commentary
+  - [x] @tpope/vim-surround
+  - [x] @vim-airline/vim-airline
+  - [-] Experiment: Blog gotchas

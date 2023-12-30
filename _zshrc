@@ -66,14 +66,14 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  composer
-  docker
-  docker-compose
-  git
-  laravel
-  node
-  npm
-  nvm
+composer
+docker
+docker-compose
+git
+laravel
+node
+npm
+nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,35 +93,35 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 export JAVA_OPTS=''
 
 if [[ -d "$HOME/Android" ]]; then
-  export ANDROID_HOME=$HOME/Android
+export ANDROID_HOME=$HOME/Android
 
-  # Add jarxb jar libs
-  # See https://stackoverflow.com/q/53076422/3451822
-  # export PATH=$PATH:$ANDROID_HOME/jaxb_lib
+# Add jarxb jar libs
+# See https://stackoverflow.com/q/53076422/3451822
+# export PATH=$PATH:$ANDROID_HOME/jaxb_lib
 
-  # export PATH=$PATH:$ANDROID_HOME/android
-  export PATH=$PATH:$ANDROID_HOME/Sdk/emulator
-  # export PATH=$PATH:$ANDROID_HOME/tools
-  export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-  # export PATH=$PATH:$ANDROID_HOME/tools/bin
-  # export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export PATH=$PATH:$ANDROID_HOME/android
+export PATH=$PATH:$ANDROID_HOME/Sdk/emulator
+# export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
 fi
 
 # pyenv
 # see https://github.com/pyenv/pyenv
 if [[ -d "$HOME/.pyenv" ]]; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
-  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-  export WORKON_HOME=~/.virtualenvs
-  # source $(which virtualenvwrapper.sh)
-  source $HOME/.local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/.virtualenvs
+# source $(which virtualenvwrapper.sh)
+source $HOME/.local/bin/virtualenvwrapper.sh
 
-  PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
-  # Load pyenv into the shell
-  #eval "$(pyenv init -)"
+# Load pyenv into the shell
+#eval "$(pyenv init -)"
 fi
 
 
@@ -130,9 +130,9 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vi'
+export EDITOR='vi'
 else
-  export EDITOR='vim'
+export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -155,14 +155,32 @@ PERL_MM_OPT="INSTALL_BASE=/home/joshua/perl5"; export PERL_MM_OPT;
 # For a full list of active aliases, run `alias`.
 # Example aliases
 
+# Dotfiles
+#
+# TODO: Fix
+#
+# Vim has a little quirk when it comes to finding the dotfiles working
+# directory. It basically looks at wherever you called dotconfig. Wouldn't it be
+# fantastic if you could easily switch to the dotfiles code directory? Plus, it'd
+# remember your previous working directory so you can easily switch back after editing.
+alias dotconfig="vi ~/dotfiles"
+
+# zsh things
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias zshedit="vi ~/.zshrc"
-alias dotconfig="vi ~/dotfiles"
+
+# Google chrome things
 alias chrome="google-chrome-stable"
 
-#check-if-installed
+# Chrome apps
+#
+# TODO: Create a desktop launcher
+# See: https://askubuntu.com/questions/1445655/is-there-any-way-to-use-google-keep-in-ubuntu-in-2022-now-that-chrome-apps-are
+alias keep="chrome -app=https://keep.google.com"
+
+#TODO: check-if-installed
 alias downloadyt="yt-dlp"
 alias youtube-dl="downloadyt"
 
@@ -185,15 +203,16 @@ function search {
 function htmlToText {
   outputFile="$@"
 
-  perl -0777 -MHTML::Strip -nlE 'say HTML::Strip->new->parse($_)' $outputFile
+    perl -0777 -MHTML::Strip -nlE 'say HTML::Strip->new->parse($_)' $outputFile
 }
 
-# expiriment: don't use
+# TODO:
+# Experiment: Use chatgpt to summarize blogs on the web
 function gotchas {
   linkToBlog="$@"
-  outputFile="/tmp/${linkToBlog}.output.txt"
+    outputFile="/tmp/${linkToBlog}.output.txt"
 
-  curl $linkToBlog -o /tmp/$linkToBlog.output.txt
+    curl $linkToBlog -o /tmp/$linkToBlog.output.txt
 
-  htmlToText $outputFile
+    htmlToText $outputFile
 }
