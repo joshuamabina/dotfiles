@@ -187,7 +187,20 @@ alias gitlog="git log --oneline"
 
 
 # Dart things
-# TODO: npm-watch "clear && dart codegen && cd ./packages && dart test" ./packages/*/lib ./packages/*/test
+#
+# TODO: Watch files and run dart tests
+#
+# An idea would be, run npm-watch "clear && dart codegen && cd ./packages && dart test" ./packages/*/lib ./packages/*/test
+#
+# Limitations: So far, I have found out if your writing small dart packages in your flutter project, you'd need to run dart tests within those
+# package directories -- and, am learning the dart cli-api isn't as permissive, so it's kind of hard to run a regex to run tests on directories
+# contained within the packages parent directory.
+#
+# So yeah, let's keep things lean and simple.
+#
+# Inside the package working directory, run:
+#
+# watch --color --interval=6 --wait=13 "clear && dart test --chain-stack-traces" ../
 
 
 # zsh things
@@ -265,6 +278,7 @@ function _notes {
   # Alternatively,if args are not specified, just start vim in the notes directory
   if [[ $# -eq 0 ]] ; then
     cd "$HOME/notes" && vi . && git add . && git commit -am 'wip' && clear
+    return;
   fi
 
 
