@@ -259,11 +259,12 @@ function _notes {
   # good high quality search of notes and ideas.
   arg="$@"
 
-  # TODO:
-  # Validate cmd takes name (and later even keywords to be used as tags)
-  # A quick fix: if args not specified, just start vim in the notes directory
+  # TODO: Check if a note-title was specified (in the future, using a prompts,
+  # capture keywords to be used as article tags and for searching)
+  #
+  # Alternatively,if args are not specified, just start vim in the notes directory
   if [[ $# -eq 0 ]] ; then
-    cd "$HOME/notes" && vi . notePath && git add . && git commit -am 'wip' && clear
+    cd "$HOME/notes" && vi . && git add . && git commit -am 'wip' && clear
   fi
 
 
