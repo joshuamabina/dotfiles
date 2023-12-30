@@ -181,6 +181,11 @@ function _dotconfig {
 alias wip="git add . && git commit -am 'wip'"
 alias gitlog="git log --oneline"
 
+# vlc things
+# TODO: alias vlc="vlc --rate 1.5"
+# TODO: alias cvlc="cvlc --rate 1.5"
+
+
 # Dart things
 # TODO: npm-watch "clear && dart codegen && cd ./packages && dart test" ./packages/*/lib ./packages/*/test
 
@@ -238,10 +243,10 @@ function _gotchas {
 
 # TODO:
 # Experiment: A scratchpad. Just start vim and start writing.
-# 
+#
 # My goal with this:
 #
-# A zen mode way of writing my book summaries (without the influences of 
+# A zen mode way of writing my book summaries (without the influences of
 # the Google and the rest of the world) -- oh, and before using chatgpt for editing and publishing on Medium.
 function _notes {
   # TODO: for the args
@@ -256,6 +261,11 @@ function _notes {
 
   # TODO:
   # Validate cmd takes name (and later even keywords to be used as tags)
+  # A quick fix: if args not specified, just start vim in the notes directory
+  if [[ $# -eq 0 ]] ; then
+    cd "$HOME/notes" && vi . notePath && git add . && git commit -am 'wip' && clear
+  fi
+
 
   # TODO: Fix
   # Variable scoping, avoid globals - accidentally reference global $path variable.
