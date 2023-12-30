@@ -165,6 +165,16 @@ PERL_MM_OPT="INSTALL_BASE=/home/joshua/perl5"; export PERL_MM_OPT;
 # remember your previous working directory so you can easily switch back after editing.
 alias dotconfig="vi ~/dotfiles"
 
+# wip
+# Quickly switch to the dotfiles directory, and switch back to the last
+# current working directory.
+# TODO: Consider export DOTFILES_HOME=~/.dotfiles
+function _dotconfig {
+  last_cwd=$(pwd)
+
+  cd ~/.dotfiles && vi . && cd $last_cwd
+}
+
 # zsh things
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias zshsource="source ~/.zshrc"
@@ -174,13 +184,12 @@ alias zshedit="vi ~/.zshrc"
 # Google chrome things
 alias chrome="google-chrome-stable"
 
-# Chrome apps
-#
 # TODO: Create a desktop launcher
 # See: https://askubuntu.com/questions/1445655/is-there-any-way-to-use-google-keep-in-ubuntu-in-2022-now-that-chrome-apps-are
 alias keep="chrome -app=https://keep.google.com"
+alias devdocs="chrome -app=https://devdocs.io/"
 
-#TODO: check-if-installed
+# TODO: check if yt-dlp is installed
 alias downloadyt="yt-dlp"
 alias youtube-dl="downloadyt"
 
