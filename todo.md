@@ -3,6 +3,10 @@
 > Lol, I need to remember to put-down an actual writeup why I think this project is cool! 
 Why or how it came to existence, where it's going, and when will v1 be out? So, the product roadmap in in the works!
 
+- Dart test
+  - Clear the screen so it's easier to trace error logs
+  - Generate `.g.dart` files
+  - and then run dart test
 - Setup prettier
 - Flatpak + Stremio - `flatpak install flathub com.stremio.Stremio`
 - Python + Python env
@@ -18,3 +22,4 @@ Why or how it came to existence, where it's going, and when will v1 be out? So, 
 - Extract basic configurations to basic.vimrc plugin
 - Install and manage specific versions of php and apache
 - Install scripts: php, apache, tmux, ohmyzsh, vim
+- Manage a github repo of all my podcast subscriptions

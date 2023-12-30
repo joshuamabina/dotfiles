@@ -92,6 +92,9 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 #export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 export JAVA_OPTS=''
 
+# Android things
+# TODO: Start emulator-device with a default device
+
 if [[ -d "$HOME/Android" ]]; then
 export ANDROID_HOME=$HOME/Android
 
@@ -175,11 +178,15 @@ function _dotconfig {
   cd ~/.dotfiles && vi . && cd $last_cwd
 }
 
+# Dart things
+# TODO: npm-watch "clear && dart codegen && cd ./packages && dart test" ./packages/*/lib ./packages/*/test
+
+
 # zsh things
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
-alias zshedit="vi ~/.zshrc"
+alias zshedit="zshconfig && zshsource"
 
 # Google chrome things
 alias chrome="google-chrome-stable"
@@ -217,11 +224,45 @@ function htmlToText {
 
 # TODO:
 # Experiment: Use chatgpt to summarize blogs on the web
-function gotchas {
+function _gotchas {
   linkToBlog="$@"
     outputFile="/tmp/${linkToBlog}.output.txt"
 
     curl $linkToBlog -o /tmp/$linkToBlog.output.txt
 
     htmlToText $outputFile
+}
+
+# TODO:
+# Experiment: A scratchpad. Just start vim and start writing.
+# 
+# My goal with this:
+#
+# A zen mode way of writing my book summaries (without the influences of 
+# the Google and the rest of the world) -- oh, and before using chatgpt for editing and publishing on Medium.
+function _notes {
+  # TODO: for the args
+  # Use a prompt format to take the following inputs:
+  #
+  # - title
+  # - keywords (to be used as tags esp. good for search)
+  arg="$@"
+
+  # TODO:
+  # Validate cmd takes name (and later even keywords to be used as tags)
+
+  # TODO: Fix
+  # Variable scoping, avoid globals - accidentally reference global $path variable.
+  fileName="$1"
+
+  dateSuffix=$(date -I)
+  notePath="$HOME/notes/$fileName.$dateSuffix.txt"
+
+  # If it already exists, don't reacreate
+  echo $notePath
+  touch $notePath
+
+  # TODO:
+  # Find a way to append updatedAt (as in, last update date) at the top of the file just after the edits.
+  vi $notePath && clear && echo 'Done. That was awesome!'
 }
