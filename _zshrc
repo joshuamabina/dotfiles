@@ -249,6 +249,9 @@ function _notes {
   #
   # - title
   # - keywords (to be used as tags esp. good for search)
+  #
+  # Just thought, if I make `_notes` central to vim, with CtrlP and ctags it might actually become super easy to do really
+  # good high quality search of notes and ideas.
   arg="$@"
 
   # TODO:
