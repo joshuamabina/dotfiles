@@ -29,11 +29,13 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 - [ ] React things
 - [x] PHP-Laravel
 
-- [ ] Dart and flutter
+- [ ] Dart and flutter things
 
   - [ ] FVM 
   - [ ] Syntax highlighting
+  - [ ] Basic boilerplates
   - [ ] IntelliSense
+  - [ ] Code generation
 
 - [ ] Kotlin things
 
