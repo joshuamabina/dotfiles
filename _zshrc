@@ -192,15 +192,10 @@ alias gitlog="git log --oneline"
 #
 # An idea would be, run npm-watch "clear && dart codegen && cd ./packages && dart test" ./packages/*/lib ./packages/*/test
 #
-# Limitations: So far, I have found out if your writing small dart packages in your flutter project, you'd need to run dart tests within those
-# package directories -- and, am learning the dart cli-api isn't as permissive, so it's kind of hard to run a regex to run tests on directories
-# contained within the packages parent directory.
+# In the spirit of keeping things lean and simple... Just run the cmd below manually.
+# Important to note: Make sure you've defined your packages in the top-level parent pubspec.yaml file.
 #
-# So yeah, let's keep things lean and simple.
-#
-# Inside the package working directory, run:
-#
-# watch --color --interval=6 --wait=13 "clear && dart test --chain-stack-traces" ../
+# watch --color --interval=6 --wait=13 clear && dart test ./packages --chain-stack-traces ./packages
 
 
 # zsh things
@@ -216,6 +211,7 @@ alias chrome="google-chrome-stable"
 # See: https://askubuntu.com/questions/1445655/is-there-any-way-to-use-google-keep-in-ubuntu-in-2022-now-that-chrome-apps-are
 alias keep="chrome -app=https://keep.google.com"
 alias devdocs="chrome -app=https://devdocs.io/"
+# TODO: alias duo="chrome -app=https://www.duolingo.com/lesson"
 
 # TODO: check if yt-dlp is installed
 alias downloadyt="yt-dlp"

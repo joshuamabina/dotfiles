@@ -7,7 +7,13 @@ Why or how it came to existence, where it's going, and when will v1 be out? So, 
   - Clear the screen so it's easier to trace error logs
   - Generate `.g.dart` files
   - and then run dart test
-- Setup prettier
+  - Dartlang plugin - https://github.com/dart-lang/dart-vim-plugin 
+
+- Vim language server - https://github.com/natebosch/vim-lsc
+- ALE - Asynchronouse lint engine - https://github.com/dense-analysis/ale 
+- Vim - build with clipboard support - https://stackoverflow.com/questions/9166328/how-to-copy-selected-lines-to-clipboard-in-vim
+
+- Setup prettier - useful for CI/CD pipelines on cloud deployments. Limitatin, only supports web focused languages and a plugin extension for dart does not yet exist.
 - Flatpak + Stremio - `flatpak install flathub com.stremio.Stremio`
 - Python + Python env
 - zshaliases - downloadyt - cleanup the youtube url - remove `&pp=%` just use `v=%` or `list=%` where appropriate.
@@ -23,3 +29,4 @@ Why or how it came to existence, where it's going, and when will v1 be out? So, 
 - Install and manage specific versions of php and apache
 - Install scripts: php, apache, tmux, ohmyzsh, vim
 - Manage a github repo of all my podcast subscriptions
+- Experiment: Try out vundle again. Compare the performance against using builtin Vim package manager.

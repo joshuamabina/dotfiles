@@ -28,13 +28,15 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 - [x] NVM-Node
 - [ ] React things
 - [x] PHP-Laravel
+- [ ] General code formatting with tools like EditorConfig
+- [ ] Code completion with tools like Ale, CoC or YouCompleteMe 
 
 - [ ] Dart and flutter things
 
   - [ ] FVM 
   - [ ] Syntax highlighting
+  - [ ] Dart-specific code formatting
   - [ ] Basic boilerplates
-  - [ ] IntelliSense
   - [ ] Code generation
 
 - [ ] Kotlin things
