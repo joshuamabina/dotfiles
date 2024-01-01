@@ -39,6 +39,8 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
   - [ ] Basic boilerplates
   - [ ] Code generation
 
+- [ ] Python - https://realpython.com/vim-and-python-a-match-made-in-heaven 
+
 - [ ] Kotlin things
 
   - [ ] sdkman
