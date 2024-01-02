@@ -30,3 +30,4 @@ Why or how it came to existence, where it's going, and when will v1 be out? So, 
 - Install scripts: php, apache, tmux, ohmyzsh, vim
 - Manage a github repo of all my podcast subscriptions
 - Experiment: Try out vundle again. Compare the performance against using builtin Vim package manager.
+- Install scripts for Docker

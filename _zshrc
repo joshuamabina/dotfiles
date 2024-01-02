@@ -195,7 +195,7 @@ alias gitlog="git log --oneline"
 # In the spirit of keeping things lean and simple... Just run the cmd below manually.
 # Important to note: Make sure you've defined your packages in the top-level parent pubspec.yaml file.
 #
-# watch --color --interval=6 --wait=13 clear && dart test ./packages --chain-stack-traces ./packages
+# watch --color --interval=6 --wait=13 "clear && dart test ./packages --chain-stack-traces" ./packages
 
 
 # zsh things
@@ -212,6 +212,7 @@ alias chrome="google-chrome-stable"
 alias keep="chrome -app=https://keep.google.com"
 alias devdocs="chrome -app=https://devdocs.io/"
 # TODO: alias duo="chrome -app=https://www.duolingo.com/lesson"
+# TODO: alias whatsapp="chrome -app=https://www.duolingo.com/lesson"
 
 # TODO: check if yt-dlp is installed
 alias downloadyt="yt-dlp"
