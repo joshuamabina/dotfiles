@@ -1,1 +1,8 @@
-_vimrc
+source ~/.vimrc
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Commentary (support for ideavim)
+"
+" See https://stackoverflow.com/a/57202087/22959828
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set commentary
