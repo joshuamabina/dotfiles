@@ -93,7 +93,10 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 export JAVA_OPTS=''
 
 # Android things
-# TODO: Start emulator-device with a default device
+#
+# TODO:
+# Start emulator-device with a default device
+# emulator -avd @pixel_phone
 
 if [[ -d "$HOME/Android" ]]; then
 export ANDROID_HOME=$HOME/Android
