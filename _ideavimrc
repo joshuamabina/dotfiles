@@ -4,5 +4,6 @@ source ~/.vimrc
 " => Commentary (support for ideavim)
 "
 " See https://stackoverflow.com/a/57202087/22959828
+" See https://vi.stackexchange.com/questions/18722/how-to-detect-intellij-ideavim-in-vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set commentary
