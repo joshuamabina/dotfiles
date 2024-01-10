@@ -34,12 +34,9 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
   - [x] Syntax highlighting
   - [ ] Basic boilerplates
   - [ ] Code generation
+  - [ ] Code completion
 
 - [x] PHP-Laravel
-
-- [ ] General code formatting with tools like EditorConfig
-
-- [ ] Code completion with tools like Ale, CoC or YouCompleteMe 
 
 - [ ] Dart and flutter things
 
@@ -47,9 +44,14 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
   - [ ] Syntax highlighting
   - [ ] Dart-specific code formatting
   - [ ] Basic boilerplates
-  - [ ] Code generation
+  - [ ] Code completion
 
 - [ ] Python - https://realpython.com/vim-and-python-a-match-made-in-heaven 
+
+  - [x] Syntax highlighting
+  - [ ] Basic boilerplates
+  - [ ] Code generation
+  - [ ] Code completion
 
 - [ ] Kotlin things
 
@@ -58,11 +60,10 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 - [ ] Vim things
 
   - [x] @ctrlpvim/ctrlp.vim
-  - [x] @editorconfig/editorconfig-vim
+  - [ ] **WIP:** @editorconfig/editorconfig-vim
   - [x] @mxw/vim-jsx
   - [x] @pangloss/vim-javascript
   - [ ] **WIP:** @prettier/vim-prettier
   - [x] @tpope/commentary
   - [x] @tpope/vim-surround
   - [x] @vim-airline/vim-airline
-  - [ ] **WIP:** Experiment: Blog gotchas
