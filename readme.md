@@ -4,7 +4,7 @@ Currently optimized for Ubuntu 22.04 (also, plans exists for Debian).
 
 My goal is to fine-tune these configurations for seamless setup and execution within seconds. Specifically tailored for the following use cases and platforms:
 
-- **WIP:HighPriority** React-Redux-Jest code creation for the web
+- React, redux and jest tools
 - Laravel-PHP code development
 - Flutter code writing and testing on Android
 - React Native (Expo) for mobile app development
@@ -51,8 +51,8 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
   - [x] @editorconfig/editorconfig-vim
   - [x] @mxw/vim-jsx
   - [x] @pangloss/vim-javascript
-  - [x] @prettier/vim-prettier
+  - [ ] **WIP:** @prettier/vim-prettier
   - [x] @tpope/commentary
   - [x] @tpope/vim-surround
   - [x] @vim-airline/vim-airline
-  - [-] Experiment: Blog gotchas
+  - [ ] **WIP:** Experiment: Blog gotchas
