@@ -33,7 +33,6 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 
   - [x] Syntax highlighting
   - [ ] Basic boilerplates
-  - [ ] Code generation
   - [ ] Code completion
 
 - [x] PHP-Laravel
@@ -49,8 +48,10 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 - [ ] Python - https://realpython.com/vim-and-python-a-match-made-in-heaven 
 
   - [x] Syntax highlighting
+  - [ ] PEP 8 builtin support
+  - [ ] Autofix PEP8 errors
+  - [ ] Python virtual environments support
   - [ ] Basic boilerplates
-  - [ ] Code generation
   - [ ] Code completion
 
 - [ ] Kotlin things

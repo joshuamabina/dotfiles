@@ -15,6 +15,7 @@ Why or how it came to existence, where it's going, and when will v1 be out? So, 
 - Vim language server - https://github.com/natebosch/vim-lsc
 - ALE - Asynchronouse lint engine - https://github.com/dense-analysis/ale 
 - Vim - build with clipboard support - https://stackoverflow.com/questions/9166328/how-to-copy-selected-lines-to-clipboard-in-vim
+- Doc: Why I chose ALE over the others?
 
 ## Python tools
 
