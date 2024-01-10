@@ -24,11 +24,21 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 ## Supported features:
 
 - [x] tmux
+
 - [x] Oh-My-Zsh https://ohmyz.sh/
+
 - [x] NVM-Node
+
 - [ ] React things
+
+  - [x] Syntax highlighting
+  - [ ] Basic boilerplates
+  - [ ] Code generation
+
 - [x] PHP-Laravel
+
 - [ ] General code formatting with tools like EditorConfig
+
 - [ ] Code completion with tools like Ale, CoC or YouCompleteMe 
 
 - [ ] Dart and flutter things
