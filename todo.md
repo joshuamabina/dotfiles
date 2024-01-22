@@ -23,6 +23,7 @@ Why or how it came to existence, where it's going, and when will v1 be out? So, 
 
 ## Unsorted
 
+- Install google fonts directory
 - Setup prettier - useful for CI/CD pipelines on cloud deployments. Limitatin, only supports web focused languages and a plugin extension for dart does not yet exist.
 - Flatpak + Stremio - `flatpak install flathub com.stremio.Stremio`
 - zshaliases - downloadyt - cleanup the youtube url - remove `&pp=%` just use `v=%` or `list=%` where appropriate.

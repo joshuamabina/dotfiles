@@ -17,9 +17,7 @@ Some gotchas:
 - This project is trying to keep things lean, so we've opted for Vim 8's native package manager.
 - This repo uses git submodules to manage dependencies. So, don't forget to run `git submodule update`.
 
-To kick things off, take a look at the [docs.md](./docs.md) file!
-
-For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
+To kick things off, take a look at the [docs.md](./docs.md) file. For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 
 ## Supported features:
 
@@ -48,7 +46,7 @@ For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 - [ ] Python - https://realpython.com/vim-and-python-a-match-made-in-heaven 
 
   - [x] Syntax highlighting
-  - [ ] PEP 8 builtin support
+  - [x] PEP 8 builtin support
   - [ ] Autofix PEP8 errors
   - [ ] Python virtual environments support
   - [ ] Basic boilerplates

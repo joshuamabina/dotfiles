@@ -34,7 +34,7 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" TODO: Fix
+" TODO: Fix - install Vim8 with clipboard support
 " Set clipboard
 set clipboard^=unnamed,unnamedplus
 
@@ -402,17 +402,3 @@ let g:ctrlp_show_hidden = 1
 
 "Exclude some files and directories for a much saner search scope.
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Python Mode
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Add PEP 8 indentation support
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-

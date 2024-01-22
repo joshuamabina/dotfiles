@@ -74,6 +74,7 @@ laravel
 node
 npm
 nvm
+kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
