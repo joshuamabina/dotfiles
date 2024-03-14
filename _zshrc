@@ -98,6 +98,7 @@ export JAVA_OPTS=''
 # TODO:
 # Start emulator-device with a default device
 # emulator -avd @pixel_phone
+alias start-emulator="emulator -avd Pixel_7_API_34"
 
 if [[ -d "$HOME/Android" ]]; then
 export ANDROID_HOME=$HOME/Android
@@ -262,7 +263,8 @@ function _gotchas {
 #
 # A zen mode way of writing my book summaries (without the influences of
 # the Google and the rest of the world) -- oh, and before using chatgpt for editing and publishing on Medium.
-function _notes {
+alias makenotes="_makenotes"
+function _makenotes {
   # TODO: for the args
   # Use a prompt format to take the following inputs:
   #
