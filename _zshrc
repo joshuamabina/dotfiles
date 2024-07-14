@@ -187,6 +187,12 @@ alias wip="git add . && git commit -am 'wip'"
 alias commit-amend="git add . && git commit --amend"
 alias gitlog="git log --oneline"
 
+# Laravel things
+
+alias laravel-clear-cache="php artisan cache:clear && php artisan view:clear \
+  && php artisan route:clear && php artisan clear-compiled \
+  && php artisan config:cache"
+
 # vlc things
 # TODO: alias vlc="vlc --rate 1.5"
 # TODO: alias cvlc="cvlc --rate 1.5"
