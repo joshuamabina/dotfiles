@@ -184,6 +184,7 @@ function _dotconfig {
 
 # Git things
 alias wip="git add . && git commit -am 'wip'"
+alias commit-amend="git add . && git commit --amend"
 alias gitlog="git log --oneline"
 
 # vlc things
