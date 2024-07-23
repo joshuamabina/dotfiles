@@ -193,6 +193,10 @@ alias laravel-clear-cache="php artisan cache:clear && php artisan view:clear \
   && php artisan route:clear && php artisan clear-compiled \
   && php artisan config:cache"
 
+alias laravel-fresh-migrate="php artisan migrate:fresh --seed"
+
+alias laravel-fresh-migrate-cache="laravel-fresh-migrate && laravel-clear-cache"
+
 # vlc things
 # TODO: alias vlc="vlc --rate 1.5"
 # TODO: alias cvlc="cvlc --rate 1.5"
