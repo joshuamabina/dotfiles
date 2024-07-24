@@ -59,6 +59,8 @@ To kick things off, take a look at the [docs.md](./docs.md) file. For a ideas, t
 - [ ] Vim things
 
   - [x] @ctrlpvim/ctrlp.vim
+  - [ ] Compile with clipboard support
+  - [ ] FIX: manpath: can't set the locale; make sure `$LC_*` and `$LANG` are correct
   - [ ] **WIP:** @editorconfig/editorconfig-vim
   - [x] @mxw/vim-jsx
   - [x] @pangloss/vim-javascript
