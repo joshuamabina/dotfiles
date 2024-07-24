@@ -2,6 +2,9 @@
 
 Currently optimized for Ubuntu 22.04 (also, plans exists for Debian).
 
+TODO: (1) basic.vimrc - vim config for stable/stock Vim
+TODO: (2) build.vimrc - vim config for build latest source
+
 My goal is to fine-tune these configurations for seamless setup and execution within seconds. Specifically tailored for the following use cases and platforms:
 
 - React, redux and jest tools
