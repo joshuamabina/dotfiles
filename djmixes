@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Default filename
+FILENAME="$HOME/DjMixes"
+
+# Check if an argument is provided
+if [ "$#" -gt 0 ]; then
+    FILENAME="$1"
+fi
+
+# Run cvlc with the specified options
+nohup cvlc --no-video --random --rate=1.99999 "$FILENAME" &
