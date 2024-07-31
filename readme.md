@@ -22,6 +22,11 @@ Some gotchas:
 
 To kick things off, take a look at the [docs.md](./docs.md) file. For a ideas, todos and a product roadmap, see [todos.md](./todos.md) file.
 
+On the server:
+
+- ohmyzsh
+- vimrc
+
 ## Supported features:
 
 - [x] tmux

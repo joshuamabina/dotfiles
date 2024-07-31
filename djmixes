@@ -9,4 +9,5 @@ if [ "$#" -gt 0 ]; then
 fi
 
 # Run cvlc with the specified options
-nohup cvlc --no-video --random --rate=1.99999 "$FILENAME" &
+nohup cvlc --no-video --random --rate=1.99999 "$FILENAME" > /tmp/nohup.djmixes.out 2>&1 &
+

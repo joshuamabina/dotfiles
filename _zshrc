@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$$HOME/.local/bin:HOME/.config/composer/vendor/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$PATH
 
 # Disable compfix for insecure directories.
 ZSH_DISABLE_COMPFIX=true
@@ -7,316 +7,101 @@ ZSH_DISABLE_COMPFIX=true
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Theme
 ZSH_THEME="robbyrussell"
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# Case-sensitivity and completion settings
+CASE_SENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+# Plugins
 plugins=(
-composer
-docker
-docker-compose
-git
-laravel
-node
-npm
-nvm
-kubectl
+  docker
+  docker-compose
+  node
+  npm
+  python
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  laravel
+  kubectl
+  git-extras
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-export EDITOR=vi
-
-#export SDKMAN_DIR="/home/joshua/.sdkman"
-#[[ -s "/home/joshua/.sdkman/bin/sdkman-init.sh" ]] && source "/home/joshua/.sdkman/bin/sdkman-init.sh"
-
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.xml.bind'
-#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
-export JAVA_OPTS=''
-
-# Android things
-#
-# TODO:
-# Start emulator-device with a default device
-# emulator -avd @pixel_phone
-alias start-emulator="emulator -avd Pixel_7_API_34"
-
-if [[ -d "$HOME/Android" ]]; then
-export ANDROID_HOME=$HOME/Android
-
-# Add jarxb jar libs
-# See https://stackoverflow.com/q/53076422/3451822
-# export PATH=$PATH:$ANDROID_HOME/jaxb_lib
-
-# export PATH=$PATH:$ANDROID_HOME/android
-export PATH=$PATH:$ANDROID_HOME/Sdk/emulator
-# export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-# export PATH=$PATH:$ANDROID_HOME/tools/bin
-# export PATH=$PATH:$ANDROID_HOME/platform-tools
-fi
-
-# pyenv
-# see https://github.com/pyenv/pyenv
-if [[ -d "$HOME/.pyenv" ]]; then
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=~/.virtualenvs
-# source $(which virtualenvwrapper.sh)
-source $HOME/.local/bin/virtualenvwrapper.sh
-
-PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
-
-# Load pyenv into the shell
-#eval "$(pyenv init -)"
-fi
-
-
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='vi'
+  export EDITOR='vi'
 else
-export EDITOR='vim'
+  export EDITOR='vim'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Java settings
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+export JAVA_OPTS=''
 
-# ssh
+# Android SDK settings
+if [[ -d "$HOME/Android" ]]; then
+  export ANDROID_HOME=$HOME/Android
+  export PATH=$PATH:$ANDROID_HOME/Sdk/emulator
+  export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+fi
+
+# Pyenv settings
+if [[ -d "$HOME/.pyenv" ]]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+  export WORKON_HOME=~/.virtualenvs
+  source $HOME/.local/bin/virtualenvwrapper.sh
+  PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+fi
+
+# Language environment
+export LANG=en_US.UTF-8
+
+# SSH settings
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-
-PATH="/home/joshua/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/joshua/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/joshua/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/joshua/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/joshua/perl5"; export PERL_MM_OPT;
+# Perl settings
+export PATH="/home/joshua/perl5/bin${PATH:+:${PATH}}"
+export PERL5LIB="/home/joshua/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+export PERL_LOCAL_LIB_ROOT="/home/joshua/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+export PERL_MB_OPT="--install_base /home/joshua/perl5"
+export PERL_MM_OPT="INSTALL_BASE=/home/joshua/perl5"
 
 # Aliases and Helpers
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-# Example aliases
 
 # Dotfiles
-#
-# TODO: Fix
-#
-# Vim has a little quirk when it comes to finding the dotfiles working
-# directory. It basically looks at wherever you called dotconfig. Wouldn't it be
-# fantastic if you could easily switch to the dotfiles code directory? Plus, it'd
-# remember your previous working directory so you can easily switch back after editing.
 alias dotconfig="vi ~/dotfiles"
 
-# wip: Quickly switch to the dotfiles directory, and switch back to the last
-# current working directory.
-# TODO: Consider export DOTFILES_HOME=~/.dotfiles
+# Switch to dotfiles directory and edit
 function _dotconfig {
-  last_cwd=$(pwd)
-
-  cd ~/.dotfiles && vi . && cd $last_cwd
+  local last_cwd=$(pwd)
+  cd ~/.dotfiles && vi . && cd "$last_cwd"
 }
 
-# Git things
+# Git aliases
 alias wip="git add . && git commit -am 'wip'"
 alias commit-amend="git add . && git commit --amend"
 alias gitlog="git log --oneline"
 
-# Laravel things
-
-alias laravel-clear-cache="php artisan cache:clear && php artisan view:clear \
-  && php artisan route:clear && php artisan clear-compiled \
-  && php artisan config:cache"
-
+# Laravel aliases
+alias laravel-clear-cache="php artisan cache:clear && php artisan view:clear && php artisan route:clear && php artisan clear-compiled && php artisan config:cache"
 alias laravel-fresh-migrate="php artisan migrate:fresh --seed"
-
 alias laravel-fresh-migrate-cache="laravel-fresh-migrate && laravel-clear-cache"
 
-# vlc things
-# TODO: alias vlc="vlc --rate 1.5"
-# TODO: alias cvlc="cvlc --rate 1.5"
-
-
-# Dart things
-#
-# TODO: Watch files and run dart tests
-#
-# An idea would be, run npm-watch "clear && dart codegen && cd ./packages && dart test" ./packages/*/lib ./packages/*/test
-#
-# In the spirit of keeping things lean and simple... Just run the cmd below manually.
-# Important to note: Make sure you've defined your packages in the top-level parent pubspec.yaml file.
-#
-# watch --color --interval=6 --wait=13 "clear && dart test ./packages --chain-stack-traces" ./packages
-
-
-# zsh things
+# ZSH aliases
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias zshsource="source ~/.zshrc"
 alias zshconfig="vi ~/.zshrc"
 alias zshedit="zshconfig && zshsource"
 
-# Google chrome things
-alias chrome="google-chrome-stable"
-
-# TODO: Create a desktop launcher
-# See: https://askubuntu.com/questions/1445655/is-there-any-way-to-use-google-keep-in-ubuntu-in-2022-now-that-chrome-apps-are
-alias keep="chrome -app=https://keep.google.com"
-alias devdocs="chrome -app=https://devdocs.io/"
-# TODO: alias duo="chrome -app=https://www.duolingo.com/lesson"
-# TODO: alias whatsapp="chrome -app=https://www.duolingo.com/lesson"
-
-# TODO: check if yt-dlp is installed
+# yt-dlp aliases
 alias downloadyt="yt-dlp"
 alias youtube-dl="downloadyt"
-
-function searchfx {
-  q="$@";
-
-  SEARCH_URL='https://www.google.com/search?q=';
-  stream=$(firefox "${SEARCH_URL}${q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||');
-  echo -e "${stream//\%/\x}";
-}
-
-function search {
-  q="$@";
-
-  SEARCH_URL='https://www.google.com/search?q=';
-  stream=$(chrome "${SEARCH_URL}${q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||');
-  echo -e "${stream//\%/\x}";
-}
-
-function htmlToText {
-  outputFile="$@"
-
-    perl -0777 -MHTML::Strip -nlE 'say HTML::Strip->new->parse($_)' $outputFile
-}
-
-# TODO:
-# Experiment: Use chatgpt to summarize blogs on the web
-function _gotchas {
-  linkToBlog="$@"
-    outputFile="/tmp/${linkToBlog}.output.txt"
-
-    curl $linkToBlog -o /tmp/$linkToBlog.output.txt
-
-    htmlToText $outputFile
-}
-
-# TODO:
-# Experiment: A scratchpad. Just start vim and start writing.
-#
-# My goal with this:
-#
-# A zen mode way of writing my book summaries (without the influences of
-# the Google and the rest of the world) -- oh, and before using chatgpt for editing and publishing on Medium.
-alias makenotes="_makenotes"
-function _makenotes {
-  # TODO: for the args
-  # Use a prompt format to take the following inputs:
-  #
-  # - title
-  # - keywords (to be used as tags esp. good for search)
-  #
-  # Just thought, if I make `_notes` central to vim, with CtrlP and ctags it might actually become super easy to do really
-  # good high quality search of notes and ideas.
-  arg="$@"
-
-  # TODO: Check if a note-title was specified (in the future, using a prompts,
-  # capture keywords to be used as article tags and for searching)
-  #
-  # Alternatively,if args are not specified, just start vim in the notes directory
-  if [[ $# -eq 0 ]] ; then
-    cd "$HOME/notes" && vi . && git add . && git commit -am 'wip' && clear
-    return;
-  fi
-
-
-  # TODO: Fix
-  # Variable scoping, avoid globals - accidentally reference global $path variable.
-  fileName="$1"
-
-  dateSuffix=$(date -I)
-  notePath="$HOME/notes/$fileName.$dateSuffix.txt"
-
-
-  # If it already exists, don't reacreate
-  echo $notePath
-  # touch $notePath
-
-  # TODO:
-  # If does not exist, just create from the notes template
-  # For now, just copy-paste manually
-  #
-  # template="$HOME/notes/_template.txt"
-  # cat $template > $notePath
-
-  # TODO:
-  # Find a way to append updatedAt (as in, last update date) at the top of the file just after the edits.
-  # Check if connection exists, then upon save just git push automatically.
-  cd "$HOME/notes" && vi $notePath && git add . && git commit -am 'wip' && clear && echo 'Done. That was awesome!'
-}
