@@ -1,3 +1,6 @@
+# TODO: Run Prettier
+# See https://www.reddit.com/r/bash/comments/pxvmg6/code_formatter_linters_etc_recommendations/
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:$PATH
 
@@ -91,10 +94,14 @@ alias wip="git add . && git commit -am 'wip'"
 alias commit-amend="git add . && git commit --amend"
 alias gitlog="git log --oneline"
 
+# TODO: Use vim-fugitivie bindings as zsh aliases
+# TODO: Fix: aliases aren't read from Vim cli
+
 # Laravel aliases
 alias laravel-clear-cache="php artisan cache:clear && php artisan view:clear && php artisan route:clear && php artisan clear-compiled && php artisan config:cache"
 alias laravel-fresh-migrate="php artisan migrate:fresh --seed"
 alias laravel-fresh-migrate-cache="laravel-fresh-migrate && laravel-clear-cache"
+alias laravel-create-sqlitedb='[ -d "$(pwd)/database" ] && touch "$(pwd)/database/database.sqlite" || echo "Error: Directory $(pwd)/database does not exist."'
 
 # ZSH aliases
 alias ohmyzsh="vi ~/.oh-my-zsh"
@@ -105,3 +112,7 @@ alias zshedit="zshconfig && zshsource"
 # yt-dlp aliases
 alias downloadyt="yt-dlp"
 alias youtube-dl="downloadyt"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
