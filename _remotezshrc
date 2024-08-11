@@ -9,10 +9,16 @@ HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 
+git_branch() {
+  git rev-parse --is-inside-work-tree &>/dev/null && git symbolic-ref --short HEAD 2>/dev/null | awk '{print "(" $0 ")"}'
+}
+
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 export COMPOSER_ALLOW_SUPERUSER=1
 export EDITOR='vim'
 
-PROMPT="%F{green}%n@chapaa.test%f %1~ $(git_branch) %# "
+alias reload!='source ~/.zshrc'
 
+PROMPT="%F{green}%n@chapaa.test%f %1~ %F{cyan}$(git_branch)%f %# "
+RPROMPT='%F{red}%T%f'
