@@ -26,6 +26,7 @@ On the server:
 
 - ohmyzsh
 - vimrc
+- essentials e.g. tree, ack, git
 
 ## Supported features:
 

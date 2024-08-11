@@ -1,13 +1,31 @@
 #!/usr/bin/env bash
 
-# Default filename
+# All djmixes
 FILENAME="$HOME/DjMixes"
 
-# Check if an argument is provided
+# Check if an argument e.g. Goggins is provided; if so, use it as the filename
 if [ "$#" -gt 0 ]; then
-    FILENAME="$1"
+  FILENAME="$1"
 fi
 
-# Run cvlc with the specified options
+# File to store the PID of the running cvlc process
+PID_FILE="/tmp/cvlc.pid"
+
+# Check if the PID file exists and kill the process if it does
+if [ -f "$PID_FILE" ]; then
+  if ps -p $(cat "$PID_FILE") > /dev/null; then
+    echo "Shuffling..."
+    kill $(cat "$PID_FILE")
+  fi
+  rm "$PID_FILE"
+fi
+
+# Run cvlc to shuffle and play the playlist
+# nohup allows the command to run in the background even if the terminal is closed
+# --no-video disables video playback
+# --random shuffles the playlist
+# --rate=1.99999 adjusts playback speed slightly (you can adjust this or remove it if not needed)
 nohup cvlc --no-video --random --rate=1.99999 "$FILENAME" > /tmp/nohup.djmixes.out 2>&1 &
 
+# Save the PID of the new cvlc process
+echo $! > "$PID_FILE"
