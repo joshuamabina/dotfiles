@@ -31,9 +31,8 @@ Roadmap and priorities:
 
 ### Server Setup
 
-- **Vim and basic.vimrc**
-- **ohmyzsh and basic.zshrc**
-- **Essentials** (e.g., tree, git, ack)
+- **ohmyzsh**
+- **Vimrc essentials** (e.g., tree, git, ack)
 
 ### Known Issues
 
