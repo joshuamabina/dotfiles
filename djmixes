@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# TODO: loop current playing track
+
 # All djmixes
 FILENAME="$HOME/DjMixes"
 
