@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-# TODO: loop current playing track
+# TODO: Loop current playing track
 
 # All djmixes
 FILENAME="$HOME/DjMixes"
 
-# Check if an argument e.g. Goggins is provided; if so, use it as the filename
+# TODO: Check if an argument e.g. --artist alicia is provided; if so, only play songs by that artist
 if [ "$#" -gt 0 ]; then
-  FILENAME="$1"
+  echo "TODO: Check if an argument e.g. Goggins is provided; if so, use it as the filename"
 fi
 
 # File to store the PID of the running cvlc process
