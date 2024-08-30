@@ -1,64 +1,33 @@
 #!/usr/bin/env bash
 
+# TODO: Loop current playing track
+
 # All djmixes
 FILENAME="$HOME/DjMixes"
+
+# TODO: Check if an argument e.g. --artist alicia is provided; if so, only play songs by that artist
+if [ "$#" -gt 0 ]; then
+  echo "TODO: Check if an argument e.g. Goggins is provided; if so, use it as the filename"
+fi
 
 # File to store the PID of the running cvlc process
 PID_FILE="/tmp/cvlc.pid"
 
-# Temporary playlist for looping a track
-LOOP_PLAYLIST="/tmp/loop_playlist.m3u"
-
-# Function to get the currently playing track
-get_current_track() {
-  cvlc --extraintf rc --rc-fake-tty --no-video --playlist > /tmp/cvlc.rc 2>&1 &
-  local pid=$!
-  sleep 2
-  # Fetch the current track from the RC interface output
-  current_track=$(grep "New input" /tmp/cvlc.rc | tail -1 | awk -F': ' '{print $2}')
-  kill $pid
-  rm /tmp/cvlc.rc
-  echo "$current_track"
-}
-
-# Check if an argument e.g. --loop is provided
-if [[ "$1" == "--loop" ]]; then
-  # Get the currently playing track
-  current_track=$(get_current_track)
-
-  if [ -n "$current_track" ]; then
-    echo "Current track: $current_track"
-
-    # Stop the current playback
-    if [ -f "$PID_FILE" ]; then
-      if ps -p $(cat "$PID_FILE") > /dev/null; then
-        echo "Stopping the current playback..."
-        kill $(cat "$PID_FILE")
-      fi
-      rm "$PID_FILE"
-    fi
-
-    # Write the current track to the loop playlist
-    echo "$current_track" > "$LOOP_PLAYLIST"
-    echo "Looping the current track..."
-    nohup cvlc --no-video --loop "$LOOP_PLAYLIST" > /tmp/nohup.loop.out 2>&1 &
-    echo $! > "$PID_FILE"
-  else
-    echo "No track is currently playing or unable to determine the track."
+# Check if the PID file exists and kill the process if it does
+if [ -f "$PID_FILE" ]; then
+  if ps -p $(cat "$PID_FILE") > /dev/null; then
+    echo "Shuffling..."
+    kill $(cat "$PID_FILE")
   fi
-else
-  # Normal playback behavior
-  # Check if the PID file exists and kill the process if it does
-  if [ -f "$PID_FILE" ]; then
-    if ps -p $(cat "$PID_FILE") > /dev/null; then
-      echo "Shuffling..."
-      kill $(cat "$PID_FILE")
-    fi
-    rm "$PID_FILE"
-  fi
-
-  # Run cvlc to shuffle and play the playlist
-  nohup cvlc --no-video --random --rate=1.99999 "$FILENAME" 2>&1 | ts '%Y-%m-%d %H:%M' > /tmp/nohup.djmixes.out &
-  echo $! > "$PID_FILE"
+  rm "$PID_FILE"
 fi
 
+# Run cvlc to shuffle and play the playlist
+# nohup allows the command to run in the background even if the terminal is closed
+# --no-video disables video playback
+# --random shuffles the playlist
+# --rate=1.99999 adjusts playback speed slightly (you can adjust this or remove it if not needed)
+nohup cvlc --no-video --random --rate=1.99999 "$FILENAME" > /tmp/nohup.djmixes.out 2>&1 &
+
+# Save the PID of the new cvlc process
+echo $! > "$PID_FILE"
