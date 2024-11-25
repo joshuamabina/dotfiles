@@ -14,5 +14,8 @@ An overview of why this project exists, where it's headed, and the anticipated r
 - Set up React Native with Expo.
 - Extract basic configurations into a `basic.vimrc` plugin.
 - Install and manage specific versions of PHP.
-- Create install scripts for Vim, PHP, nginx, apache (optional), tmux, oh-my-zsh, and docker.
+- Create install scripts for Vim, PHP, nginx, apache (optional), mysql, postgres, mongodb, [phpMyAdmin (using Docker)][1], tmux, oh-my-zsh, and docker.
 - GitHubPages: Manage a GitHub repo for podcast subscriptions.
+
+
+1: https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker
