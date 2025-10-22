@@ -82,13 +82,13 @@ Clone this repo
 git clone --recurse-submodules -j8 https://github.com/joshuamabina/dotfiles.git ~/.dotfiles
 ```
 
-Setup tmux
+# Setup tmux
 
 ```
 ln -sf ~/.dotfiles/_tmux.conf ~/.tmux.conf
 ```
 
-Setup ohmyzsh
+# Setup ohmyzsh
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -104,8 +104,39 @@ Setup vim
 ln -sf ~/.dotfiles/_vimrc ~/.vimrc && ln -sf ~/.dotfiles/_vim ~/.vim
 ```
 
-##### Adding a Vim plugin
+# Install Dart and Flutter
+
+```
+sudo apt-get update
+sudo apt-get install apt-transport-https
+sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+sudo apt-get update
+sudo apt-get install dart
+```
+
+Check:
+
+```
+dart --version
+```
+
+Install Flutter using Snap
+
+```
+sudo snap install flutter --classic
+```
+
+Check:
+
+```
+flutter --version
+```
+
+# Adding a Vim plugin
 
 1. Create a new directory to hold the plugin, `mkdir -p [_vim/pack/plugin-author/start]`
+
 2. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url] [_vim/pack/plugin-author/start/plugin-name]`
+
 3. Stage, commit, and push changes for review and merging.
