@@ -27,16 +27,16 @@ For setup instructions, see [docs.md](./docs/docs.md). For ideas, todos, and the
 
 ## Known Issues
 
-  There are a few known issues already, but if you find something new, feel free to share it.
+There are a few known issues already, but if you find something new, feel free to share it.
 
-  - Clipboard issues.
-
-  - The `manpath` complains: Can't set the locale; ensure `$LC_*` and `$LANG` are correct.
+- Clipboard issues.
+- The `manpath` complains: Can't set the locale; ensure `$LC_*` and `$LANG` are correct.
 
 ## Inspiration
 
-  - [Vim and Python: A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven)
+- [Vim and Python: A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven)
 
 ## Contributing
 
-  Please take a moment to look through the /docs directory before you make any contributions. It will help you understand how things work and make your contribution easier.
+Please take a moment to look through the /docs directory before you make any contributions. It will help you understand how things work and make your contribution easier.
+
