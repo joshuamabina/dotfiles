@@ -1,46 +1,42 @@
 # My Dotfiles
 
+I maintain this repo slowly, mainly to support my Vim development workflow.
+rarely open it. Posting an issue works, but emailing me at mabinajoshua@gmail.com will usually get a faster response.
+
 Optimized for Ubuntu 22.04 and tailored for:
 
-- React
+- Dart and Flutter
+
 - Laravel-PHP development
-- Flutter on Android Studio
+
+- React
+
 - React Native with Expo
+
 - Python development
 
-### Key Points
+For setup instructions, see [docs.md](./docs/docs.md). For ideas, todos, and the product roadmap, check [todos.md](./docs/todos.md).
 
-- **Lean Setup**: Uses Vim 8's native package manager for a minimalistic approach.
-- **Git Submodules**: Run `git submodule update` to manage dependencies.
-
-For setup instructions, see [docs.md](./docs.md). For ideas, todos, and the product roadmap, check [todos.md](./todos.md).
-
-## TODOS
-
-Roadmap and priorities:
-
-- **basic.vimrc**: Vim config for stock OS Vim with zero configuration.
-- **build.vimrc**: Vim config for builds from the latest source with more configurations.
-- **tmux**: Installation and configuration.
-- **ohmyzsh**: Installation and configuration.
-- **nvm**: Installation and configuration.
-- **php-laravel**: Support for phpenv and Vim.
-- **dart-flutter**: Support for fvm and Vim.
-- **python**: Installation and configuration, Vim support, virtualenv support.
-- **sdkman**: Installation and configuration for JVM and Kotlin.
-
-### Server Setup
+## Server Setup
 
 - **Vim and basic.vimrc**
+
 - **ohmyzsh and basic.zshrc**
+
 - **Essentials** (e.g., tree, git, ack)
 
-### Known Issues
+## Known Issues
 
-- `manpath`: Can't set the locale; ensure `$LC_*` and `$LANG` are correct.
-- Clipboard issues.
-- Editorconfig/Prettier issues.
+  There are a few known issues already, but if you find something new, feel free to share it.
 
-### Inspiration
+  - Clipboard issues.
 
-- [Vim and Python: A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven)
+  - The `manpath` complains: Can't set the locale; ensure `$LC_*` and `$LANG` are correct.
+
+## Inspiration
+
+  - [Vim and Python: A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven)
+
+## Contributing
+
+  Please take a moment to look through the /docs directory before you make any contributions. It will help you understand how things work and make your contribution easier.
