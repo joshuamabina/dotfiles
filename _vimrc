@@ -403,3 +403,10 @@ let g:ctrlp_show_hidden = 1
 
 "Exclude some files and directories for a much saner search scope.
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Dartlang
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:dart_style_guide = 2
+let g:dartfmt_options = ['--fix', '--line-length 120']
