@@ -91,7 +91,7 @@ ln -sf ~/.dotfiles/_tmux.conf ~/.tmux.conf
 # Setup ohmyzsh
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
 
 cp ~/dotfiles/_zshrc ~/.zshrc
 
@@ -135,8 +135,7 @@ flutter --version
 
 # Adding a Vim plugin
 
-1. Create a new directory to hold the plugin, `mkdir -p [_vim/pack/plugin-author/start]`
+1. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url] [_vim/pack/plugin-author/start/plugin-name]`
 
-2. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url] [_vim/pack/plugin-author/start/plugin-name]`
+2. Stage, commit, and push changes for review and merging.
 
-3. Stage, commit, and push changes for review and merging.
