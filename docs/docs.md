@@ -138,4 +138,3 @@ flutter --version
 1. Clone the plugin GitHub repo as a git submodule, `git submodule add [plugin-git-url] [_vim/pack/plugin-author/start/plugin-name]`
 
 2. Stage, commit, and push changes for review and merging.
-
