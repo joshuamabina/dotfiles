@@ -31,3 +31,6 @@
 [submodule "_vim/pack/dart-lang/start/dart-vim-plugin"]
 	path = _vim/pack/dart-lang/start/dart-vim-plugin
 	url = https://github.com/dart-lang/dart-vim-plugin.git
+[submodule "_vim/pack/sheerun/start/vim-polyglot"]
+	path = _vim/pack/sheerun/start/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git
