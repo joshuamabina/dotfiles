@@ -111,39 +111,18 @@ wait_for_connection() {
 
 # Function: Ask user to connect to a network if none is active
 connect_to_network() {
-  ACTIVE_CONN=$(nmcli -t -f NAME connection show --active | head -n 1 || true)
+    # Get the name of the active connection
+    ACTIVE_CONN=$(nmcli -t -f NAME connection show --active | head -n 1 || true)
 
-  if [ -n "$ACTIVE_CONN" ]; then
-    echo "✅ Already connected to: $ACTIVE_CONN"
-    return
-  fi
+    if [ -n "$ACTIVE_CONN" ]; then
+        echo "✅ Already connected to: $ACTIVE_CONN"
+        return
+    fi
 
-  echo "⚠️ No active connection found."
-
-  echo ""
-  echo "🔎 Available Wi-Fi networks:"
-  nmcli dev wifi list | awk 'NR==1 || NR<=10 {print}' # show top 10
-
-  echo ""
-  read -rp "👉 Enter the Wi-Fi network name (SSID) to connect: " SSID
-  read -srp "🔑 Enter Wi-Fi password (leave empty if open): " PASSWORD
-  echo ""
-
-  if [ -z "$PASSWORD" ]; then
-    echo "➡️ Connecting to open network: $SSID..."
-    nmcli dev wifi connect "$SSID"
-  else
-    echo "➡️ Connecting to $SSID..."
-    nmcli dev wifi connect "$SSID" password "$PASSWORD"
-  fi
-
-  # Wait until connected
-  echo "⏳ Waiting for connection..."
-  until nmcli -t -f NAME connection show --active | grep -q "$SSID"; do
-    sleep 1
-  done
-
-  echo "✅ Connected to $SSID"
+    # No active connection found, exit
+    echo "❌ No active connection found."
+    echo "Please connect to Wi-Fi or a wired connection first."
+    exit 1
 }
 
 # Function: Set Cloudflare DNS
