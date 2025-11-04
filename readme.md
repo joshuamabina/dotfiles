@@ -38,8 +38,8 @@ If you use Vim on the server, you might want to check:
 - https://github.com/tpope/vim-commentary
 - https://github.com/tpope/vim-surround
 - https://github.com/sheerun/vim-polyglot.git
-- https://github.com/prettier/vim-prettier
 - https://github.com/vim-airline/vim-airline
+- https://github.com/prettier/vim-prettier
 
 ## Helpful links
 

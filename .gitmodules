@@ -1,0 +1,12 @@
+[submodule "_vim/pack/plugins/start/ctrlp.vim"]
+	path = _vim/pack/plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "_vim/pack/plugins/start/vim-commentary"]
+	path = _vim/pack/plugins/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "_vim/pack/plugins/start/vim-surround"]
+	path = _vim/pack/plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "_vim/pack/plugins/start/vim-polyglot"]
+	path = _vim/pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
