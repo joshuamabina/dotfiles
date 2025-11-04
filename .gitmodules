@@ -4,9 +4,6 @@
 [submodule "_vim/pack/tpope/start/vim-surround"]
 	path = _vim/pack/tpope/start/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "_vim/pack/editorconfig/start/editorconfig-vim"]
-	path = _vim/pack/editorconfig/start/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
 [submodule "_vim/pack/ctrlpvim/start/ctrlp.vim"]
 	path = _vim/pack/ctrlpvim/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
