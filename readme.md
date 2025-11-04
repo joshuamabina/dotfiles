@@ -13,6 +13,10 @@ Optimized for Ubuntu 22.04 and tailored for:
 
 For setup instructions, see [docs.md](./docs/docs.md). For ideas, todos, and the product roadmap, check [todos.md](./docs/todos.md).
 
+## Inspiration
+
+- [Vim and Python: A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven)
+
 ## Server setup
 
 If you use Vim on the server, you might want to check:
@@ -27,17 +31,12 @@ If you use Vim on the server, you might want to check:
 
 2. Stage, commit, and push changes for review and merging.
 
-## Inspiration
-
-- [Vim and Python: A Match Made in Heaven](https://realpython.com/vim-and-python-a-match-made-in-heaven)
-
-
 ## Dependencies
 
 - https://github.com/ctrlpvim/ctrlp.vim
 - https://github.com/tpope/vim-commentary
 - https://github.com/tpope/vim-surround
-- https://github.com/sheerun/vim-polyglot.git
+- https://github.com/sheerun/vim-polyglot
 - https://github.com/vim-airline/vim-airline
 - https://github.com/prettier/vim-prettier
 

@@ -9,4 +9,7 @@
 	url = https://github.com/tpope/vim-surround
 [submodule "_vim/pack/plugins/start/vim-polyglot"]
 	path = _vim/pack/plugins/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "_vim/pack/plugins/start/vim-airline"]
+	path = _vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
