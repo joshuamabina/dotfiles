@@ -7,6 +7,7 @@ Helpful links
 - https://sdkman.io/
 - https://github.com/expo/expo
 - https://github.com/facebook/create-react-app
+- https://github.com/sheerun/vim-polyglot.git
 - https://github.com/tpope/vim-commentary
 - https://github.com/tpope/vim-surround
 - https://github.com/editorconfig/editorconfig-vim 
@@ -20,7 +21,6 @@ Helpful links
 ## References
 
 - Reinstalling MySQL - https://dev.to/asifzcpe/resetting-mysql-root-password-in-ubuntu-a-step-by-step-guide-3gnd
-- Reinstalling MySQL - mysqld_safe Directory '/var/run/mysqld' for UNIX socket file don't exists - https://dev.to/asifzcpe/resetting-mysql-root-password-in-ubuntu-a-step-by-step-guide-3gnd
 - Getting Started with Flutter - Linux - https://docs.flutter.dev/get-started/install/linux
 - https://github.com/github/scripts-to-rule-them-all/tree/master
 - https://williamjturkel.net/2013/05/31/installing-debian-linux-in-a-vm/
