@@ -19,11 +19,25 @@ For setup instructions, see [docs.md](./docs/docs.md). For ideas, todos, and the
 
 ## Server setup
 
-If you use Vim on the server, you might want to check:
+If you use Vim on the server, install latest git, tmux, zsh and vim
+
+```
+sudo apt-get install -y git tmux zsh vim 
+```
+
+You might also want to check:
 
 - basic.vimrc
 - basic.zshrc
-- basic.essentials *includes install scripts for essentials i.e. tree, git, ack*
+
+## Before setting up locally
+
+Install latest git, tmux, and zsh
+
+
+```
+sudo apt-get install -y git tmux zsh
+```
 
 ## Installing and adding a Vim plugin
 
@@ -39,6 +53,26 @@ If you use Vim on the server, you might want to check:
 - https://github.com/sheerun/vim-polyglot
 - https://github.com/vim-airline/vim-airline
 - https://github.com/prettier/vim-prettier
+
+## TODOs
+
+- [ ] basic.vimrc: Vim with zero configuration.
+- [ ] tmux: Installation and configuration.
+- [ ] ohmyzsh: Installation and configuration.
+- [ ] php-laravel: Support for phpenv and Vim.
+- [ ] dart-flutter: Support for fvm and Vim.
+- [ ] python: Installation and configuration, Vim support, virtualenv support.
+- [ ] Create install scripts for [phpMyAdmin (using Docker)][https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker]
+- [x] Create install scripts for Vim.
+- [x] Create install scripts for nvm.
+- [ ] Create install scripts for nginx.
+- [ ] Create install scripts for mysql.
+- [ ] Create install scripts for tmux.
+- [ ] Create install scripts for oh-my-zsh.
+- [ ] Create install scripts for docker.
+- [ ] Create install scripts for setting up a PHP version manager https://github.com/Thavarshan/phpvm
+- [ ] Create install scripts for setting up a VPN Server - https://ubuntu.com/blog/setup-your-own-vpn-server
+- [ ] Set up a sandbox environment (e.g., VirtualBox VM) for building/testing dotfiles.
 
 ## Helpful links
 

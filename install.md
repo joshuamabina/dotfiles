@@ -1,12 +1,3 @@
-# Before setting up
-
-Install latest git, tmux, zsh and vim
-
-
-```
-sudo apt-get install -y git tmux zsh vim 
-```
-
 # Install php-laravel
 
 Refer to:
