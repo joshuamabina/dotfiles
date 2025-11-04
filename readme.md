@@ -1,7 +1,8 @@
 # My Dotfiles
 
 I maintain this repo slowly, mainly to support my Vim development workflow.
-rarely open it. Posting an issue works, but emailing me at mabinajoshua@gmail.com will usually get a faster response.
+
+Posting an issue works, but emailing me at mabinajoshua@gmail.com will usually get a faster response.
 
 Optimized for Ubuntu 22.04 and tailored for:
 
@@ -11,26 +12,17 @@ Optimized for Ubuntu 22.04 and tailored for:
 
 - React
 
-- React Native with Expo
-
 - Python development
 
 For setup instructions, see [docs.md](./docs/docs.md). For ideas, todos, and the product roadmap, check [todos.md](./docs/todos.md).
 
 ## Server Setup
 
-- **Vim and basic.vimrc**
+If you use Vim on the server, you might want to check:
 
-- **ohmyzsh and basic.zshrc**
-
-- **Essentials** (e.g., tree, git, ack)
-
-## Known Issues
-
-There are a few known issues already, but if you find something new, feel free to share it.
-
-- Clipboard issues.
-- The `manpath` complains: Can't set the locale; ensure `$LC_*` and `$LANG` are correct.
+- basic.vimrc
+- basic.zshrc
+- basic.essentials *includes install scripts for essentials i.e. tree, git, ack*
 
 ## Inspiration
 
