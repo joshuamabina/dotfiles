@@ -73,6 +73,7 @@ sudo apt-get install -y git tmux zsh
 - [ ] Create install scripts for setting up a PHP version manager https://github.com/Thavarshan/phpvm
 - [ ] Create install scripts for setting up a VPN Server - https://ubuntu.com/blog/setup-your-own-vpn-server
 - [ ] Set up a sandbox environment (e.g., VirtualBox VM) for building/testing dotfiles.
+- [ ] Support/install fonts: Calibri, Courier
 
 ## Helpful links
 
