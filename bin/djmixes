@@ -3,15 +3,37 @@
 # TODO: Loop current playing track
 
 # All djmixes
-FILENAME="$HOME/DjMixes"
+MIXDIR="$HOME/DjMixes"
 
-# TODO: Check if an argument e.g. --artist alicia is provided; if so, only play songs by that artist
-if [ "$#" -gt 0 ]; then
-  echo "TODO: Check if an argument e.g. Goggins is provided; if so, use it as the filename"
-fi
-
-# File to store the PID of the running cvlc process
+RATE="1.999999"
+ARTIST=""
 PID_FILE="/tmp/cvlc.pid"
+
+while [[ "$#" -gt 0 ]]; do
+  case "$1" in
+    --rate=*)
+      RATE="${1#*=}"
+      ;;
+    --artist)
+      shift
+      ARTIST="$1"
+      ;;
+    *)
+      echo "Unknown option: $1"
+      ;;
+  esac
+  shift
+done
+
+if [[ -n "$ARTIST" ]]; then
+  FILELIST=$(find "$MIXDIR" -type f -iname "*$ARTIST*" | sort)
+  if [[ -z "$FILELIST" ]]; then
+    echo "No mixes found for artist: $ARTIST"
+    exit 1
+  fi
+else
+  FILELIST="$MIXDIR"
+fi
 
 # Check if the PID file exists and kill the process if it does
 if [ -f "$PID_FILE" ]; then
@@ -27,7 +49,7 @@ fi
 # --no-video disables video playback
 # --random shuffles the playlist
 # --rate=1.99999 adjusts playback speed slightly (you can adjust this or remove it if not needed)
-nohup cvlc --no-video --random --rate=1.99999 "$FILENAME" > /tmp/nohup.djmixes.out 2>&1 &
+nohup cvlc --no-video --random --rate="$RATE" "$FILELIST" > /tmp/nohup.djmixes.out 2>&1 &
 
 # Save the PID of the new cvlc process
 echo $! > "$PID_FILE"
