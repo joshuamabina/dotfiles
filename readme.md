@@ -31,6 +31,8 @@ If you use Vim on the server, install latest git, tmux, zsh and vim
 sudo apt-get install -y git tmux zsh vim 
 ```
 
+TODO:
+
 You might also want to check:
 
 - basic.vimrc
@@ -82,7 +84,17 @@ TODO
 
 ## Laravel-PHP development
 
-TODO
+I use Laravel for my PHP work and I run everything in containers. That decision removes the need to install PHP locally or manage versions with tools like phpenv.
+
+This note exists mainly for archival context. I’ve moved away from building PHP from source and juggling multiple local runtimes. Docker and Laravel Sail now define the entire environment
+
+To install Laravel, run the script below.
+
+TODO:
+
+```
+./install/lib/laravel.sh
+```
 
 ## TODOs
 
@@ -94,14 +106,10 @@ TODO
 - [x] Create install scripts for nvm.
 - [ ] Create install scripts for docker.
 - [ ] Create install scripts for oh-my-zsh.
-- [ ] php-laravel: Support for phpenv and Vim.
 - [ ] dart-flutter: Support for fvm and Vim.
 - [ ] python: Installation and configuration, Vim support, virtualenv support.
 - [ ] Create install scripts for [phpMyAdmin (using Docker)](https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker)
-- [ ] Create install scripts for setting up a PHP version manager https://github.com/Thavarshan/phpvm
-- [ ] Create install scripts for setting up a VPN Server - https://ubuntu.com/blog/setup-your-own-vpn-server
 - [ ] Set up a sandbox environment (e.g., VirtualBox VM) for building/testing dotfiles.
-- [ ] Support/install fonts: Calibri, Courier
 
 ## Helpful links
 
