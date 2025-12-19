@@ -33,6 +33,10 @@ info "Verifying installations..."
 node_version=$(node -v)
 npm_version=$(npm -v)
 
+# 5. Install global npm packages (optional)
+info "Installing global npm packages..."
+npm install -g http-server fast-cli watch
+
 echo "✅ Node.js version: $node_version"
 echo "✅ npm version: $npm_version"
 echo "✅ NVM installed at: $NVM_DIR"

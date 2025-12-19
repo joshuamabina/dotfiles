@@ -13,4 +13,3 @@ bash autogen.sh
 sudo auto-apt run ./configure && make
 
 sudo checkinstall
-

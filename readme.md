@@ -28,7 +28,7 @@ TODO
 If you use Vim on the server, install latest git, tmux, zsh and vim
 
 ```
-sudo apt-get install -y git tmux zsh vim 
+sudo apt-get install -y git tmux zsh vim
 ```
 
 TODO:
@@ -57,7 +57,6 @@ TODO: Install and setup terminal, ohmyzsh, tmux
 
 Run the script below to install Vim 9 from source.
 
-
 ```
 ./install/lib/vim.sh
 ```
@@ -77,6 +76,7 @@ Run the script below to install Vim 9 from source.
 - https://github.com/vim-airline/vim-airline
 - https://github.com/github/copilot.vim
 - https://github.com/editorconfig/editorconfig-vim
+- https://github.com/madox2/vim-ai
 
 ## Flutter/Dart development
 
@@ -87,14 +87,6 @@ TODO
 I use Laravel for my PHP work and I run everything in containers. That decision removes the need to install PHP locally or manage versions with tools like phpenv.
 
 This note exists mainly for archival context. I’ve moved away from building PHP from source and juggling multiple local runtimes. Docker and Laravel Sail now define the entire environment
-
-To install Laravel, run the script below.
-
-TODO:
-
-```
-./install/lib/laravel.sh
-```
 
 ## TODOs
 

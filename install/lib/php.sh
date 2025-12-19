@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-##TODO install php-redis
+# Deprecated
 
 ## pre-requisites
 sudo apt-get install apt-transport-https ca-certificates
