@@ -1,17 +1,144 @@
-# EditorConfig is awesome: http://EditorConfig.org
+# https://editorconfig.org/
+# Universal EditorConfig for modern, multi-language projects
+# PHP follows PSR-1 / PSR-12 and Laravel conventions
+#
+# Author: Joshua Mabina
+# Email: mabinajoshua@gmail.com
 
 root = true
 
+# --------------------------------------------------
+# Global defaults
+# --------------------------------------------------
 [*]
 charset = utf-8
 end_of_line = lf
-indent_style = space
-indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+max_line_length = off
 
-[*.{js,json,yaml,yml}]
+# --------------------------------------------------
+# JavaScript / TypeScript / JSX / TSX / Flow
+# --------------------------------------------------
+[*.{js,jsx,ts,tsx,flow}]
 indent_size = 2
 
-[*.md]
+# Minified assets must not be touched
+[*.min.{js,css}]
+indent_style = ignore
+indent_size = ignore
+insert_final_newline = ignore
+trim_trailing_whitespace = ignore
+
+# --------------------------------------------------
+# Frontend frameworks & templates
+# --------------------------------------------------
+[*.{html,htm,vue,xml,mjml}]
+indent_size = 2
+
+[*.{hbs,handlebars}]
+indent_size = 2
+
+# Angular templates
+[*.component.html]
+indent_size = 2
+
+# Lightning Web Components
+[*.{lwc,cmp,page,design}]
+indent_size = 2
+
+# --------------------------------------------------
+# Stylesheets
+# --------------------------------------------------
+[*.{css,less,scss,sass}]
+indent_size = 2
+
+# --------------------------------------------------
+# PHP (PSR-1 / PSR-12 / Laravel)
+# --------------------------------------------------
+[*.php]
+indent_size = 4
+max_line_length = 120
+
+# --------------------------------------------------
+# Backend languages
+# --------------------------------------------------
+[*.rb]
+indent_size = 2
+
+[*.{java,kt}]
+indent_size = 4
+
+[*.rs]
+indent_size = 4
+
+[*.{c,h,cpp,hpp}]
+indent_size = 4
+
+# --------------------------------------------------
+# Flutter / Dart
+# --------------------------------------------------
+[*.dart]
+indent_size = 2
+
+# --------------------------------------------------
+# Data & configuration formats
+# --------------------------------------------------
+[*.{json,json5,jsonc}]
+indent_size = 2
+insert_final_newline = ignore
+
+[*.{yaml,yml}]
+indent_size = 2
+
+[*.graphql]
+indent_size = 2
+
+# --------------------------------------------------
+# Markdown & documentation
+# --------------------------------------------------
+[*.{md,mdx}]
+indent_size = 2
 trim_trailing_whitespace = false
+
+[docs/**.{txt,md}]
+max_line_length = 80
+
+# --------------------------------------------------
+# Shell & scripts
+# --------------------------------------------------
+[*.{sh,bash,zsh}]
+indent_size = 2
+
+# --------------------------------------------------
+# Docker
+# --------------------------------------------------
+[Dockerfile]
+indent_size = 2
+
+[*.dockerfile]
+indent_size = 2
+
+# --------------------------------------------------
+# Build systems
+# --------------------------------------------------
+[Makefile]
+indent_style = tab
+
+[*.bat]
+indent_style = tab
+
+# --------------------------------------------------
+# Vendor / generated code
+# --------------------------------------------------
+[**/vendor/**]
+indent_style = ignore
+indent_size = ignore
+trim_trailing_whitespace = ignore
+
+[**/dist/**]
+indent_style = ignore
+indent_size = ignore
+trim_trailing_whitespace = ignore
