@@ -70,9 +70,9 @@ echo "YOUR_OPENAI_API_KEY" > ~/.config/openai.token
 
 ### Installing and adding a Vim plugin
 
-1. Clone the plugin GitHub repo as a git submodule, `git submodule add --depth=1 [plugin-git-url] [_vim/pack/plugins/start/]`
+Clone the plugin GitHub repo as a git submodule, `git submodule add --depth=1 [plugin-git-url] [_vim/pack/plugins/start/]`
 
-2. Stage, commit, and push changes for review and merging.
+Stage, commit, and push changes for review and merging.
 
 ### Vim dependencies
 
