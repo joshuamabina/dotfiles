@@ -55,10 +55,17 @@ TODO: Install and setup terminal, ohmyzsh, tmux
 
 ### Installing Vim 9 on Ubuntu 22.04
 
-Run the script below to install Vim 9 from source.
+Run the script below to build and install Vim 9 from source with Python 3 support enabled.
 
 ```
 ./install/lib/vim.sh
+```
+
+To use Vim with AI, you need to set up your OpenAI API key.
+
+```
+# save api key to `~/.config/openai.token` file
+echo "YOUR_OPENAI_API_KEY" > ~/.config/openai.token
 ```
 
 ### Installing and adding a Vim plugin
