@@ -89,7 +89,7 @@ cp ~/dotfiles/_zshrc ~/.zshrc
 rm ~/.bashrc
 ```
 
-Setup vim
+# Setup vim
 
 ```
 ln -sf ~/.dotfiles/_vimrc ~/.vimrc && ln -sf ~/.dotfiles/_vim ~/.vim

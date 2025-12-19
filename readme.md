@@ -49,7 +49,7 @@ sudo apt-get install -y git tmux zsh
 
 ## Terminal setup
 
-TODO: Install and setup terminal, ohmyzsh, tmux
+See [setting up tmux](https://github.com/joshuamabina/dotfiles/blob/master/install.md#setup-tmux) and [ohmyzsh](https://github.com/joshuamabina/dotfiles/blob/master/install.md#setup-ohmyzsh).
 
 ## Vim
 
@@ -87,7 +87,7 @@ echo "YOUR_OPENAI_API_KEY" > ~/.config/openai.token
 
 ## Flutter/Dart development
 
-TODO
+See [installing and setting up Flutter/Dart environment.](https://github.com/joshuamabina/dotfiles/blob/master/install.md#install-dart-and-flutter)
 
 ## Laravel-PHP development
 
