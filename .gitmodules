@@ -13,3 +13,6 @@
 [submodule "_vim/pack/plugins/start/vim-airline"]
 	path = _vim/pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "_vim/pack/plugins/start/copilot.vim"]
+	path = _vim/pack/plugins/start/copilot.vim
+	url = git@github.com:github/copilot.vim.git
