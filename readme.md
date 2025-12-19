@@ -95,15 +95,20 @@ I use Laravel for my PHP work and I run everything in containers. That decision 
 
 This note exists mainly for archival context. I’ve moved away from building PHP from source and juggling multiple local runtimes. Docker and Laravel Sail now define the entire environment
 
+To install docker and docker-compose, run the script below.
+
+```
+./install/lib/docker.sh
+```
+
 ## TODOs
 
 - [ ] basic.vimrc: Vim with zero configuration.
-- [ ] tmux: Installation and configuration.
 - [ ] ohmyzsh: Installation and configuration.
-- [ ] Create install scripts for tmux.
+- [x] Create install scripts for tmux.
 - [x] Create install scripts for Vim.
 - [x] Create install scripts for nvm.
-- [ ] Create install scripts for docker.
+- [x] Create install scripts for docker and docker-compose.
 - [ ] Create install scripts for oh-my-zsh.
 - [ ] dart-flutter: Support for fvm and Vim.
 - [ ] python: Installation and configuration, Vim support, virtualenv support.
