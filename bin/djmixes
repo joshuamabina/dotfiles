@@ -25,6 +25,8 @@ while [[ "$#" -gt 0 ]]; do
   shift
 done
 
+#TODO: djmixes --list-artists
+#TODO: djmixes --artist name gives error: No mixes found for artist
 if [[ -n "$ARTIST" ]]; then
   FILELIST=$(find "$MIXDIR" -type f -iname "*$ARTIST*" | sort)
   if [[ -z "$FILELIST" ]]; then
