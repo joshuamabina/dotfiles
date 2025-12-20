@@ -24,6 +24,8 @@
 " Load all plugins earlier
 packloadall
 
+packadd! editorconfig
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -34,7 +36,6 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" TODO: Fix - install Vim8 with clipboard support
 " Set clipboard
 set clipboard^=unnamed,unnamedplus
 
