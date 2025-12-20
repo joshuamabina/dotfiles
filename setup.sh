@@ -14,11 +14,11 @@ function main() {
 
 	source "${current_dir}"/lib/utils.sh
 
-  ## TODO: Install EditorConfig
+	## TODO: Install EditorConfig
 
-  ## TODO: Install Prettier
+	## TODO: Install Prettier
 
-  ## TODO: Install Python
+	## TODO: Install Python
 }
 
 main "$@"
