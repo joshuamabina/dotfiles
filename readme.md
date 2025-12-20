@@ -82,7 +82,6 @@ Stage, commit, and push changes for review and merging.
 - https://github.com/sheerun/vim-polyglot
 - https://github.com/vim-airline/vim-airline
 - https://github.com/github/copilot.vim
-- https://github.com/editorconfig/editorconfig-vim
 - https://github.com/madox2/vim-ai
 
 ## Flutter/Dart development
