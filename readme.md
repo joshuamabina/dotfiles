@@ -103,14 +103,14 @@ To install docker and docker-compose, run the script below.
 ## TODOs
 
 - [ ] basic.vimrc: Vim with zero configuration.
-- [ ] ohmyzsh: Installation and configuration.
+- [ ] basic.zshrc: Zsh with zero configuration. 
 - [x] Create install scripts for tmux.
 - [x] Create install scripts for Vim.
 - [x] Create install scripts for nvm.
 - [x] Create install scripts for docker and docker-compose.
-- [ ] Create install scripts for oh-my-zsh.
-- [ ] dart-flutter: Support for fvm and Vim.
-- [ ] python: Installation and configuration, Vim support, virtualenv support.
+- [x] Create install scripts for oh-my-zsh.
+- [ ] **(CURRENT)** Check syntax and linting using ALE Vim plugin.
+- [ ] Install fvm (Flutter Version Manager) and set up Flutter projects to use it.
 - [ ] Create install scripts for [phpMyAdmin (using Docker)](https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker)
 - [ ] Set up a sandbox environment (e.g., VirtualBox VM) for building/testing dotfiles.
 
