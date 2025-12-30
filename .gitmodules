@@ -13,9 +13,9 @@
 [submodule "_vim/pack/plugins/start/vim-airline"]
 	path = _vim/pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "_vim/pack/plugins/start/copilot.vim"]
-	path = _vim/pack/plugins/start/copilot.vim
-	url = git@github.com:github/copilot.vim.git
 [submodule "_vim/pack/plugins/start/vim-ai"]
 	path = _vim/pack/plugins/start/vim-ai
 	url = git@github.com:madox2/vim-ai.git
+[submodule "_vim/pack/plugins/start/ale"]
+	path = _vim/pack/plugins/start/ale
+	url = git@github.com:dense-analysis/ale.git
