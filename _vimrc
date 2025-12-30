@@ -411,3 +411,35 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:dart_style_guide = 2
 let g:dartfmt_options = ['--fix', '--line-length 120']
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim ALE
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set omnifunc=ale#completion#OmniFunc
+
+" ALE fixers setup
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['prettier', 'eslint'],
+\   'vue': ['prettier', 'eslint'],
+\   'dart': ['dart-format'],
+\   'php': ['phpcsfixer'],
+\   'json': ['jq', 'prettier'],
+\   'jsonc': ['prettier'],
+\   'html': ['prettier'],
+\   'css': ['prettier'],
+\   'scss': ['prettier'],
+\   'markdown': ['prettier'],
+\   'yaml': ['prettier', 'yamlfmt'],
+\   'toml': ['taplo'],
+\   'sh': ['shfmt'],
+\   'sql': ['sql-formatter'],
+\   'dockerfile': ['hadolint'],
+\   'graphql': ['prettier'],
+\   'xml': ['prettier'],
+\}
+
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1

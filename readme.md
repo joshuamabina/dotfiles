@@ -70,19 +70,21 @@ echo "YOUR_OPENAI_API_KEY" > ~/.config/openai.token
 
 ### Installing and adding a Vim plugin
 
-Clone the plugin GitHub repo as a git submodule, `git submodule add --depth=1 [plugin-git-url] [_vim/pack/plugins/start/]`
+Clone the plugin GitHub repo as a git submodule, `git submodule add --depth=1 [plugin-git-url] [_vim/pack/plugins/start/plugin-name]`
 
 Stage, commit, and push changes for review and merging.
 
 ### Vim dependencies
 
-- https://github.com/ctrlpvim/ctrlp.vim
-- https://github.com/tpope/vim-commentary
-- https://github.com/tpope/vim-surround
-- https://github.com/sheerun/vim-polyglot
-- https://github.com/vim-airline/vim-airline
-- https://github.com/github/copilot.vim
-- https://github.com/madox2/vim-ai
+- [x] https://github.com/ctrlpvim/ctrlp.vim
+- [x] https://github.com/tpope/vim-commentary
+- [x] https://github.com/tpope/vim-surround
+- [x] https://github.com/sheerun/vim-polyglot
+- [x] https://github.com/vim-airline/vim-airline
+- [ ] https://github.com/github/copilot.vim
+- [x] https://github.com/madox2/vim-ai
+- [x] https://github.com/dense-analysis/ale
+
 
 ## Flutter/Dart development
 
@@ -103,13 +105,14 @@ To install docker and docker-compose, run the script below.
 ## TODOs
 
 - [ ] basic.vimrc: Vim with zero configuration.
-- [ ] basic.zshrc: Zsh with zero configuration. 
+- [ ] basic.zshrc: Zsh with zero configuration.
 - [x] Create install scripts for tmux.
 - [x] Create install scripts for Vim.
 - [x] Create install scripts for nvm.
 - [x] Create install scripts for docker and docker-compose.
 - [x] Create install scripts for oh-my-zsh.
-- [ ] **(CURRENT)** Check syntax and linting using ALE Vim plugin.
+- [x] Check syntax and linting using ALE Vim plugin.
+- [x] Check syntax and linting using ALE Vim plugin.
 - [ ] Install fvm (Flutter Version Manager) and set up Flutter projects to use it.
 - [ ] Create install scripts for [phpMyAdmin (using Docker)](https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker)
 - [ ] Set up a sandbox environment (e.g., VirtualBox VM) for building/testing dotfiles.
