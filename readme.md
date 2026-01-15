@@ -114,6 +114,8 @@ To install docker and docker-compose, run the script below.
 - [x] Check syntax and linting using ALE Vim plugin.
 - [x] Check syntax and linting using ALE Vim plugin.
 - [ ] Use Git submodules to manage oh-my-zsh plugins.
+- [ ] Create install scritpts (mostly, flathub) to install OBS Studio.
+- [ ] Create install script for st (Simple Terminal).
 - [ ] Install fvm (Flutter Version Manager) and set up Flutter projects to use it.
 - [ ] Create install scripts for [phpMyAdmin (using Docker)](https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker)
 - [ ] Set up a sandbox environment (e.g., VirtualBox VM) for building/testing dotfiles.
